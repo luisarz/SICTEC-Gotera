@@ -1,23 +1,10 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmcoloniapanel
-    Private Sub SimpleButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton1.Click
-       
+    Private Sub SimpleButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
-        Try
-            If lblcod.Text = "" Then
-                Me.AlertControl1.Show(Me, "Adventencia-MODIFICAR", "Debe seleccionar una colonia a modificar")
-            Else
-                My.Forms.frmeditcolonia.id = lblcod.Text
-                My.Forms.frmeditcolonia.colonia = lblnombre.Text
-                My.Forms.frmeditcolonia.zona = lblzona.Text
-                My.Forms.frmeditcolonia.ShowDialog()
-               llenar()
-            End If
 
-        Catch ex As Exception
 
-        End Try
     End Sub
 
     Private Sub frmcoloniapanel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -53,7 +40,7 @@ Public Class frmcoloniapanel
 
     End Sub
 
-    Private Sub SimpleButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton3.Click
+    Private Sub SimpleButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             If lblcod.Text = "" Then
                 Me.AlertControl1.Show(Me, "Adventencia-ELIMINAR", "Debe seleccionar una colonia a Eliminar")
@@ -62,7 +49,7 @@ Public Class frmcoloniapanel
                 My.Forms.frmeliminarcolonia.colonia = lblnombre.Text
                 My.Forms.frmeliminarcolonia.zona = lblzona.Text
                 My.Forms.frmeliminarcolonia.ShowDialog()
-             llenar()
+                llenar()
             End If
         Catch ex As Exception
 
@@ -79,4 +66,43 @@ Public Class frmcoloniapanel
     Private Sub SimpleButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton4.Click
         Reporte_Colonia.ShowDialog()
     End Sub
+
+    Private Sub GridView1_RowCellClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
+        If e.Column.Name = "Delete" Then
+            Try
+                If lblcod.Text = "" Then
+                    Me.AlertControl1.Show(Me, "Adventencia-ELIMINAR", "Debe seleccionar una colonia a Eliminar")
+                Else
+                    My.Forms.frmeliminarcolonia.id = lblcod.Text
+                    My.Forms.frmeliminarcolonia.colonia = lblnombre.Text
+                    My.Forms.frmeliminarcolonia.zona = lblzona.Text
+                    My.Forms.frmeliminarcolonia.ShowDialog()
+                    llenar()
+                End If
+            Catch ex As Exception
+
+            End Try
+        End If
+
+        If e.Column.Name = "btnEdit" Then
+            Try
+                If lblcod.Text = "" Then
+                    Me.AlertControl1.Show(Me, "Adventencia-MODIFICAR", "Debe seleccionar una colonia a modificar")
+                Else
+                    My.Forms.frmeditcolonia.id = lblcod.Text
+                    My.Forms.frmeditcolonia.colonia = lblnombre.Text
+                    My.Forms.frmeditcolonia.zona = lblzona.Text
+                    My.Forms.frmeditcolonia.ShowDialog()
+                    llenar()
+                End If
+
+            Catch ex As Exception
+
+            End Try
+        End If
+
+
+
+    End Sub
+
 End Class

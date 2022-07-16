@@ -27,9 +27,7 @@ Public Class frmEmpleado
         End Try
     End Sub
 
-    Private Sub SimpleButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton1.Click
-
-    End Sub
+ 
 
     Private Sub SimpleButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton2.Click
         My.Forms.frmAddEmpleado.ShowDialog()
@@ -38,21 +36,27 @@ Public Class frmEmpleado
 
     End Sub
 
-    Private Sub SimpleButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton3.Click
-        Try
-            If lblID.Text = "" Then
-                AlertControl1.Show(Me, "Advertencia", "Debe seleccionar un Empleado de la lista a modificar")
-            Else
-                My.Forms.frmEditEmpleado.txtcodigo.Text = lblID.Text
-                My.Forms.frmEditEmpleado.ShowDialog()
-                cargardatos()
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Information)
-        End Try
+    Private Sub SimpleButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
     Private Sub GridView1_FocusedRowChanged(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles GridView1.FocusedRowChanged
         lblID.Text = GridView1.GetFocusedRowCellValue("Id")
+    End Sub
+
+    Private Sub GridView1_RowCellClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
+        If e.Column.Name = "btnEdit" Then
+                
+                    My.Forms.frmEditEmpleado.txtcodigo.Text = lblID.Text
+                    My.Forms.frmEditEmpleado.ShowDialog()
+                    cargardatos()
+          
+        End If
+        If e.Column.Name = "btnDelete" Then
+            My.Forms.frmdelEmpleado.txtcodigo.Text = lblID.Text
+            My.Forms.frmdelEmpleado.ShowDialog()
+            cargardatos()
+
+        End If
     End Sub
 End Class

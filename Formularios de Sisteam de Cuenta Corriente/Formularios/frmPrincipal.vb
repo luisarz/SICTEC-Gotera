@@ -177,18 +177,15 @@ Public Class FrmPrincipal
 
 
 
-    Private Sub BarButtonItem39_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem39.ItemClick
-        Try
-            frmThemas.ShowDialog()
-        Catch ex As Exception
-            AlertControl1.Show(Me, "Error", "Error al cargar modulo el error Es: " & ex.Message)
-        End Try
-    End Sub
 
 
 
     Private Sub BarButtonItem34_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem34.ItemClick
-        frmUsuarios.ShowDialog()
+        Try
+            newform(frmUsuarios)
+        Catch ex As Exception
+            AlertControl1.Show(Me, "Error", "Error al cargar modulo")
+        End Try
     End Sub
 
     Private Sub BarButtonItem58_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs)
@@ -350,4 +347,7 @@ Public Class FrmPrincipal
         newform(frmTituloPerpetuidadPanel)
     End Sub
 
+    Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
+
+    End Sub
 End Class

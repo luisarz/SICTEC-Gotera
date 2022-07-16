@@ -40,29 +40,20 @@ Public Class frmUsuarios
         consulta_datos()
     End Sub
 
-    Private Sub SimpleButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton1.Click
-        Try
-            If lblid.Text = "id" Then
-                MsgBox("Debe seleccionar el usuario a editar", MessageBoxIcon.Stop)
-            Else
-                My.Forms.frmedituser.txtid.Text = lblid.Text
-                My.Forms.frmedituser.ShowDialog()
-                consulta_datos()
-                lblid.Text = "id"
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical)
-        End Try
-    End Sub
+  
 
-    Private Sub SimpleButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton2.Click
-        If lblid.Text = "" Then
-            MsgBox("Debe seleccionar el usuario a eliminar", MsgBoxStyle.Information)
-        Else
+
+    Private Sub GridView1_RowCellClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
+        If e.Column.Name = "btnEdit" Then
+            My.Forms.frmedituser.txtid.Text = lblid.Text
+            My.Forms.frmedituser.ShowDialog()
+            consulta_datos()
+        End If
+        If e.Column.Name = "btnDelete" Then
             My.Forms.frmdeleteuser.txtid.Text = lblid.Text
             My.Forms.frmdeleteuser.ShowDialog()
             consulta_datos()
-            lblid.Text = "id"
+
         End If
     End Sub
 End Class

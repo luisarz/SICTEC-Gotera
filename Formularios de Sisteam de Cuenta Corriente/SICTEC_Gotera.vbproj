@@ -300,12 +300,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Formularios\settings\frmThemas.Designer.vb">
-      <DependentUpon>frmThemas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\settings\frmThemas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\splash.Designer.vb">
       <DependentUpon>splash.vb</DependentUpon>
     </Compile>
@@ -412,9 +406,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\settings\frmThemas.resx">
-      <DependentUpon>frmThemas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\splash.resx">
       <DependentUpon>splash.vb</DependentUpon>
     </EmbeddedResource>
@@ -481,108 +472,40 @@
       <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\conexion_OK.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Inmuebles_name.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Conexion_help.png" />
-  </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <None Include="Resources\Empresa_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Empresa_logo_activo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Empresa_logo_EDICION.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\InmuebleDispensa_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\estado_de_cuenta.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\estado_de_cuenta_agua.png" />
-  </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\intro\assets\images\bannerHome.png" />
     <Content Include="ColumnChart.ico" />
-    <None Include="Resources\bosale_32x32.png" />
     <None Include="Resources\delete_32x321.png" />
     <None Include="Resources\deletedatasource_32x32.png" />
-    <None Include="Resources\cancel_32x32.png" />
-    <None Include="Resources\customer_32x32.png" />
-    <None Include="Resources\remove_32x321.png" />
-    <None Include="Resources\fierro.png" />
-    <None Include="Resources\fierroIcon.png" />
     <None Include="Resources\noIm.png" />
     <None Include="Resources\cartaventa.png" />
     <None Include="Resources\tituloPerpetuidad_Mesa de trabajo 1.png" />
     <None Include="Resources\bannerHome.png" />
+    <None Include="Resources\tituloPerpetuidad_Mesa de trabajo 11.png" />
+    <None Include="Resources\Header_Empleados1.png" />
     <Content Include="SAC.fw.ico" />
-    <None Include="Resources\currency_32x321.png" />
-    <None Include="Resources\currency_16x161.png" />
-    <None Include="Resources\currency_32x32.png" />
     <None Include="Resources\checkbox_32x32.png" />
     <None Include="Resources\delete_32x32.png" />
-    <None Include="Resources\download_32x32.png" />
     <None Include="Resources\remove_32x32.png" />
-    <None Include="Resources\converttoparagraphs_32x32.png" />
     <None Include="Resources\close_32x32.png" />
-    <None Include="Resources\switchtimescalesto_32x32.png" />
     <None Include="Resources\open_16x161.png" />
-    <None Include="Resources\country_16x161.png" />
     <None Include="Resources\design_16x161.png" />
     <None Include="Resources\status_16x16.png" />
-    <None Include="Resources\example_16x16.png" />
-    <None Include="Resources\currency_16x16.png" />
-    <None Include="Resources\team_16x16.png" />
-    <None Include="Resources\tag_16x16.png" />
     <None Include="Resources\design_16x16.png" />
-    <None Include="Resources\country_16x16.png" />
     <None Include="Resources\open_16x16.png" />
-    <None Include="Resources\loadding.gif" />
     <None Include="Resources\Refresh.png" />
-    <None Include="Resources\listadoproductos.png" />
-    <None Include="Resources\buscar.jpg" />
-    <None Include="Resources\FLECHA.PNG" />
-    <None Include="Resources\restore.png" />
     <None Include="Resources\Header_Empleados.png" />
-    <None Include="Resources\databaseRep.png" />
-    <None Include="Resources\databaseDell.png" />
-    <None Include="Resources\databaseEdit.png" />
-    <None Include="Resources\databaseAdd.png" />
-    <None Include="Resources\GenerarAvisoGrupos1.png" />
-    <None Include="Resources\GenerarAvisoIndividuales.png" />
-    <None Include="Resources\repIngresosDiarios.png" />
-    <None Include="Resources\listadoContadores.png" />
-    <None Include="Resources\RmedidasContadores.png" />
-    <None Include="Resources\creaciongruposcte.png" />
-    <None Include="Resources\GenerarAvisoGrupos.png" />
     <None Include="Resources\colonias.png" />
-    <None Include="Resources\inmueblesxcolonias.png" />
     <None Include="Resources\solvencias.png" />
-    <None Include="Resources\loggin.png" />
-    <None Include="Resources\edit_mini.png" />
     <None Include="Resources\splash.png" />
     <None Include="Resources\change_User.png" />
-    <None Include="Resources\Ivass1.png" />
-    <None Include="Resources\bitacora.png" />
     <None Include="Resources\Salir.png" />
-    <None Include="Resources\cascada.png" />
-    <None Include="Resources\text_edit.png" />
     <None Include="Resources\ThemeManager.png" />
     <None Include="Resources\Header_colonias.png" />
-    <None Include="Resources\Lilian.png" />
     <None Include="Resources\DevExpress.png" />
     <None Include="Resources\DevExpress Dark Style.png" />
     <None Include="Resources\Office 2010 Silver.png" />
-    <None Include="Resources\bg_grid.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

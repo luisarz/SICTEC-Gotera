@@ -73,6 +73,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cartaventa() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cartaventa", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property change_User() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("change_User", resourceCulture)
@@ -163,6 +173,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Header_Empleados() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Header_Empleados", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Salir() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Salir", resourceCulture)
@@ -206,6 +226,16 @@ Namespace My.Resources
         Friend ReadOnly Property ThemeManager() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ThemeManager", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tituloPerpetuidad_Mesa_de_trabajo_1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tituloPerpetuidad_Mesa de trabajo 1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
