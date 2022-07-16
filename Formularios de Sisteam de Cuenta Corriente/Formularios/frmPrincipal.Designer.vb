@@ -24,11 +24,11 @@ Partial Class FrmPrincipal
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
-        Dim SuperToolTip2 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem3 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
-        Dim ToolTipItem2 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-        Dim ToolTipSeparatorItem2 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
-        Dim ToolTipTitleItem4 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim SuperToolTip1 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem1 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem1 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim ToolTipSeparatorItem1 As DevExpress.Utils.ToolTipSeparatorItem = New DevExpress.Utils.ToolTipSeparatorItem()
+        Dim ToolTipTitleItem2 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.BackstageViewControl1 = New DevExpress.XtraBars.Ribbon.BackstageViewControl()
@@ -96,6 +96,7 @@ Partial Class FrmPrincipal
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.BarButtonItem60 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem6 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackstageViewControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,10 +115,10 @@ Partial Class FrmPrincipal
         Me.RibbonControl1.AutoSizeItems = True
         Me.RibbonControl1.Categories.AddRange(New DevExpress.XtraBars.BarManagerCategory() {New DevExpress.XtraBars.BarManagerCategory("themes", New System.Guid("405a8977-3b90-40b6-9d16-36f732da07b2"))})
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
-        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem13, Me.BarButtonItem14, Me.BarButtonItem15, Me.BarButtonItem17, Me.BarButtonItem19, Me.rcolonias, Me.BarButtonItem23, Me.rreporteimpuestos, Me.BarButtonItem34, Me.BarButtonItem37, Me.BarButtonItem41, Me.BarButtonItem42, Me.BarButtonItem45, Me.BarButtonItem44, Me.BarButtonItem47, Me.rrepingresosimpuestos, Me.BarButtonItem57, Me.BarStaticItem1, Me.bsiusuario, Me.estado_conexion, Me.BarButtonItem5, Me.BarButtonItem18, Me.BarButtonItem10, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem22, Me.BarButtonItem24, Me.BarButtonItem27, Me.BarButtonItem32, Me.BarButtonItem40, Me.BarButtonItem66, Me.sk, Me.BarButtonItem69, Me.BarButtonItem58, Me.BarButtonItem59, Me.BarButtonItem11, Me.BarButtonItem26, Me.BarButtonItem51, Me.BarButtonItem52, Me.BarButtonItem4})
+        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem13, Me.BarButtonItem14, Me.BarButtonItem15, Me.BarButtonItem17, Me.BarButtonItem19, Me.rcolonias, Me.BarButtonItem23, Me.rreporteimpuestos, Me.BarButtonItem34, Me.BarButtonItem37, Me.BarButtonItem41, Me.BarButtonItem42, Me.BarButtonItem45, Me.BarButtonItem44, Me.BarButtonItem47, Me.rrepingresosimpuestos, Me.BarButtonItem57, Me.BarStaticItem1, Me.bsiusuario, Me.estado_conexion, Me.BarButtonItem5, Me.BarButtonItem18, Me.BarButtonItem10, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem22, Me.BarButtonItem24, Me.BarButtonItem27, Me.BarButtonItem32, Me.BarButtonItem40, Me.BarButtonItem66, Me.sk, Me.BarButtonItem69, Me.BarButtonItem58, Me.BarButtonItem59, Me.BarButtonItem11, Me.BarButtonItem26, Me.BarButtonItem51, Me.BarButtonItem52, Me.BarButtonItem4, Me.BarButtonItem6})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
         Me.RibbonControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.RibbonControl1.MaxItemId = 181
+        Me.RibbonControl1.MaxItemId = 182
         Me.RibbonControl1.Name = "RibbonControl1"
         Me.RibbonControl1.PageHeaderItemLinks.Add(Me.BarButtonItem2)
         Me.RibbonControl1.PageHeaderItemLinks.Add(Me.BarButtonItem69)
@@ -126,7 +127,7 @@ Partial Class FrmPrincipal
         Me.RibbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.RibbonControl1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.HelpProvider1.SetShowHelp(Me.RibbonControl1, True)
-        Me.RibbonControl1.Size = New System.Drawing.Size(1376, 186)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1376, 187)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         Me.RibbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above
         '
@@ -449,16 +450,16 @@ Partial Class FrmPrincipal
         Me.BarButtonItem69.ImageOptions.Image = CType(resources.GetObject("BarButtonItem69.ImageOptions.Image"), System.Drawing.Image)
         Me.BarButtonItem69.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem69.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.BarButtonItem69.Name = "BarButtonItem69"
-        ToolTipTitleItem3.Text = "Administración de formularios"
-        ToolTipItem2.LeftIndent = 6
-        ToolTipItem2.Text = "Clic para cerrar todos los formularios abiertos "
-        ToolTipTitleItem4.LeftIndent = 6
-        ToolTipTitleItem4.Text = "SAC-SAN ESTEBAN CATARINA"
-        SuperToolTip2.Items.Add(ToolTipTitleItem3)
-        SuperToolTip2.Items.Add(ToolTipItem2)
-        SuperToolTip2.Items.Add(ToolTipSeparatorItem2)
-        SuperToolTip2.Items.Add(ToolTipTitleItem4)
-        Me.BarButtonItem69.SuperTip = SuperToolTip2
+        ToolTipTitleItem1.Text = "Administración de formularios"
+        ToolTipItem1.LeftIndent = 6
+        ToolTipItem1.Text = "Clic para cerrar todos los formularios abiertos "
+        ToolTipTitleItem2.LeftIndent = 6
+        ToolTipTitleItem2.Text = "SAC-SAN ESTEBAN CATARINA"
+        SuperToolTip1.Items.Add(ToolTipTitleItem1)
+        SuperToolTip1.Items.Add(ToolTipItem1)
+        SuperToolTip1.Items.Add(ToolTipSeparatorItem1)
+        SuperToolTip1.Items.Add(ToolTipTitleItem2)
+        Me.BarButtonItem69.SuperTip = SuperToolTip1
         '
         'BarButtonItem58
         '
@@ -551,6 +552,7 @@ Partial Class FrmPrincipal
         Me.RibbonPageGroup15.ImageOptions.Image = CType(resources.GetObject("RibbonPageGroup15.ImageOptions.Image"), System.Drawing.Image)
         Me.RibbonPageGroup15.ItemLinks.Add(Me.BarButtonItem59)
         Me.RibbonPageGroup15.ItemLinks.Add(Me.BarButtonItem34)
+        Me.RibbonPageGroup15.ItemLinks.Add(Me.BarButtonItem6)
         Me.RibbonPageGroup15.Name = "RibbonPageGroup15"
         Me.RibbonPageGroup15.ShowCaptionButton = False
         Me.RibbonPageGroup15.Text = "Setting"
@@ -576,11 +578,11 @@ Partial Class FrmPrincipal
         Me.RibbonStatusBar1.ItemLinks.Add(Me.BarStaticItem1)
         Me.RibbonStatusBar1.ItemLinks.Add(Me.bsiusuario)
         Me.RibbonStatusBar1.ItemLinks.Add(Me.estado_conexion)
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 662)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 663)
         Me.RibbonStatusBar1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1376, 30)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1376, 29)
         '
         'ApplicationMenu2
         '
@@ -654,6 +656,15 @@ Partial Class FrmPrincipal
         Me.BarButtonItem60.ImageOptions.Image = CType(resources.GetObject("BarButtonItem60.ImageOptions.Image"), System.Drawing.Image)
         Me.BarButtonItem60.Name = "BarButtonItem60"
         Me.BarButtonItem60.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
+            Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
+        '
+        'BarButtonItem6
+        '
+        Me.BarButtonItem6.Caption = "Correlativo"
+        Me.BarButtonItem6.Id = 181
+        Me.BarButtonItem6.ImageOptions.Image = CType(resources.GetObject("BarButtonItem6.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem6.Name = "BarButtonItem6"
+        Me.BarButtonItem6.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
             Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
         'FrmPrincipal
@@ -752,4 +763,5 @@ End Sub
     Friend WithEvents BarButtonItem60 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem52 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
 End Class

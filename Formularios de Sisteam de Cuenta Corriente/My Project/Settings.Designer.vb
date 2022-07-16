@@ -104,55 +104,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property aviso_primter() As String
-            Get
-                Return CType(Me("aviso_primter"),String)
-            End Get
-            Set
-                Me("aviso_primter") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://127.0.0.1/mapasCatastro/")>  _
-        Public Property serverMapa() As String
-            Get
-                Return CType(Me("serverMapa"),String)
-            End Get
-            Set
-                Me("serverMapa") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property Setting() As String
-            Get
-                Return CType(Me("Setting"),String)
-            End Get
-            Set
-                Me("Setting") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property cargaruser() As String
-            Get
-                Return CType(Me("cargaruser"),String)
-            End Get
-            Set
-                Me("cargaruser") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("SacSanEsteban")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("cementerios_gotera")>  _
         Public Property db() As String
             Get
                 Return CType(Me("db"),String)
@@ -165,23 +117,24 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=COMPUTEC;Initial Catalog=SacSanEsteban;Persist Security Info=True;Use"& _ 
-            "r ID=sa;Password=123;Current Language=SPANISH")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=COMPUTEC;Initial Catalog=cementerios_gotera;Persist Security Info=Tru"& _ 
+            "e;User ID=sa;Password=123;Current Language=SPANISH")>  _
         Public ReadOnly Property DB_catastroConnectionString1() As String
             Get
                 Return CType(Me("DB_catastroConnectionString1"),String)
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=COMPUTEC;Initial Catalog=SacSanEsteban;Persist Security Info=True;Use"& _ 
-            "r ID=sa;Password=123;Current Language=SPANISH")>  _
-        Public ReadOnly Property DB_catastroConnectionString() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property cargaruser() As String
             Get
-                Return CType(Me("DB_catastroConnectionString"),String)
+                Return CType(Me("cargaruser"),String)
             End Get
+            Set
+                Me("cargaruser") = value
+            End Set
         End Property
     End Class
 End Namespace

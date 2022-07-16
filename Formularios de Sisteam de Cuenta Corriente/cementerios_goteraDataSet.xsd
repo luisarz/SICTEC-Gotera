@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="sacChilangaDataSet1TituloPerpetuidad" targetNamespace="http://tempuri.org/sacChilangaDataSet1TituloPerpetuidad.xsd" xmlns:mstns="http://tempuri.org/sacChilangaDataSet1TituloPerpetuidad.xsd" xmlns="http://tempuri.org/sacChilangaDataSet1TituloPerpetuidad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="cementerios_goteraDataSet" targetNamespace="http://tempuri.org/cementerios_goteraDataSet.xsd" xmlns:mstns="http://tempuri.org/cementerios_goteraDataSet.xsd" xmlns="http://tempuri.org/cementerios_goteraDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -7,12 +7,12 @@
           <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DB_catastroConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_catastroConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Formularios_de_Sistema_de_Cuenta_Corriente.My.MySettings.GlobalReference.Default.DB_catastroConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SpTitulo_perpetuidadListarTableAdapter" GeneratorDataComponentClassName="SpTitulo_perpetuidadListarTableAdapter" Name="SpTitulo_perpetuidadListar" UserDataComponentName="SpTitulo_perpetuidadListarTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="titulo_perpetuidadTableAdapter" GeneratorDataComponentClassName="titulo_perpetuidadTableAdapter" Name="titulo_perpetuidad" UserDataComponentName="titulo_perpetuidadTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DB_catastroConnectionString1 (MySettings)" DbObjectName="SacSanEsteban.dbo.titulo_perpetuidad" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DB_catastroConnectionString1 (MySettings)" DbObjectName="cementerios_gotera.dbo.titulo_perpetuidad" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [titulo_perpetuidad] WHERE (([id_titulo] = @Original_id_titulo) AND ((@IsNull_monto = 1 AND [monto] IS NULL) OR ([monto] = @Original_monto)) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) AND ((@IsNull_oficio = 1 AND [oficio] IS NULL) OR ([oficio] = @Original_oficio)) AND ((@IsNull_municipio_domicilio = 1 AND [municipio_domicilio] IS NULL) OR ([municipio_domicilio] = @Original_municipio_domicilio)) AND ((@IsNull_departamento_domicilio = 1 AND [departamento_domicilio] IS NULL) OR ([departamento_domicilio] = @Original_departamento_domicilio)) AND ((@IsNull_dui = 1 AND [dui] IS NULL) OR ([dui] = @Original_dui)) AND ((@IsNull_municipio_extension_dui = 1 AND [municipio_extension_dui] IS NULL) OR ([municipio_extension_dui] = @Original_municipio_extension_dui)) AND ((@IsNull_departamento_extension_dui = 1 AND [departamento_extension_dui] IS NULL) OR ([departamento_extension_dui] = @Original_departamento_extension_dui)) AND ((@IsNull_cementerio = 1 AND [cementerio] IS NULL) OR ([cementerio] = @Original_cementerio)) AND ((@IsNull_metro_ancho = 1 AND [metro_ancho] IS NULL) OR ([metro_ancho] = @Original_metro_ancho)) AND ((@IsNull_centimetro_ancho = 1 AND [centimetro_ancho] IS NULL) OR ([centimetro_ancho] = @Original_centimetro_ancho)) AND ((@IsNull_metro_largo = 1 AND [metro_largo] IS NULL) OR ([metro_largo] = @Original_metro_largo)) AND ((@IsNull_centimetro_largo = 1 AND [centimetro_largo] IS NULL) OR ([centimetro_largo] = @Original_centimetro_largo)) AND ((@IsNull_cantidad_construir = 1 AND [cantidad_construir] IS NULL) OR ([cantidad_construir] = @Original_cantidad_construir)) AND ((@IsNull_tipo_construccion = 1 AND [tipo_construccion] IS NULL) OR ([tipo_construccion] = @Original_tipo_construccion)) AND ((@IsNull_monto_construccion = 1 AND [monto_construccion] IS NULL) OR ([monto_construccion] = @Original_monto_construccion)) AND ((@IsNull_num_recibo_pago = 1 AND [num_recibo_pago] IS NULL) OR ([num_recibo_pago] = @Original_num_recibo_pago)) AND ((@IsNull_fecha_recibo_pago = 1 AND [fecha_recibo_pago] IS NULL) OR ([fecha_recibo_pago] = @Original_fecha_recibo_pago)) AND ((@IsNull_refrencia = 1 AND [refrencia] IS NULL) OR ([refrencia] = @Original_refrencia)) AND ((@IsNull_fecha_registro = 1 AND [fecha_registro] IS NULL) OR ([fecha_registro] = @Original_fecha_registro)) AND ((@IsNull_numero_titulo = 1 AND [numero_titulo] IS NULL) OR ([numero_titulo] = @Original_numero_titulo)) AND ((@IsNull_zona = 1 AND [zona] IS NULL) OR ([zona] = @Original_zona)) AND ((@IsNull_categoria_cuadro = 1 AND [categoria_cuadro] IS NULL) OR ([categoria_cuadro] = @Original_categoria_cuadro)) AND ((@IsNull_calle = 1 AND [calle] IS NULL) OR ([calle] = @Original_calle)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_situado = 1 AND [situado] IS NULL) OR ([situado] = @Original_situado)) AND ((@IsNull_campo1 = 1 AND [campo1] IS NULL) OR ([campo1] = @Original_campo1)) AND ((@IsNull_campo2 = 1 AND [campo2] IS NULL) OR ([campo2] = @Original_campo2)))</CommandText>
+                    <CommandText>DELETE FROM [dbo].[titulo_perpetuidad] WHERE (([id_titulo] = @Original_id_titulo) AND ((@IsNull_monto = 1 AND [monto] IS NULL) OR ([monto] = @Original_monto)) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) AND ((@IsNull_oficio = 1 AND [oficio] IS NULL) OR ([oficio] = @Original_oficio)) AND ((@IsNull_municipio_domicilio = 1 AND [municipio_domicilio] IS NULL) OR ([municipio_domicilio] = @Original_municipio_domicilio)) AND ((@IsNull_departamento_domicilio = 1 AND [departamento_domicilio] IS NULL) OR ([departamento_domicilio] = @Original_departamento_domicilio)) AND ((@IsNull_dui = 1 AND [dui] IS NULL) OR ([dui] = @Original_dui)) AND ((@IsNull_municipio_extension_dui = 1 AND [municipio_extension_dui] IS NULL) OR ([municipio_extension_dui] = @Original_municipio_extension_dui)) AND ((@IsNull_departamento_extension_dui = 1 AND [departamento_extension_dui] IS NULL) OR ([departamento_extension_dui] = @Original_departamento_extension_dui)) AND ((@IsNull_cementerio = 1 AND [cementerio] IS NULL) OR ([cementerio] = @Original_cementerio)) AND ((@IsNull_metro_ancho = 1 AND [metro_ancho] IS NULL) OR ([metro_ancho] = @Original_metro_ancho)) AND ((@IsNull_centimetro_ancho = 1 AND [centimetro_ancho] IS NULL) OR ([centimetro_ancho] = @Original_centimetro_ancho)) AND ((@IsNull_metro_largo = 1 AND [metro_largo] IS NULL) OR ([metro_largo] = @Original_metro_largo)) AND ((@IsNull_centimetro_largo = 1 AND [centimetro_largo] IS NULL) OR ([centimetro_largo] = @Original_centimetro_largo)) AND ((@IsNull_cantidad_construir = 1 AND [cantidad_construir] IS NULL) OR ([cantidad_construir] = @Original_cantidad_construir)) AND ((@IsNull_tipo_construccion = 1 AND [tipo_construccion] IS NULL) OR ([tipo_construccion] = @Original_tipo_construccion)) AND ((@IsNull_monto_construccion = 1 AND [monto_construccion] IS NULL) OR ([monto_construccion] = @Original_monto_construccion)) AND ((@IsNull_num_recibo_pago = 1 AND [num_recibo_pago] IS NULL) OR ([num_recibo_pago] = @Original_num_recibo_pago)) AND ((@IsNull_fecha_recibo_pago = 1 AND [fecha_recibo_pago] IS NULL) OR ([fecha_recibo_pago] = @Original_fecha_recibo_pago)) AND ((@IsNull_refrencia = 1 AND [refrencia] IS NULL) OR ([refrencia] = @Original_refrencia)) AND ((@IsNull_fecha_registro = 1 AND [fecha_registro] IS NULL) OR ([fecha_registro] = @Original_fecha_registro)) AND ((@IsNull_numero_titulo = 1 AND [numero_titulo] IS NULL) OR ([numero_titulo] = @Original_numero_titulo)) AND ((@IsNull_zona = 1 AND [zona] IS NULL) OR ([zona] = @Original_zona)) AND ((@IsNull_categoria_cuadro = 1 AND [categoria_cuadro] IS NULL) OR ([categoria_cuadro] = @Original_categoria_cuadro)) AND ((@IsNull_calle = 1 AND [calle] IS NULL) OR ([calle] = @Original_calle)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_situado = 1 AND [situado] IS NULL) OR ([situado] = @Original_situado)) AND ((@IsNull_campo1 = 1 AND [campo1] IS NULL) OR ([campo1] = @Original_campo1)) AND ((@IsNull_campo2 = 1 AND [campo2] IS NULL) OR ([campo2] = @Original_campo2)))</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id_titulo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_titulo" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_monto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="monto" SourceColumnNullMapping="true" SourceVersion="Original" />
@@ -70,16 +70,16 @@
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_situado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="situado" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_situado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="situado" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_campo1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_campo1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_campo1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_campo2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_campo2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_campo2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </DeleteCommand>
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [titulo_perpetuidad] ([monto], [nombre], [edad], [oficio], [municipio_domicilio], [departamento_domicilio], [dui], [municipio_extension_dui], [departamento_extension_dui], [cementerio], [metro_ancho], [centimetro_ancho], [metro_largo], [centimetro_largo], [cantidad_construir], [tipo_construccion], [monto_construccion], [num_recibo_pago], [fecha_recibo_pago], [refrencia], [fecha_registro], [numero_titulo], [zona], [categoria_cuadro], [calle], [numero], [situado], [campo1], [campo2]) VALUES (@monto, @nombre, @edad, @oficio, @municipio_domicilio, @departamento_domicilio, @dui, @municipio_extension_dui, @departamento_extension_dui, @cementerio, @metro_ancho, @centimetro_ancho, @metro_largo, @centimetro_largo, @cantidad_construir, @tipo_construccion, @monto_construccion, @num_recibo_pago, @fecha_recibo_pago, @refrencia, @fecha_registro, @numero_titulo, @zona, @categoria_cuadro, @calle, @numero, @situado, @campo1, @campo2);
-SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento_domicilio, dui, municipio_extension_dui, departamento_extension_dui, cementerio, metro_ancho, centimetro_ancho, metro_largo, centimetro_largo, cantidad_construir, tipo_construccion, monto_construccion, num_recibo_pago, fecha_recibo_pago, refrencia, fecha_registro, numero_titulo, zona, categoria_cuadro, calle, numero, situado, campo1, campo2 FROM titulo_perpetuidad WHERE (id_titulo = SCOPE_IDENTITY())</CommandText>
+                    <CommandText>INSERT INTO [dbo].[titulo_perpetuidad] ([monto], [nombre], [edad], [oficio], [municipio_domicilio], [departamento_domicilio], [dui], [municipio_extension_dui], [departamento_extension_dui], [cementerio], [metro_ancho], [centimetro_ancho], [metro_largo], [centimetro_largo], [cantidad_construir], [tipo_construccion], [monto_construccion], [num_recibo_pago], [fecha_recibo_pago], [refrencia], [fecha_registro], [numero_titulo], [zona], [categoria_cuadro], [calle], [numero], [situado], [campo1], [campo2], [imagen_recibo], [imagen_dui], [imagen_dos]) VALUES (@monto, @nombre, @edad, @oficio, @municipio_domicilio, @departamento_domicilio, @dui, @municipio_extension_dui, @departamento_extension_dui, @cementerio, @metro_ancho, @centimetro_ancho, @metro_largo, @centimetro_largo, @cantidad_construir, @tipo_construccion, @monto_construccion, @num_recibo_pago, @fecha_recibo_pago, @refrencia, @fecha_registro, @numero_titulo, @zona, @categoria_cuadro, @calle, @numero, @situado, @campo1, @campo2, @imagen_recibo, @imagen_dui, @imagen_dos);
+SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento_domicilio, dui, municipio_extension_dui, departamento_extension_dui, cementerio, metro_ancho, centimetro_ancho, metro_largo, centimetro_largo, cantidad_construir, tipo_construccion, monto_construccion, num_recibo_pago, fecha_recibo_pago, refrencia, fecha_registro, numero_titulo, zona, categoria_cuadro, calle, numero, situado, campo1, campo2, imagen_recibo, imagen_dui, imagen_dos FROM titulo_perpetuidad WHERE (id_titulo = SCOPE_IDENTITY())</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@monto" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="monto" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -108,23 +108,24 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@calle" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="calle" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@numero" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numero" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@situado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="situado" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@campo1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@campo2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@campo1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@campo2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@imagen_recibo" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="imagen_recibo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@imagen_dui" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="imagen_dui" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@imagen_dos" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="imagen_dos" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento_domicilio, dui, municipio_extension_dui, departamento_extension_dui, cementerio, metro_ancho, centimetro_ancho, metro_largo, centimetro_largo, 
-                  cantidad_construir, tipo_construccion, monto_construccion, num_recibo_pago, fecha_recibo_pago, refrencia, fecha_registro, numero_titulo, zona, categoria_cuadro, calle, numero, situado, campo1, campo2
-FROM     titulo_perpetuidad</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento_domicilio, dui, municipio_extension_dui, departamento_extension_dui, cementerio, metro_ancho, centimetro_ancho, metro_largo, centimetro_largo, cantidad_construir, tipo_construccion, monto_construccion, num_recibo_pago, fecha_recibo_pago, refrencia, fecha_registro, numero_titulo, zona, categoria_cuadro, calle, numero, situado, campo1, campo2, imagen_recibo, imagen_dui, imagen_dos FROM dbo.titulo_perpetuidad</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [titulo_perpetuidad] SET [monto] = @monto, [nombre] = @nombre, [edad] = @edad, [oficio] = @oficio, [municipio_domicilio] = @municipio_domicilio, [departamento_domicilio] = @departamento_domicilio, [dui] = @dui, [municipio_extension_dui] = @municipio_extension_dui, [departamento_extension_dui] = @departamento_extension_dui, [cementerio] = @cementerio, [metro_ancho] = @metro_ancho, [centimetro_ancho] = @centimetro_ancho, [metro_largo] = @metro_largo, [centimetro_largo] = @centimetro_largo, [cantidad_construir] = @cantidad_construir, [tipo_construccion] = @tipo_construccion, [monto_construccion] = @monto_construccion, [num_recibo_pago] = @num_recibo_pago, [fecha_recibo_pago] = @fecha_recibo_pago, [refrencia] = @refrencia, [fecha_registro] = @fecha_registro, [numero_titulo] = @numero_titulo, [zona] = @zona, [categoria_cuadro] = @categoria_cuadro, [calle] = @calle, [numero] = @numero, [situado] = @situado, [campo1] = @campo1, [campo2] = @campo2 WHERE (([id_titulo] = @Original_id_titulo) AND ((@IsNull_monto = 1 AND [monto] IS NULL) OR ([monto] = @Original_monto)) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) AND ((@IsNull_oficio = 1 AND [oficio] IS NULL) OR ([oficio] = @Original_oficio)) AND ((@IsNull_municipio_domicilio = 1 AND [municipio_domicilio] IS NULL) OR ([municipio_domicilio] = @Original_municipio_domicilio)) AND ((@IsNull_departamento_domicilio = 1 AND [departamento_domicilio] IS NULL) OR ([departamento_domicilio] = @Original_departamento_domicilio)) AND ((@IsNull_dui = 1 AND [dui] IS NULL) OR ([dui] = @Original_dui)) AND ((@IsNull_municipio_extension_dui = 1 AND [municipio_extension_dui] IS NULL) OR ([municipio_extension_dui] = @Original_municipio_extension_dui)) AND ((@IsNull_departamento_extension_dui = 1 AND [departamento_extension_dui] IS NULL) OR ([departamento_extension_dui] = @Original_departamento_extension_dui)) AND ((@IsNull_cementerio = 1 AND [cementerio] IS NULL) OR ([cementerio] = @Original_cementerio)) AND ((@IsNull_metro_ancho = 1 AND [metro_ancho] IS NULL) OR ([metro_ancho] = @Original_metro_ancho)) AND ((@IsNull_centimetro_ancho = 1 AND [centimetro_ancho] IS NULL) OR ([centimetro_ancho] = @Original_centimetro_ancho)) AND ((@IsNull_metro_largo = 1 AND [metro_largo] IS NULL) OR ([metro_largo] = @Original_metro_largo)) AND ((@IsNull_centimetro_largo = 1 AND [centimetro_largo] IS NULL) OR ([centimetro_largo] = @Original_centimetro_largo)) AND ((@IsNull_cantidad_construir = 1 AND [cantidad_construir] IS NULL) OR ([cantidad_construir] = @Original_cantidad_construir)) AND ((@IsNull_tipo_construccion = 1 AND [tipo_construccion] IS NULL) OR ([tipo_construccion] = @Original_tipo_construccion)) AND ((@IsNull_monto_construccion = 1 AND [monto_construccion] IS NULL) OR ([monto_construccion] = @Original_monto_construccion)) AND ((@IsNull_num_recibo_pago = 1 AND [num_recibo_pago] IS NULL) OR ([num_recibo_pago] = @Original_num_recibo_pago)) AND ((@IsNull_fecha_recibo_pago = 1 AND [fecha_recibo_pago] IS NULL) OR ([fecha_recibo_pago] = @Original_fecha_recibo_pago)) AND ((@IsNull_refrencia = 1 AND [refrencia] IS NULL) OR ([refrencia] = @Original_refrencia)) AND ((@IsNull_fecha_registro = 1 AND [fecha_registro] IS NULL) OR ([fecha_registro] = @Original_fecha_registro)) AND ((@IsNull_numero_titulo = 1 AND [numero_titulo] IS NULL) OR ([numero_titulo] = @Original_numero_titulo)) AND ((@IsNull_zona = 1 AND [zona] IS NULL) OR ([zona] = @Original_zona)) AND ((@IsNull_categoria_cuadro = 1 AND [categoria_cuadro] IS NULL) OR ([categoria_cuadro] = @Original_categoria_cuadro)) AND ((@IsNull_calle = 1 AND [calle] IS NULL) OR ([calle] = @Original_calle)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_situado = 1 AND [situado] IS NULL) OR ([situado] = @Original_situado)) AND ((@IsNull_campo1 = 1 AND [campo1] IS NULL) OR ([campo1] = @Original_campo1)) AND ((@IsNull_campo2 = 1 AND [campo2] IS NULL) OR ([campo2] = @Original_campo2)));
-SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento_domicilio, dui, municipio_extension_dui, departamento_extension_dui, cementerio, metro_ancho, centimetro_ancho, metro_largo, centimetro_largo, cantidad_construir, tipo_construccion, monto_construccion, num_recibo_pago, fecha_recibo_pago, refrencia, fecha_registro, numero_titulo, zona, categoria_cuadro, calle, numero, situado, campo1, campo2 FROM titulo_perpetuidad WHERE (id_titulo = @id_titulo)</CommandText>
+                    <CommandText>UPDATE [dbo].[titulo_perpetuidad] SET [monto] = @monto, [nombre] = @nombre, [edad] = @edad, [oficio] = @oficio, [municipio_domicilio] = @municipio_domicilio, [departamento_domicilio] = @departamento_domicilio, [dui] = @dui, [municipio_extension_dui] = @municipio_extension_dui, [departamento_extension_dui] = @departamento_extension_dui, [cementerio] = @cementerio, [metro_ancho] = @metro_ancho, [centimetro_ancho] = @centimetro_ancho, [metro_largo] = @metro_largo, [centimetro_largo] = @centimetro_largo, [cantidad_construir] = @cantidad_construir, [tipo_construccion] = @tipo_construccion, [monto_construccion] = @monto_construccion, [num_recibo_pago] = @num_recibo_pago, [fecha_recibo_pago] = @fecha_recibo_pago, [refrencia] = @refrencia, [fecha_registro] = @fecha_registro, [numero_titulo] = @numero_titulo, [zona] = @zona, [categoria_cuadro] = @categoria_cuadro, [calle] = @calle, [numero] = @numero, [situado] = @situado, [campo1] = @campo1, [campo2] = @campo2, [imagen_recibo] = @imagen_recibo, [imagen_dui] = @imagen_dui, [imagen_dos] = @imagen_dos WHERE (([id_titulo] = @Original_id_titulo) AND ((@IsNull_monto = 1 AND [monto] IS NULL) OR ([monto] = @Original_monto)) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_edad = 1 AND [edad] IS NULL) OR ([edad] = @Original_edad)) AND ((@IsNull_oficio = 1 AND [oficio] IS NULL) OR ([oficio] = @Original_oficio)) AND ((@IsNull_municipio_domicilio = 1 AND [municipio_domicilio] IS NULL) OR ([municipio_domicilio] = @Original_municipio_domicilio)) AND ((@IsNull_departamento_domicilio = 1 AND [departamento_domicilio] IS NULL) OR ([departamento_domicilio] = @Original_departamento_domicilio)) AND ((@IsNull_dui = 1 AND [dui] IS NULL) OR ([dui] = @Original_dui)) AND ((@IsNull_municipio_extension_dui = 1 AND [municipio_extension_dui] IS NULL) OR ([municipio_extension_dui] = @Original_municipio_extension_dui)) AND ((@IsNull_departamento_extension_dui = 1 AND [departamento_extension_dui] IS NULL) OR ([departamento_extension_dui] = @Original_departamento_extension_dui)) AND ((@IsNull_cementerio = 1 AND [cementerio] IS NULL) OR ([cementerio] = @Original_cementerio)) AND ((@IsNull_metro_ancho = 1 AND [metro_ancho] IS NULL) OR ([metro_ancho] = @Original_metro_ancho)) AND ((@IsNull_centimetro_ancho = 1 AND [centimetro_ancho] IS NULL) OR ([centimetro_ancho] = @Original_centimetro_ancho)) AND ((@IsNull_metro_largo = 1 AND [metro_largo] IS NULL) OR ([metro_largo] = @Original_metro_largo)) AND ((@IsNull_centimetro_largo = 1 AND [centimetro_largo] IS NULL) OR ([centimetro_largo] = @Original_centimetro_largo)) AND ((@IsNull_cantidad_construir = 1 AND [cantidad_construir] IS NULL) OR ([cantidad_construir] = @Original_cantidad_construir)) AND ((@IsNull_tipo_construccion = 1 AND [tipo_construccion] IS NULL) OR ([tipo_construccion] = @Original_tipo_construccion)) AND ((@IsNull_monto_construccion = 1 AND [monto_construccion] IS NULL) OR ([monto_construccion] = @Original_monto_construccion)) AND ((@IsNull_num_recibo_pago = 1 AND [num_recibo_pago] IS NULL) OR ([num_recibo_pago] = @Original_num_recibo_pago)) AND ((@IsNull_fecha_recibo_pago = 1 AND [fecha_recibo_pago] IS NULL) OR ([fecha_recibo_pago] = @Original_fecha_recibo_pago)) AND ((@IsNull_refrencia = 1 AND [refrencia] IS NULL) OR ([refrencia] = @Original_refrencia)) AND ((@IsNull_fecha_registro = 1 AND [fecha_registro] IS NULL) OR ([fecha_registro] = @Original_fecha_registro)) AND ((@IsNull_numero_titulo = 1 AND [numero_titulo] IS NULL) OR ([numero_titulo] = @Original_numero_titulo)) AND ((@IsNull_zona = 1 AND [zona] IS NULL) OR ([zona] = @Original_zona)) AND ((@IsNull_categoria_cuadro = 1 AND [categoria_cuadro] IS NULL) OR ([categoria_cuadro] = @Original_categoria_cuadro)) AND ((@IsNull_calle = 1 AND [calle] IS NULL) OR ([calle] = @Original_calle)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_situado = 1 AND [situado] IS NULL) OR ([situado] = @Original_situado)) AND ((@IsNull_campo1 = 1 AND [campo1] IS NULL) OR ([campo1] = @Original_campo1)) AND ((@IsNull_campo2 = 1 AND [campo2] IS NULL) OR ([campo2] = @Original_campo2)));
+SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento_domicilio, dui, municipio_extension_dui, departamento_extension_dui, cementerio, metro_ancho, centimetro_ancho, metro_largo, centimetro_largo, cantidad_construir, tipo_construccion, monto_construccion, num_recibo_pago, fecha_recibo_pago, refrencia, fecha_registro, numero_titulo, zona, categoria_cuadro, calle, numero, situado, campo1, campo2, imagen_recibo, imagen_dui, imagen_dos FROM titulo_perpetuidad WHERE (id_titulo = @id_titulo)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@monto" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="monto" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -153,8 +154,11 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@calle" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="calle" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@numero" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="numero" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@situado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="situado" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@campo1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@campo2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@campo1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@campo2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@imagen_recibo" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="imagen_recibo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@imagen_dui" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="imagen_dui" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@imagen_dos" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="imagen_dos" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id_titulo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_titulo" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_monto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="monto" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_monto" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="monto" SourceColumnNullMapping="false" SourceVersion="Original" />
@@ -211,25 +215,24 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_situado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="situado" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_situado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="situado" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_campo1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_campo1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_campo1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo1" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_campo2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_campo2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="id_titulo" ColumnName="id_titulo" DataSourceName="SacSanEsteban.dbo.titulo_perpetuidad" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id_titulo" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id_titulo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_campo2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="campo2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id_titulo" ColumnName="id_titulo" DataSourceName="cementerios_gotera.dbo.titulo_perpetuidad" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id_titulo" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id_titulo" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="zona" DataSetColumn="zona" />
-              <Mapping SourceColumn="categoria_cuadro" DataSetColumn="categoria_cuadro" />
-              <Mapping SourceColumn="calle" DataSetColumn="calle" />
-              <Mapping SourceColumn="situado" DataSetColumn="situado" />
               <Mapping SourceColumn="id_titulo" DataSetColumn="id_titulo" />
               <Mapping SourceColumn="monto" DataSetColumn="monto" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="edad" DataSetColumn="edad" />
               <Mapping SourceColumn="oficio" DataSetColumn="oficio" />
               <Mapping SourceColumn="municipio_domicilio" DataSetColumn="municipio_domicilio" />
               <Mapping SourceColumn="departamento_domicilio" DataSetColumn="departamento_domicilio" />
+              <Mapping SourceColumn="dui" DataSetColumn="dui" />
               <Mapping SourceColumn="municipio_extension_dui" DataSetColumn="municipio_extension_dui" />
               <Mapping SourceColumn="departamento_extension_dui" DataSetColumn="departamento_extension_dui" />
               <Mapping SourceColumn="cementerio" DataSetColumn="cementerio" />
@@ -245,12 +248,16 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
               <Mapping SourceColumn="refrencia" DataSetColumn="refrencia" />
               <Mapping SourceColumn="fecha_registro" DataSetColumn="fecha_registro" />
               <Mapping SourceColumn="numero_titulo" DataSetColumn="numero_titulo" />
+              <Mapping SourceColumn="zona" DataSetColumn="zona" />
+              <Mapping SourceColumn="categoria_cuadro" DataSetColumn="categoria_cuadro" />
+              <Mapping SourceColumn="calle" DataSetColumn="calle" />
+              <Mapping SourceColumn="numero" DataSetColumn="numero" />
+              <Mapping SourceColumn="situado" DataSetColumn="situado" />
               <Mapping SourceColumn="campo1" DataSetColumn="campo1" />
               <Mapping SourceColumn="campo2" DataSetColumn="campo2" />
-              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
-              <Mapping SourceColumn="edad" DataSetColumn="edad" />
-              <Mapping SourceColumn="dui" DataSetColumn="dui" />
-              <Mapping SourceColumn="numero" DataSetColumn="numero" />
+              <Mapping SourceColumn="imagen_recibo" DataSetColumn="imagen_recibo" />
+              <Mapping SourceColumn="imagen_dui" DataSetColumn="imagen_dui" />
+              <Mapping SourceColumn="imagen_dos" DataSetColumn="imagen_dos" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -259,42 +266,22 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="sacChilangaDataSet1TituloPerpetuidad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sacChilangaDataSet1TituloPerpetuidad" msprop:Generator_UserDSName="sacChilangaDataSet1TituloPerpetuidad">
+  <xs:element name="cementerios_goteraDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="cementerios_goteraDataSet" msprop:Generator_UserDSName="cementerios_goteraDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="SpTitulo_perpetuidadListar" msprop:Generator_TableClassName="SpTitulo_perpetuidadListarDataTable" msprop:Generator_TableVarName="tableSpTitulo_perpetuidadListar" msprop:Generator_TablePropName="SpTitulo_perpetuidadListar" msprop:Generator_RowDeletingName="SpTitulo_perpetuidadListarRowDeleting" msprop:Generator_RowChangingName="SpTitulo_perpetuidadListarRowChanging" msprop:Generator_RowEvHandlerName="SpTitulo_perpetuidadListarRowChangeEventHandler" msprop:Generator_RowDeletedName="SpTitulo_perpetuidadListarRowDeleted" msprop:Generator_UserTableName="SpTitulo_perpetuidadListar" msprop:Generator_RowChangedName="SpTitulo_perpetuidadListarRowChanged" msprop:Generator_RowEvArgName="SpTitulo_perpetuidadListarRowChangeEvent" msprop:Generator_RowClassName="SpTitulo_perpetuidadListarRow">
+        <xs:element name="titulo_perpetuidad" msprop:Generator_TableClassName="titulo_perpetuidadDataTable" msprop:Generator_TableVarName="tabletitulo_perpetuidad" msprop:Generator_TablePropName="titulo_perpetuidad" msprop:Generator_RowDeletingName="titulo_perpetuidadRowDeleting" msprop:Generator_RowChangingName="titulo_perpetuidadRowChanging" msprop:Generator_RowEvHandlerName="titulo_perpetuidadRowChangeEventHandler" msprop:Generator_RowDeletedName="titulo_perpetuidadRowDeleted" msprop:Generator_UserTableName="titulo_perpetuidad" msprop:Generator_RowChangedName="titulo_perpetuidadRowChanged" msprop:Generator_RowEvArgName="titulo_perpetuidadRowChangeEvent" msprop:Generator_RowClassName="titulo_perpetuidadRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="zona" msprop:Generator_ColumnVarNameInTable="columnzona" msprop:Generator_ColumnPropNameInRow="zona" msprop:Generator_ColumnPropNameInTable="zonaColumn" msprop:Generator_UserColumnName="zona" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="categoria_cuadro" msprop:Generator_ColumnVarNameInTable="columncategoria_cuadro" msprop:Generator_ColumnPropNameInRow="categoria_cuadro" msprop:Generator_ColumnPropNameInTable="categoria_cuadroColumn" msprop:Generator_UserColumnName="categoria_cuadro" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="calle" msprop:Generator_ColumnVarNameInTable="columncalle" msprop:Generator_ColumnPropNameInRow="calle" msprop:Generator_ColumnPropNameInTable="calleColumn" msprop:Generator_UserColumnName="calle" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="situado" msprop:Generator_ColumnVarNameInTable="columnsituado" msprop:Generator_ColumnPropNameInRow="situado" msprop:Generator_ColumnPropNameInTable="situadoColumn" msprop:Generator_UserColumnName="situado" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
               <xs:element name="id_titulo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_titulo" msprop:Generator_ColumnPropNameInRow="id_titulo" msprop:Generator_ColumnPropNameInTable="id_tituloColumn" msprop:Generator_UserColumnName="id_titulo" type="xs:int" />
               <xs:element name="monto" msprop:Generator_ColumnVarNameInTable="columnmonto" msprop:Generator_ColumnPropNameInRow="monto" msprop:Generator_ColumnPropNameInTable="montoColumn" msprop:Generator_UserColumnName="monto" type="xs:double" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="edad" msprop:Generator_ColumnVarNameInTable="columnedad" msprop:Generator_ColumnPropNameInRow="edad" msprop:Generator_ColumnPropNameInTable="edadColumn" msprop:Generator_UserColumnName="edad" type="xs:int" minOccurs="0" />
               <xs:element name="oficio" msprop:Generator_ColumnVarNameInTable="columnoficio" msprop:Generator_ColumnPropNameInRow="oficio" msprop:Generator_ColumnPropNameInTable="oficioColumn" msprop:Generator_UserColumnName="oficio" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -313,6 +300,13 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dui" msprop:Generator_ColumnVarNameInTable="columndui" msprop:Generator_ColumnPropNameInRow="dui" msprop:Generator_ColumnPropNameInTable="duiColumn" msprop:Generator_UserColumnName="dui" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -355,38 +349,30 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
               <xs:element name="refrencia" msprop:Generator_ColumnVarNameInTable="columnrefrencia" msprop:Generator_ColumnPropNameInRow="refrencia" msprop:Generator_ColumnPropNameInTable="refrenciaColumn" msprop:Generator_UserColumnName="refrencia" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
+                    <xs:maxLength value="500" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="fecha_registro" msprop:Generator_ColumnVarNameInTable="columnfecha_registro" msprop:Generator_ColumnPropNameInRow="fecha_registro" msprop:Generator_ColumnPropNameInTable="fecha_registroColumn" msprop:Generator_UserColumnName="fecha_registro" type="xs:dateTime" minOccurs="0" />
               <xs:element name="numero_titulo" msprop:Generator_ColumnVarNameInTable="columnnumero_titulo" msprop:Generator_ColumnPropNameInRow="numero_titulo" msprop:Generator_ColumnPropNameInTable="numero_tituloColumn" msprop:Generator_UserColumnName="numero_titulo" type="xs:int" minOccurs="0" />
-              <xs:element name="campo1" msprop:Generator_ColumnVarNameInTable="columncampo1" msprop:Generator_ColumnPropNameInRow="campo1" msprop:Generator_ColumnPropNameInTable="campo1Column" msprop:Generator_UserColumnName="campo1" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="campo2" msprop:Generator_ColumnVarNameInTable="columncampo2" msprop:Generator_ColumnPropNameInRow="campo2" msprop:Generator_ColumnPropNameInTable="campo2Column" msprop:Generator_UserColumnName="campo2" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" minOccurs="0">
+              <xs:element name="zona" msprop:Generator_ColumnVarNameInTable="columnzona" msprop:Generator_ColumnPropNameInRow="zona" msprop:Generator_ColumnPropNameInTable="zonaColumn" msprop:Generator_UserColumnName="zona" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="edad" msprop:Generator_ColumnVarNameInTable="columnedad" msprop:Generator_ColumnPropNameInRow="edad" msprop:Generator_ColumnPropNameInTable="edadColumn" msprop:Generator_UserColumnName="edad" type="xs:int" minOccurs="0" />
-              <xs:element name="dui" msprop:Generator_ColumnVarNameInTable="columndui" msprop:Generator_ColumnPropNameInRow="dui" msprop:Generator_ColumnPropNameInTable="duiColumn" msprop:Generator_UserColumnName="dui" minOccurs="0">
+              <xs:element name="categoria_cuadro" msprop:Generator_ColumnVarNameInTable="columncategoria_cuadro" msprop:Generator_ColumnPropNameInRow="categoria_cuadro" msprop:Generator_ColumnPropNameInTable="categoria_cuadroColumn" msprop:Generator_UserColumnName="categoria_cuadro" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="calle" msprop:Generator_ColumnVarNameInTable="columncalle" msprop:Generator_ColumnPropNameInRow="calle" msprop:Generator_ColumnPropNameInTable="calleColumn" msprop:Generator_UserColumnName="calle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -397,13 +383,37 @@ SELECT id_titulo, monto, nombre, edad, oficio, municipio_domicilio, departamento
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="situado" msprop:Generator_ColumnVarNameInTable="columnsituado" msprop:Generator_ColumnPropNameInRow="situado" msprop:Generator_ColumnPropNameInTable="situadoColumn" msprop:Generator_UserColumnName="situado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="campo1" msprop:Generator_ColumnVarNameInTable="columncampo1" msprop:Generator_ColumnPropNameInRow="campo1" msprop:Generator_ColumnPropNameInTable="campo1Column" msprop:Generator_UserColumnName="campo1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="campo2" msprop:Generator_ColumnVarNameInTable="columncampo2" msprop:Generator_ColumnPropNameInRow="campo2" msprop:Generator_ColumnPropNameInTable="campo2Column" msprop:Generator_UserColumnName="campo2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="imagen_recibo" msprop:Generator_ColumnVarNameInTable="columnimagen_recibo" msprop:Generator_ColumnPropNameInRow="imagen_recibo" msprop:Generator_ColumnPropNameInTable="imagen_reciboColumn" msprop:Generator_UserColumnName="imagen_recibo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imagen_dui" msprop:Generator_ColumnVarNameInTable="columnimagen_dui" msprop:Generator_ColumnPropNameInRow="imagen_dui" msprop:Generator_ColumnPropNameInTable="imagen_duiColumn" msprop:Generator_UserColumnName="imagen_dui" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imagen_dos" msprop:Generator_ColumnVarNameInTable="columnimagen_dos" msprop:Generator_ColumnPropNameInRow="imagen_dos" msprop:Generator_ColumnPropNameInTable="imagen_dosColumn" msprop:Generator_UserColumnName="imagen_dos" type="xs:base64Binary" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:SpTitulo_perpetuidadListar" />
+      <xs:selector xpath=".//mstns:titulo_perpetuidad" />
       <xs:field xpath="mstns:id_titulo" />
     </xs:unique>
   </xs:element>

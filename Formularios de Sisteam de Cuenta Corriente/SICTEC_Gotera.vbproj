@@ -87,19 +87,24 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
       <HintPath>..\..\..\..\..\Downloads\DevExpress.Utils.v17.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -121,15 +126,23 @@
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data">
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms">
       <Private>True</Private>
     </Reference>
@@ -151,6 +164,11 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cementerios_goteraDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cementerios_goteraDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\About.Designer.vb">
       <DependentUpon>About.vb</DependentUpon>
     </Compile>
@@ -161,17 +179,23 @@
     <Compile Include="clases\LiberarRam.vb" />
     <Compile Include="clases\Module1.vb" />
     <Compile Include="clases\VariableGlobales.vb" />
+    <Compile Include="Formularios\correlativos_admin.designer.vb">
+      <DependentUpon>correlativos_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\correlativos_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\AddTituloperpetuidad.Designer.vb">
+      <DependentUpon>AddTituloperpetuidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\AddTituloperpetuidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\tituloPerpetuidad\ficha_titulo.Designer.vb">
       <DependentUpon>ficha_titulo.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\tituloPerpetuidad\ficha_titulo.vb">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Formularios\tituloPerpetuidad\frmTituloPerpetuidadPanel.designer.vb">
-      <DependentUpon>frmTituloPerpetuidadPanel.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\tituloPerpetuidad\frmTituloPerpetuidadPanel.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Colonias\frmcoloniapanel.designer.vb">
       <DependentUpon>frmcoloniapanel.vb</DependentUpon>
@@ -261,6 +285,12 @@
     <Compile Include="Formularios\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\frmPanelTituloPerpetuidad.designer.vb">
+      <DependentUpon>frmPanelTituloPerpetuidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\frmPanelTituloPerpetuidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\WaitForm1.Designer.vb">
       <DependentUpon>WaitForm1.vb</DependentUpon>
     </Compile>
@@ -283,11 +313,6 @@
     </Compile>
     <Compile Include="reportes\Bitacora\Bitacora.vb">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="sacChilangaDataSet1TituloPerpetuidad.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
     </Compile>
     <Compile Include="Formularios\modulos\modeleVariables.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -342,12 +367,14 @@
       <DependentUpon>About.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\correlativos_admin.resx">
+      <DependentUpon>correlativos_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\AddTituloperpetuidad.resx">
+      <DependentUpon>AddTituloperpetuidad.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\tituloPerpetuidad\ficha_titulo.resx">
       <DependentUpon>ficha_titulo.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\tituloPerpetuidad\frmTituloPerpetuidadPanel.resx">
-      <DependentUpon>frmTituloPerpetuidadPanel.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Colonias\frmcoloniapanel.resx">
@@ -390,6 +417,9 @@
     <EmbeddedResource Include="Formularios\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\frmPanelTituloPerpetuidad.resx">
+      <DependentUpon>frmPanelTituloPerpetuidad.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\WaitForm1.resx">
       <DependentUpon>WaitForm1.vb</DependentUpon>
     </EmbeddedResource>
@@ -427,6 +457,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="cementerios_goteraDataSet.xsc">
+      <DependentUpon>cementerios_goteraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cementerios_goteraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cementerios_goteraDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cementerios_goteraDataSet.xss">
+      <DependentUpon>cementerios_goteraDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Dsbitacora.xsc">
       <DependentUpon>Dsbitacora.xsd</DependentUpon>
     </None>
@@ -460,17 +501,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="Sac-SanEstebanCatarina_TemporaryKey.pfx" />
-    <None Include="sacChilangaDataSet1TituloPerpetuidad.xsc">
-      <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
-    </None>
-    <None Include="sacChilangaDataSet1TituloPerpetuidad.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>sacChilangaDataSet1TituloPerpetuidad.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="sacChilangaDataSet1TituloPerpetuidad.xss">
-      <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

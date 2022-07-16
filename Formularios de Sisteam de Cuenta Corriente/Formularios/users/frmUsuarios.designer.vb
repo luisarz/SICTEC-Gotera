@@ -37,16 +37,9 @@ Partial Class frmUsuarios
         Me.PanelControl2 = New DevExpress.XtraEditors.PanelControl()
         Me.dtglista = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.btnDelete = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemButtonEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
-        Me.btnEdit = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemButtonEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         Me.AlertControl1 = New DevExpress.XtraBars.Alerter.AlertControl(Me.components)
+        Me.RepositoryItemButtonEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
+        Me.RepositoryItemButtonEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
         CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,7 +114,6 @@ Partial Class frmUsuarios
         Me.GridView1.Appearance.FocusedRow.Options.UseFont = True
         Me.GridView1.Appearance.FocusedRow.Options.UseForeColor = True
         Me.GridView1.Appearance.FocusedRow.Options.UseImage = True
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.btnDelete, Me.btnEdit})
         Me.GridView1.GridControl = Me.dtglista
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -130,57 +122,6 @@ Partial Class frmUsuarios
         Me.GridView1.OptionsView.ColumnAutoWidth = False
         Me.GridView1.OptionsView.ShowAutoFilterRow = True
         Me.GridView1.OptionsView.ShowGroupPanel = False
-        '
-        'GridColumn1
-        '
-        Me.GridColumn1.Caption = "Id"
-        Me.GridColumn1.FieldName = "Id_usuario"
-        Me.GridColumn1.Name = "GridColumn1"
-        Me.GridColumn1.Width = 86
-        '
-        'GridColumn2
-        '
-        Me.GridColumn2.Caption = "Usuario"
-        Me.GridColumn2.FieldName = "Usuario"
-        Me.GridColumn2.Name = "GridColumn2"
-        Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 2
-        Me.GridColumn2.Width = 182
-        '
-        'GridColumn3
-        '
-        Me.GridColumn3.Caption = "Nombre"
-        Me.GridColumn3.FieldName = "Nombre"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 3
-        Me.GridColumn3.Width = 213
-        '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "Tipo"
-        Me.GridColumn4.FieldName = "tipo"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 4
-        Me.GridColumn4.Width = 165
-        '
-        'GridColumn5
-        '
-        Me.GridColumn5.Caption = "F. Registro"
-        Me.GridColumn5.FieldName = "Fecha_registro"
-        Me.GridColumn5.Name = "GridColumn5"
-        Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 5
-        Me.GridColumn5.Width = 173
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Caption = "Eliminar"
-        Me.btnDelete.ColumnEdit = Me.RepositoryItemButtonEdit1
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Visible = True
-        Me.btnDelete.VisibleIndex = 0
         '
         'RepositoryItemButtonEdit1
         '
@@ -191,14 +132,6 @@ Partial Class frmUsuarios
         Me.RepositoryItemButtonEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.RepositoryItemButtonEdit1.Name = "RepositoryItemButtonEdit1"
         Me.RepositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
-        '
-        'btnEdit
-        '
-        Me.btnEdit.Caption = "Modificar"
-        Me.btnEdit.ColumnEdit = Me.RepositoryItemButtonEdit2
-        Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Visible = True
-        Me.btnEdit.VisibleIndex = 1
         '
         'RepositoryItemButtonEdit2
         '
@@ -239,16 +172,9 @@ Partial Class frmUsuarios
     Friend WithEvents PanelControl2 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents dtglista As DevExpress.XtraGrid.GridControl
     Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lblid As DevExpress.XtraEditors.LabelControl
     Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents AlertControl1 As DevExpress.XtraBars.Alerter.AlertControl
-    Friend WithEvents btnDelete As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemButtonEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
-    Friend WithEvents btnEdit As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemButtonEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
 End Class

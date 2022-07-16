@@ -1140,14 +1140,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SICTEC.exe" size="14889472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SICTEC.exe" size="15293952">
       <assemblyIdentity name="SICTEC" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PwoSbmF1tSK8EQ8O3eVNeBiECH4=</dsig:DigestValue>
+        <dsig:DigestValue>lRatkxbXqhIT262F/XX+KYgDw7I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1169,13 +1169,13 @@
       <dsig:DigestValue>L9yAiXkyVz6edZVMjs/CUyZ+Y88=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SICTEC.exe.config" size="4240">
+  <file name="SICTEC.exe.config" size="3549">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fgInNvdIx9QgZwwC1gFcVWQxyvY=</dsig:DigestValue>
+      <dsig:DigestValue>BqvDTzOm18NZeGrEOs5/1u4sIk0=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

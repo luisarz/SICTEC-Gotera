@@ -19,7 +19,7 @@ Public Class frmcoloniapanel
         End Try
     End Sub
 
-    Private Sub Lista_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Lista.MouseClick
+    Private Sub Lista_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs)
         lblcod.Text = GridView1.GetFocusedRowCellValue("id_colonia")
         lblnombre.Text = GridView1.GetFocusedRowCellValue("colonia")
         lblzona.Text = GridView1.GetFocusedRowCellValue("id_Zona")
@@ -40,34 +40,9 @@ Public Class frmcoloniapanel
 
     End Sub
 
-    Private Sub SimpleButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Try
-            If lblcod.Text = "" Then
-                Me.AlertControl1.Show(Me, "Adventencia-ELIMINAR", "Debe seleccionar una colonia a Eliminar")
-            Else
-                My.Forms.frmeliminarcolonia.id = lblcod.Text
-                My.Forms.frmeliminarcolonia.colonia = lblnombre.Text
-                My.Forms.frmeliminarcolonia.zona = lblzona.Text
-                My.Forms.frmeliminarcolonia.ShowDialog()
-                llenar()
-            End If
-        Catch ex As Exception
 
-        End Try
 
-    End Sub
-
-    Private Sub GridView1_FocusedRowChanged(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles GridView1.FocusedRowChanged
-        lblcod.Text = GridView1.GetFocusedRowCellValue("id_colonia")
-        lblnombre.Text = GridView1.GetFocusedRowCellValue("colonia")
-        lblzona.Text = GridView1.GetFocusedRowCellValue("id_Zona")
-    End Sub
-
-    Private Sub SimpleButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpleButton4.Click
-        Reporte_Colonia.ShowDialog()
-    End Sub
-
-    Private Sub GridView1_RowCellClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
+    Private Sub GridView1_RowCellClick_1(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
         If e.Column.Name = "Delete" Then
             Try
                 If lblcod.Text = "" Then
@@ -100,9 +75,11 @@ Public Class frmcoloniapanel
 
             End Try
         End If
-
-
-
     End Sub
 
+    Private Sub GridView1_FocusedRowChanged_1(sender As Object, e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles GridView1.FocusedRowChanged
+        lblcod.Text = GridView1.GetFocusedRowCellValue("id_colonia")
+        lblnombre.Text = GridView1.GetFocusedRowCellValue("colonia")
+        lblzona.Text = GridView1.GetFocusedRowCellValue("id_Zona")
+    End Sub
 End Class

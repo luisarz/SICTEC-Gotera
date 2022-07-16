@@ -27,17 +27,20 @@ Public Class frmEmpleadoSelections
         LabelControl2.Text = LabelControl1.Text & " " & GridView1.GetFocusedRowCellValue("Apellido")
     End Sub
 
-    Private Sub dtglista_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles dtglista.MouseDoubleClick
-        If LabelControl3.Text = 0 Then
-            My.Forms.frmAddusers.bteiddocente.Text = LabelControl1.Text
-            Close()
-        Else
-            My.Forms.frmedituser.bteiddocente.Text = LabelControl1.Text
-            Close()
-        End If
-       
-    End Sub
+   
     Private Sub frmteachersSelections_FormClosed(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
         Dispose()
+    End Sub
+
+    Private Sub GridView1_RowCellClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
+        If e.Column.Name = "btnSelect" Then
+            If LabelControl3.Text = 0 Then
+                My.Forms.frmAddusers.bteiddocente.Text = LabelControl1.Text
+                Close()
+            Else
+                My.Forms.frmedituser.bteiddocente.Text = LabelControl1.Text
+                Close()
+            End If
+        End If
     End Sub
 End Class

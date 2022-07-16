@@ -1721,7 +1721,7 @@ Namespace DsEmpleadosTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.Formularios_de_Sistema_de_Cuenta_Corriente.My.MySettings.Default.DB_catastroConnectionString
+            Me._connection.ConnectionString = Global.Formularios_de_Sistema_de_Cuenta_Corriente.My.MySettings.Default.DB_catastroConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

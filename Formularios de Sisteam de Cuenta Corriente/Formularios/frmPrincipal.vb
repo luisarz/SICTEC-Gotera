@@ -27,15 +27,7 @@ Public Class FrmPrincipal
             MsgBox(ex.Message)
         End Try
     End Sub
-    Sub cargarconfiguraciones()
-        Dim cmd As New SqlCommand("select codAgua,transitoria from [config_recibos] where id='1'", cnxConectionsServer)
-        Dim lectorcmdc As SqlDataReader = cmd.ExecuteReader
-        If lectorcmdc.Read Then
-            codAgua = lectorcmdc(0).ToString
-            ordenanzaTransitoria = lectorcmdc(1).ToString
-        End If
-        lectorcmdc.Close()
-    End Sub
+ 
     Private Sub sk_Gallery_ItemClick(ByVal sender As Object, ByVal e As GalleryItemClickEventArgs) Handles sk.Gallery.ItemClick
         setting.Skin = DefaultLookAndFeel1.LookAndFeel.SkinName
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = setting.Skin
@@ -60,7 +52,6 @@ Public Class FrmPrincipal
             'db = "sacDelicias"
             Dim passServer As String = setting.Pass
             UserServer = user
-            var_printer = setting.aviso_primter
 
             cnxConectionsServer.ConnectionString = "Data Source=" & servidor & ";Initial Catalog='" & db.ToString & "';User ID=" & UserServer & ";Password=" & passServer & ";MultipleActiveResultSets=true;"
             cnxConectionsServer.Open()
@@ -75,7 +66,6 @@ Public Class FrmPrincipal
             'AlertControl1.Show(Me, "Error de Conexión", "Error de Conexion a la base de datos  ")
             MsgBox(ex.Message)
         End Try
-        cargarconfiguraciones()
         Try
             DevExpress.UserSkins.BonusSkins.Register()
             DevExpress.Skins.SkinManager.EnableFormSkins()
@@ -344,10 +334,14 @@ Public Class FrmPrincipal
 
 
     Private Sub BarButtonItem52_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem52.ItemClick
-        newform(frmTituloPerpetuidadPanel)
+        newform(frmPanelTituloPerpetuidad)
     End Sub
 
     Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
 
+    End Sub
+
+    Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
+        correlativos_admin.ShowDialog()
     End Sub
 End Class

@@ -26,20 +26,36 @@ Partial Class frmAddusers
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.txtdui = New DevExpress.XtraEditors.TextEdit()
-        Me.chktipo = New DevExpress.XtraEditors.CheckEdit()
-        Me.txtcargo = New DevExpress.XtraEditors.TextEdit()
-        Me.txtnit = New DevExpress.XtraEditors.TextEdit()
-        Me.txtempleado = New DevExpress.XtraEditors.TextEdit()
-        Me.bteiddocente = New DevExpress.XtraEditors.ButtonEdit()
-        Me.txtid = New DevExpress.XtraEditors.TextEdit()
-        Me.cbmtipo = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.dtfecharegistro = New DevExpress.XtraEditors.DateEdit()
-        Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
-        Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
-        Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage()
+        Me.cbmtipo = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.txtreppass = New DevExpress.XtraEditors.TextEdit()
         Me.txtpass = New DevExpress.XtraEditors.TextEdit()
         Me.txtusuario = New DevExpress.XtraEditors.TextEdit()
+        Me.txtcargo = New DevExpress.XtraEditors.TextEdit()
+        Me.chktipo = New DevExpress.XtraEditors.CheckEdit()
+        Me.txtnit = New DevExpress.XtraEditors.TextEdit()
+        Me.txtempleado = New DevExpress.XtraEditors.TextEdit()
+        Me.txtid = New DevExpress.XtraEditors.TextEdit()
+        Me.bteiddocente = New DevExpress.XtraEditors.ButtonEdit()
+        Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
+        Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
+        Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage()
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage()
         Me.XtraTabControl2 = New DevExpress.XtraTab.XtraTabControl()
         Me.XtraTabPage3 = New DevExpress.XtraTab.XtraTabPage()
@@ -109,42 +125,43 @@ Partial Class frmAddusers
         Me.chkavisos_individuales_emitidos = New DevExpress.XtraEditors.CheckEdit()
         Me.chkavisos_individuales = New DevExpress.XtraEditors.CheckEdit()
         Me.AlertControl1 = New DevExpress.XtraBars.Alerter.AlertControl(Me.components)
-        Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
-        Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
         CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl2.SuspendLayout()
         CType(Me.txtdui.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.chktipo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtcargo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtnit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtempleado.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.bteiddocente.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtid.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cbmtipo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LayoutControl1.SuspendLayout()
         CType(Me.dtfecharegistro.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtfecharegistro.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cbmtipo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtreppass.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtpass.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtusuario.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtcargo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.chktipo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtnit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtempleado.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtid.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bteiddocente.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
-        CType(Me.txtreppass.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtpass.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtusuario.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage2.SuspendLayout()
         CType(Me.XtraTabControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl2.SuspendLayout()
@@ -229,23 +246,6 @@ Partial Class frmAddusers
         Me.GroupControl15.SuspendLayout()
         CType(Me.chkavisos_individuales_emitidos.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.chkavisos_individuales.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LayoutControl1.SuspendLayout()
-        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelControl2
@@ -309,80 +309,27 @@ Partial Class frmAddusers
         Me.txtdui.StyleController = Me.LayoutControl1
         Me.txtdui.TabIndex = 6
         '
-        'chktipo
+        'LayoutControl1
         '
-        Me.chktipo.EditValue = True
-        Me.chktipo.Location = New System.Drawing.Point(358, 55)
-        Me.chktipo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.chktipo.Name = "chktipo"
-        Me.chktipo.Properties.Caption = "Es empleado"
-        Me.chktipo.Size = New System.Drawing.Size(323, 20)
-        Me.chktipo.StyleController = Me.LayoutControl1
-        Me.chktipo.TabIndex = 1
-        '
-        'txtcargo
-        '
-        Me.txtcargo.Location = New System.Drawing.Point(166, 139)
-        Me.txtcargo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.txtcargo.Name = "txtcargo"
-        Me.txtcargo.Properties.MaxLength = 49
-        Me.txtcargo.Size = New System.Drawing.Size(186, 22)
-        Me.txtcargo.StyleController = Me.LayoutControl1
-        Me.txtcargo.TabIndex = 5
-        '
-        'txtnit
-        '
-        Me.txtnit.Location = New System.Drawing.Point(493, 83)
-        Me.txtnit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.txtnit.Name = "txtnit"
-        Me.txtnit.Properties.MaxLength = 49
-        Me.txtnit.Properties.ReadOnly = True
-        Me.txtnit.Size = New System.Drawing.Size(188, 22)
-        Me.txtnit.StyleController = Me.LayoutControl1
-        Me.txtnit.TabIndex = 3
-        '
-        'txtempleado
-        '
-        Me.txtempleado.Location = New System.Drawing.Point(166, 111)
-        Me.txtempleado.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.txtempleado.Name = "txtempleado"
-        Me.txtempleado.Properties.MaxLength = 49
-        Me.txtempleado.Size = New System.Drawing.Size(186, 22)
-        Me.txtempleado.StyleController = Me.LayoutControl1
-        Me.txtempleado.TabIndex = 4
-        '
-        'bteiddocente
-        '
-        Me.bteiddocente.Location = New System.Drawing.Point(166, 83)
-        Me.bteiddocente.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bteiddocente.Name = "bteiddocente"
-        Me.bteiddocente.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.bteiddocente.Size = New System.Drawing.Size(186, 22)
-        Me.bteiddocente.StyleController = Me.LayoutControl1
-        Me.bteiddocente.TabIndex = 2
-        '
-        'txtid
-        '
-        Me.txtid.Location = New System.Drawing.Point(166, 55)
-        Me.txtid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.txtid.Name = "txtid"
-        Me.txtid.Properties.ReadOnly = True
-        Me.txtid.Size = New System.Drawing.Size(186, 22)
-        Me.txtid.StyleController = Me.LayoutControl1
-        Me.txtid.TabIndex = 0
-        '
-        'cbmtipo
-        '
-        Me.cbmtipo.EditValue = "--Tipo de Usuario--"
-        Me.cbmtipo.Location = New System.Drawing.Point(166, 277)
-        Me.cbmtipo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.cbmtipo.Name = "cbmtipo"
-        Me.cbmtipo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cbmtipo.Properties.Items.AddRange(New Object() {"Administrador", "Catastro", "Tesorero"})
-        Me.cbmtipo.Properties.MaxLength = 49
-        Me.cbmtipo.Size = New System.Drawing.Size(187, 22)
-        Me.cbmtipo.StyleController = Me.LayoutControl1
-        Me.cbmtipo.TabIndex = 10
+        Me.LayoutControl1.Controls.Add(Me.dtfecharegistro)
+        Me.LayoutControl1.Controls.Add(Me.cbmtipo)
+        Me.LayoutControl1.Controls.Add(Me.txtreppass)
+        Me.LayoutControl1.Controls.Add(Me.txtpass)
+        Me.LayoutControl1.Controls.Add(Me.txtdui)
+        Me.LayoutControl1.Controls.Add(Me.txtusuario)
+        Me.LayoutControl1.Controls.Add(Me.txtcargo)
+        Me.LayoutControl1.Controls.Add(Me.chktipo)
+        Me.LayoutControl1.Controls.Add(Me.txtnit)
+        Me.LayoutControl1.Controls.Add(Me.txtempleado)
+        Me.LayoutControl1.Controls.Add(Me.txtid)
+        Me.LayoutControl1.Controls.Add(Me.bteiddocente)
+        Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControl1.Name = "LayoutControl1"
+        Me.LayoutControl1.Root = Me.LayoutControlGroup1
+        Me.LayoutControl1.Size = New System.Drawing.Size(712, 382)
+        Me.LayoutControl1.TabIndex = 2
+        Me.LayoutControl1.Text = "LayoutControl1"
         '
         'dtfecharegistro
         '
@@ -396,34 +343,18 @@ Partial Class frmAddusers
         Me.dtfecharegistro.StyleController = Me.LayoutControl1
         Me.dtfecharegistro.TabIndex = 11
         '
-        'PanelControl1
+        'cbmtipo
         '
-        Me.PanelControl1.Controls.Add(Me.XtraTabControl1)
-        Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelControl1.Location = New System.Drawing.Point(0, 0)
-        Me.PanelControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PanelControl1.Name = "PanelControl1"
-        Me.PanelControl1.Size = New System.Drawing.Size(718, 471)
-        Me.PanelControl1.TabIndex = 0
-        '
-        'XtraTabControl1
-        '
-        Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 2)
-        Me.XtraTabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.XtraTabControl1.Name = "XtraTabControl1"
-        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(714, 467)
-        Me.XtraTabControl1.TabIndex = 2
-        Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
-        '
-        'XtraTabPage1
-        '
-        Me.XtraTabPage1.Controls.Add(Me.LayoutControl1)
-        Me.XtraTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(712, 437)
-        Me.XtraTabPage1.Text = "Nuevo Usuario"
+        Me.cbmtipo.EditValue = "--Tipo de Usuario--"
+        Me.cbmtipo.Location = New System.Drawing.Point(166, 277)
+        Me.cbmtipo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbmtipo.Name = "cbmtipo"
+        Me.cbmtipo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.cbmtipo.Properties.Items.AddRange(New Object() {"Administrador", "Catastro", "Tesorero"})
+        Me.cbmtipo.Properties.MaxLength = 49
+        Me.cbmtipo.Size = New System.Drawing.Size(187, 22)
+        Me.cbmtipo.StyleController = Me.LayoutControl1
+        Me.cbmtipo.TabIndex = 10
         '
         'txtreppass
         '
@@ -456,6 +387,232 @@ Partial Class frmAddusers
         Me.txtusuario.Size = New System.Drawing.Size(187, 22)
         Me.txtusuario.StyleController = Me.LayoutControl1
         Me.txtusuario.TabIndex = 7
+        '
+        'txtcargo
+        '
+        Me.txtcargo.Location = New System.Drawing.Point(166, 139)
+        Me.txtcargo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtcargo.Name = "txtcargo"
+        Me.txtcargo.Properties.MaxLength = 49
+        Me.txtcargo.Size = New System.Drawing.Size(186, 22)
+        Me.txtcargo.StyleController = Me.LayoutControl1
+        Me.txtcargo.TabIndex = 5
+        '
+        'chktipo
+        '
+        Me.chktipo.EditValue = True
+        Me.chktipo.Location = New System.Drawing.Point(358, 55)
+        Me.chktipo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.chktipo.Name = "chktipo"
+        Me.chktipo.Properties.Caption = "Es empleado"
+        Me.chktipo.Size = New System.Drawing.Size(323, 20)
+        Me.chktipo.StyleController = Me.LayoutControl1
+        Me.chktipo.TabIndex = 1
+        '
+        'txtnit
+        '
+        Me.txtnit.Location = New System.Drawing.Point(493, 83)
+        Me.txtnit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtnit.Name = "txtnit"
+        Me.txtnit.Properties.MaxLength = 49
+        Me.txtnit.Properties.ReadOnly = True
+        Me.txtnit.Size = New System.Drawing.Size(188, 22)
+        Me.txtnit.StyleController = Me.LayoutControl1
+        Me.txtnit.TabIndex = 3
+        '
+        'txtempleado
+        '
+        Me.txtempleado.Location = New System.Drawing.Point(166, 111)
+        Me.txtempleado.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtempleado.Name = "txtempleado"
+        Me.txtempleado.Properties.MaxLength = 49
+        Me.txtempleado.Size = New System.Drawing.Size(186, 22)
+        Me.txtempleado.StyleController = Me.LayoutControl1
+        Me.txtempleado.TabIndex = 4
+        '
+        'txtid
+        '
+        Me.txtid.Location = New System.Drawing.Point(166, 55)
+        Me.txtid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtid.Name = "txtid"
+        Me.txtid.Properties.ReadOnly = True
+        Me.txtid.Size = New System.Drawing.Size(186, 22)
+        Me.txtid.StyleController = Me.LayoutControl1
+        Me.txtid.TabIndex = 0
+        '
+        'bteiddocente
+        '
+        Me.bteiddocente.Location = New System.Drawing.Point(166, 83)
+        Me.bteiddocente.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bteiddocente.Name = "bteiddocente"
+        Me.bteiddocente.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
+        Me.bteiddocente.Size = New System.Drawing.Size(186, 22)
+        Me.bteiddocente.StyleController = Me.LayoutControl1
+        Me.bteiddocente.TabIndex = 2
+        '
+        'LayoutControlGroup1
+        '
+        Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+        Me.LayoutControlGroup1.GroupBordersVisible = False
+        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup2, Me.LayoutControlGroup3})
+        Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
+        Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 4
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(712, 382)
+        Me.LayoutControlGroup1.TextVisible = False
+        '
+        'LayoutControlGroup2
+        '
+        Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem7, Me.LayoutControlItem6})
+        Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
+        Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 4
+        Me.LayoutControlGroup2.Size = New System.Drawing.Size(686, 166)
+        Me.LayoutControlGroup2.Text = "Datos del Empleado"
+        '
+        'LayoutControlItem1
+        '
+        Me.LayoutControlItem1.Control = Me.txtid
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem1.Name = "LayoutControlItem1"
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem1.Text = "ID"
+        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.Control = Me.chktipo
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(327, 0)
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(329, 28)
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem2.TextVisible = False
+        '
+        'LayoutControlItem3
+        '
+        Me.LayoutControlItem3.Control = Me.bteiddocente
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 28)
+        Me.LayoutControlItem3.Name = "LayoutControlItem3"
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem3.Text = "ID Empleado:"
+        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem4
+        '
+        Me.LayoutControlItem4.Control = Me.txtnit
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(327, 28)
+        Me.LayoutControlItem4.Name = "LayoutControlItem4"
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(329, 28)
+        Me.LayoutControlItem4.Text = "NIT:"
+        Me.LayoutControlItem4.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem5
+        '
+        Me.LayoutControlItem5.Control = Me.txtempleado
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 56)
+        Me.LayoutControlItem5.Name = "LayoutControlItem5"
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem5.Text = "Nombre:"
+        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem7
+        '
+        Me.LayoutControlItem7.Control = Me.txtdui
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(327, 56)
+        Me.LayoutControlItem7.Name = "LayoutControlItem7"
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(329, 56)
+        Me.LayoutControlItem7.Text = "Dui;"
+        Me.LayoutControlItem7.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem6
+        '
+        Me.LayoutControlItem6.Control = Me.txtcargo
+        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 84)
+        Me.LayoutControlItem6.Name = "LayoutControlItem6"
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem6.Text = "Cargo"
+        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlGroup3
+        '
+        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.LayoutControlItem12})
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 166)
+        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
+        Me.LayoutControlGroup3.OptionsItemText.TextToControlDistance = 4
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(686, 190)
+        '
+        'LayoutControlItem8
+        '
+        Me.LayoutControlItem8.Control = Me.txtusuario
+        Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem8.Name = "LayoutControlItem8"
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(328, 28)
+        Me.LayoutControlItem8.Text = "Usuario:"
+        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem9
+        '
+        Me.LayoutControlItem9.Control = Me.txtpass
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(328, 0)
+        Me.LayoutControlItem9.Name = "LayoutControlItem9"
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(328, 28)
+        Me.LayoutControlItem9.Text = "Contraeña:"
+        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem10
+        '
+        Me.LayoutControlItem10.Control = Me.txtreppass
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 28)
+        Me.LayoutControlItem10.Name = "LayoutControlItem10"
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(656, 28)
+        Me.LayoutControlItem10.Text = "Confirmar Contraseña:"
+        Me.LayoutControlItem10.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem11
+        '
+        Me.LayoutControlItem11.Control = Me.cbmtipo
+        Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 56)
+        Me.LayoutControlItem11.Name = "LayoutControlItem11"
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(328, 80)
+        Me.LayoutControlItem11.Text = "Tipo Usuario:"
+        Me.LayoutControlItem11.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'LayoutControlItem12
+        '
+        Me.LayoutControlItem12.Control = Me.dtfecharegistro
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(328, 56)
+        Me.LayoutControlItem12.Name = "LayoutControlItem12"
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(328, 80)
+        Me.LayoutControlItem12.Text = "F. Registro:"
+        Me.LayoutControlItem12.TextSize = New System.Drawing.Size(131, 16)
+        '
+        'PanelControl1
+        '
+        Me.PanelControl1.Controls.Add(Me.XtraTabControl1)
+        Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelControl1.Location = New System.Drawing.Point(0, 0)
+        Me.PanelControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PanelControl1.Name = "PanelControl1"
+        Me.PanelControl1.Size = New System.Drawing.Size(718, 471)
+        Me.PanelControl1.TabIndex = 0
+        '
+        'XtraTabControl1
+        '
+        Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.XtraTabControl1.Location = New System.Drawing.Point(2, 2)
+        Me.XtraTabControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.XtraTabControl1.Name = "XtraTabControl1"
+        Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
+        Me.XtraTabControl1.Size = New System.Drawing.Size(714, 467)
+        Me.XtraTabControl1.TabIndex = 2
+        Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
+        '
+        'XtraTabPage1
+        '
+        Me.XtraTabPage1.Controls.Add(Me.LayoutControl1)
+        Me.XtraTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.XtraTabPage1.Name = "XtraTabPage1"
+        Me.XtraTabPage1.Size = New System.Drawing.Size(712, 437)
+        Me.XtraTabPage1.Text = "Nuevo Usuario"
         '
         'XtraTabPage2
         '
@@ -693,7 +850,7 @@ Partial Class frmAddusers
         Me.XtraTabPage4.Controls.Add(Me.GroupControl11)
         Me.XtraTabPage4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage4.Name = "XtraTabPage4"
-        Me.XtraTabPage4.Size = New System.Drawing.Size(447, 363)
+        Me.XtraTabPage4.Size = New System.Drawing.Size(710, 407)
         Me.XtraTabPage4.Text = "Colonias|Tributos|Recibos|Grupos"
         '
         'GroupControl14
@@ -949,7 +1106,7 @@ Partial Class frmAddusers
         Me.XtraTabPage5.Controls.Add(Me.GroupControl15)
         Me.XtraTabPage5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage5.Name = "XtraTabPage5"
-        Me.XtraTabPage5.Size = New System.Drawing.Size(447, 363)
+        Me.XtraTabPage5.Size = New System.Drawing.Size(710, 407)
         Me.XtraTabPage5.Text = "Avisos"
         '
         'GroupControl18
@@ -1137,163 +1294,6 @@ Partial Class frmAddusers
         Me.chkavisos_individuales.Size = New System.Drawing.Size(197, 20)
         Me.chkavisos_individuales.TabIndex = 3
         '
-        'LayoutControl1
-        '
-        Me.LayoutControl1.Controls.Add(Me.dtfecharegistro)
-        Me.LayoutControl1.Controls.Add(Me.cbmtipo)
-        Me.LayoutControl1.Controls.Add(Me.txtreppass)
-        Me.LayoutControl1.Controls.Add(Me.txtpass)
-        Me.LayoutControl1.Controls.Add(Me.txtdui)
-        Me.LayoutControl1.Controls.Add(Me.txtusuario)
-        Me.LayoutControl1.Controls.Add(Me.txtcargo)
-        Me.LayoutControl1.Controls.Add(Me.chktipo)
-        Me.LayoutControl1.Controls.Add(Me.txtnit)
-        Me.LayoutControl1.Controls.Add(Me.txtempleado)
-        Me.LayoutControl1.Controls.Add(Me.txtid)
-        Me.LayoutControl1.Controls.Add(Me.bteiddocente)
-        Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControl1.Name = "LayoutControl1"
-        Me.LayoutControl1.Root = Me.LayoutControlGroup1
-        Me.LayoutControl1.Size = New System.Drawing.Size(712, 382)
-        Me.LayoutControl1.TabIndex = 2
-        Me.LayoutControl1.Text = "LayoutControl1"
-        '
-        'LayoutControlGroup1
-        '
-        Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup1.GroupBordersVisible = False
-        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup2, Me.LayoutControlGroup3})
-        Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
-        Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 4
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(712, 382)
-        Me.LayoutControlGroup1.TextVisible = False
-        '
-        'LayoutControlItem1
-        '
-        Me.LayoutControlItem1.Control = Me.txtid
-        Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(327, 28)
-        Me.LayoutControlItem1.Text = "ID"
-        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem2
-        '
-        Me.LayoutControlItem2.Control = Me.chktipo
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(327, 0)
-        Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(329, 28)
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem2.TextVisible = False
-        '
-        'LayoutControlItem3
-        '
-        Me.LayoutControlItem3.Control = Me.bteiddocente
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 28)
-        Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(327, 28)
-        Me.LayoutControlItem3.Text = "ID Empleado:"
-        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem4
-        '
-        Me.LayoutControlItem4.Control = Me.txtnit
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(327, 28)
-        Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(329, 28)
-        Me.LayoutControlItem4.Text = "NIT:"
-        Me.LayoutControlItem4.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem5
-        '
-        Me.LayoutControlItem5.Control = Me.txtempleado
-        Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 56)
-        Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(327, 28)
-        Me.LayoutControlItem5.Text = "Nombre:"
-        Me.LayoutControlItem5.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem6
-        '
-        Me.LayoutControlItem6.Control = Me.txtcargo
-        Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 84)
-        Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(327, 28)
-        Me.LayoutControlItem6.Text = "Cargo"
-        Me.LayoutControlItem6.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem7
-        '
-        Me.LayoutControlItem7.Control = Me.txtdui
-        Me.LayoutControlItem7.Location = New System.Drawing.Point(327, 56)
-        Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(329, 56)
-        Me.LayoutControlItem7.Text = "Dui;"
-        Me.LayoutControlItem7.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlGroup2
-        '
-        Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem7, Me.LayoutControlItem6})
-        Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
-        Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 4
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(686, 166)
-        Me.LayoutControlGroup2.Text = "Datos del Empleado"
-        '
-        'LayoutControlItem8
-        '
-        Me.LayoutControlItem8.Control = Me.txtusuario
-        Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(328, 28)
-        Me.LayoutControlItem8.Text = "Usuario:"
-        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlGroup3
-        '
-        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.LayoutControlItem12})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 166)
-        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
-        Me.LayoutControlGroup3.OptionsItemText.TextToControlDistance = 4
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(686, 190)
-        '
-        'LayoutControlItem9
-        '
-        Me.LayoutControlItem9.Control = Me.txtpass
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(328, 0)
-        Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(328, 28)
-        Me.LayoutControlItem9.Text = "Contraeña:"
-        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem10
-        '
-        Me.LayoutControlItem10.Control = Me.txtreppass
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 28)
-        Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(656, 28)
-        Me.LayoutControlItem10.Text = "Confirmar Contraseña:"
-        Me.LayoutControlItem10.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem11
-        '
-        Me.LayoutControlItem11.Control = Me.cbmtipo
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 56)
-        Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(328, 80)
-        Me.LayoutControlItem11.Text = "Tipo Usuario:"
-        Me.LayoutControlItem11.TextSize = New System.Drawing.Size(131, 16)
-        '
-        'LayoutControlItem12
-        '
-        Me.LayoutControlItem12.Control = Me.dtfecharegistro
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(328, 56)
-        Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(328, 80)
-        Me.LayoutControlItem12.Text = "F. Registro:"
-        Me.LayoutControlItem12.TextSize = New System.Drawing.Size(131, 16)
-        '
         'frmAddusers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -1313,23 +1313,40 @@ Partial Class frmAddusers
         Me.PanelControl2.ResumeLayout(False)
         Me.PanelControl2.PerformLayout()
         CType(Me.txtdui.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.chktipo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtcargo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtnit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtempleado.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.bteiddocente.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtid.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cbmtipo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.LayoutControl1.ResumeLayout(False)
         CType(Me.dtfecharegistro.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtfecharegistro.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cbmtipo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtreppass.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtpass.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtusuario.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtcargo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.chktipo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtnit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtempleado.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtid.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bteiddocente.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl1.ResumeLayout(False)
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabControl1.ResumeLayout(False)
         Me.XtraTabPage1.ResumeLayout(False)
-        CType(Me.txtreppass.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtpass.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtusuario.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabPage2.ResumeLayout(False)
         CType(Me.XtraTabControl2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabControl2.ResumeLayout(False)
@@ -1415,23 +1432,6 @@ Partial Class frmAddusers
         Me.GroupControl15.ResumeLayout(False)
         CType(Me.chkavisos_individuales_emitidos.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.chkavisos_individuales.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LayoutControl1.ResumeLayout(False)
-        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
