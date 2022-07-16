@@ -1,0 +1,2655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B41466C-99DA-45AB-A266-831BA1C2BABD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Formularios_de_Sistema_de_Cuenta_Corriente.My.MyApplication</StartupObject>
+    <RootNamespace>Formularios_de_Sistema_de_Cuenta_Corriente</RootNamespace>
+    <AssemblyName>Sistema de Administración Catastral 1.0</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema de Administración Catastral 1.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>true</Optimize>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema de Administración Catastral 1.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SAC.fw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.1.Win, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.1.Extensions, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clases\Class1.vb" />
+    <Compile Include="clases\Classcodcatatro.vb" />
+    <Compile Include="clases\Año.vb" />
+    <Compile Include="clases\Dias.vb" />
+    <Compile Include="clases\LiberarRam.vb" />
+    <Compile Include="clases\Module1.vb" />
+    <Compile Include="clases\VariableGlobales.vb" />
+    <Compile Include="cobros\Avisos\frmcobros_anticipo.designer.vb">
+      <DependentUpon>frmcobros_anticipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Avisos\frmcobros_anticipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Avisos\frmseleccion_propiedad.designer.vb">
+      <DependentUpon>frmseleccion_propiedad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Avisos\frmseleccion_propiedad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Avisos\Generar_Recibos_de_Avisos.designer.vb">
+      <DependentUpon>Generar_Recibos_de_Avisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Avisos\Generar_Recibos_de_Avisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cobros Anticipados\frmanticipos_gerarrecibo.designer.vb">
+      <DependentUpon>frmanticipos_gerarrecibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cobros Anticipados\frmanticipos_gerarrecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cobros Anticipados\frmgeneranuevorecibo_anticipogrupo.designer.vb">
+      <DependentUpon>frmgeneranuevorecibo_anticipogrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cobros Anticipados\frmgeneranuevorecibo_anticipogrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cobros Anticipados\frmresivosanticipos .designer.vb">
+      <DependentUpon>frmresivosanticipos .vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cobros Anticipados\frmresivosanticipos .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmaddgrupos.designer.vb">
+      <DependentUpon>frmaddgrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmaddgrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmeditgrupos.designer.vb">
+      <DependentUpon>frmeditgrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmeditgrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmeliminargrupos.designer.vb">
+      <DependentUpon>frmeliminargrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmeliminargrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmpanelgrupo.designer.vb">
+      <DependentUpon>frmpanelgrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Conceptos\frmpanelgrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmaddcuentas.designer.vb">
+      <DependentUpon>frmaddcuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmaddcuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmeditcuenta.designer.vb">
+      <DependentUpon>frmeditcuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmeditcuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmeliminarcuenta.designer.vb">
+      <DependentUpon>frmeliminarcuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmeliminarcuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmpanelcuentas.designer.vb">
+      <DependentUpon>frmpanelcuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\frmpanelcuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\Reporte_de_Cuenta.designer.vb">
+      <DependentUpon>Reporte_de_Cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\Cuentas\Reporte_de_Cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\fempreRepTributos_CUENTA_CORRIETE.designer.vb">
+      <DependentUpon>fempreRepTributos_CUENTA_CORRIETE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\fempreRepTributos_CUENTA_CORRIETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\pago cc\frmpanelreciboadministrativo.designer.vb">
+      <DependentUpon>frmpanelreciboadministrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\pago cc\frmpanelreciboadministrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\pago cc\frmrecibo_administrativo.designer.vb">
+      <DependentUpon>frmrecibo_administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\pago cc\frmrecibo_administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\pago cc\frmreimprimir_administrativo.designer.vb">
+      <DependentUpon>frmreimprimir_administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\pago cc\frmreimprimir_administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\RE_Recibo_administrativo.designer.vb">
+      <DependentUpon>RE_Recibo_administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Cuenta Corrientes\RE_Recibo_administrativo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\Edit Recibos\frmeditrecibo.designer.vb">
+      <DependentUpon>frmeditrecibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Edit Recibos\frmeditrecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\MedidaNew.Designer.vb">
+      <DependentUpon>MedidaNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\MedidaNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmMapaCatastral.designer.vb">
+      <DependentUpon>frmMapaCatastral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmMapaCatastral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\ClaseAspecto.vb" />
+    <Compile Include="cobros\Formularios\Inmueble\frmMapeoGeneral.Designer.vb">
+      <DependentUpon>frmMapeoGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmMapeoGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmSupport.designer.vb">
+      <DependentUpon>frmSupport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmSupport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\MapasCompleto.designer.vb">
+      <DependentUpon>MapasCompleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\MapasCompleto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\MapsNet.vb" />
+    <Compile Include="cobros\Formularios\Inmueble\MostrarMapa.designer.vb">
+      <DependentUpon>MostrarMapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\MostrarMapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\propiedadesYPropietariosGenerales.Designer.vb">
+      <DependentUpon>propiedadesYPropietariosGenerales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\propiedadesYPropietariosGenerales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\frmnewrecibo_individual .designer.vb">
+      <DependentUpon>frmnewrecibo_individual .vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\frmnewrecibo_individual .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\newrecibogrupo .designer.vb">
+      <DependentUpon>newrecibogrupo .vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\newrecibogrupo .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Recibos Por Grupos\frmrgenera_recibopor_grupo.designer.vb">
+      <DependentUpon>frmrgenera_recibopor_grupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Recibos Por Grupos\frmrgenera_recibopor_grupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ReportePendiente_ypagado.designer.vb">
+      <DependentUpon>ReportePendiente_ypagado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ReportePendiente_ypagado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Datosdepago.designer.vb">
+      <DependentUpon>Datosdepago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Datosdepago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\fasales.designer.vb">
+      <DependentUpon>fasales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\fasales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\administracion_contadores.designer.vb">
+      <DependentUpon>administracion_contadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\administracion_contadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\frmacivacontadores.designer.vb">
+      <DependentUpon>frmacivacontadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\frmacivacontadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\frmmedidas_ de_Agua .designer.vb">
+      <DependentUpon>frmmedidas_ de_Agua .vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\frmmedidas_ de_Agua .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\ReporteMedidasdeAguayConsumo.Designer.vb">
+      <DependentUpon>ReporteMedidasdeAguayConsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\agua\ReporteMedidasdeAguayConsumo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmcoloniapanel.designer.vb">
+      <DependentUpon>frmcoloniapanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmcoloniapanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmddColonia.designer.vb">
+      <DependentUpon>frmddColonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmddColonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmeditcolonia.designer.vb">
+      <DependentUpon>frmeditcolonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmeditcolonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmeliminarcolonia.designer.vb">
+      <DependentUpon>frmeliminarcolonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\frmeliminarcolonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\Reporte_Colonia.designer.vb">
+      <DependentUpon>Reporte_Colonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Colonias\Reporte_Colonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmAddEmpleado.designer.vb">
+      <DependentUpon>frmAddEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmAddEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmdelEmpleado.designer.vb">
+      <DependentUpon>frmdelEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmdelEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmEditEmpleado.designer.vb">
+      <DependentUpon>frmEditEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmEditEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmEmpleado.designer.vb">
+      <DependentUpon>frmEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmEmpleadoSelections.designer.vb">
+      <DependentUpon>frmEmpleadoSelections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\empleados\frmEmpleadoSelections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\RepEmpresa\EstadosdeCuentaEmpresas.designer.vb">
+      <DependentUpon>EstadosdeCuentaEmpresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\RepEmpresa\EstadosdeCuentaEmpresas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\RepEmpresa\ReportEmpresasGenerales.Designer.vb">
+      <DependentUpon>ReportEmpresasGenerales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\RepEmpresa\ReportEmpresasGenerales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmCategorias.Designer.vb">
+      <DependentUpon>frmCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmcatedit.Designer.vb">
+      <DependentUpon>frmcatedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmcatedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmcatnew.Designer.vb">
+      <DependentUpon>frmcatnew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmcatnew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmcatedel.Designer.vb">
+      <DependentUpon>frmcatedel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Categoria_impuestos\frmcatedel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmAgruparPropiedades.designer.vb">
+      <DependentUpon>frmAgruparPropiedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmAgruparPropiedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmeditgrupos_imueble.designer.vb">
+      <DependentUpon>frmeditgrupos_imueble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmeditgrupos_imueble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmeliminar_grupos_imueble.designer.vb">
+      <DependentUpon>frmeliminar_grupos_imueble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmeliminar_grupos_imueble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmpanelagruparinmueble1.designer.vb">
+      <DependentUpon>frmpanelagruparinmueble1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmpanelagruparinmueble1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\propiedadesYPropietarios.Designer.vb">
+      <DependentUpon>propiedadesYPropietarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\reporte_inmuebles\propiedadesYPropietarios.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Periodos\frmperiodos.designer.vb">
+      <DependentUpon>frmperiodos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Periodos\frmperiodos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\add_nueva_zona.designer.vb">
+      <DependentUpon>add_nueva_zona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\add_nueva_zona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\Edit_zona.designer.vb">
+      <DependentUpon>Edit_zona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\Edit_zona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\frmeliminarzona.designer.vb">
+      <DependentUpon>frmeliminarzona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\frmeliminarzona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\frmpanelzona.designer.vb">
+      <DependentUpon>frmpanelzona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Zonas\frmpanelzona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\frmreport_estado.designer.vb">
+      <DependentUpon>frmreport_estado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\frmreport_estado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\frver_Recibo.designer.vb">
+      <DependentUpon>frver_Recibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\frver_Recibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Historia\frmaurora.designer.vb">
+      <DependentUpon>frmaurora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Historia\frmaurora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Historia\frmcontribuyente.designer.vb">
+      <DependentUpon>frmcontribuyente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Historia\frmcontribuyente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Historia\Frmlista_impuesto_historia.designer.vb">
+      <DependentUpon>Frmlista_impuesto_historia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Historia\Frmlista_impuesto_historia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\cobrar.designer.vb">
+      <DependentUpon>cobrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\cobrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmadd_impuestoExtra.designer.vb">
+      <DependentUpon>frmadd_impuestoExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmadd_impuestoExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmCobros_individuales.designer.vb">
+      <DependentUpon>frmCobros_individuales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmCobros_individuales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmEliminarRecibo.designer.vb">
+      <DependentUpon>frmEliminarRecibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmEliminarRecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmrecibospagados.designer.vb">
+      <DependentUpon>frmrecibospagados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\frmrecibospagados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\Movimientos.designer.vb">
+      <DependentUpon>Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\impresion de recibos .designer.vb">
+      <DependentUpon>impresion de recibos .vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\impresion de recibos .vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\Nuevo_recivo.designer.vb">
+      <DependentUpon>Nuevo_recivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\Nuevo_recivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ModCobros\Printer.designer.vb">
+      <DependentUpon>Printer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ModCobros\Printer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Reactivar Recibos\frmpanelanulados.designer.vb">
+      <DependentUpon>frmpanelanulados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Reactivar Recibos\frmpanelanulados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\ReportePendiente.designer.vb">
+      <DependentUpon>ReportePendiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\ReportePendiente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Reportes\Morosos.designer.vb">
+      <DependentUpon>Morosos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Reportes\Morosos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cobros\Reportes\Pre_rep_morosos.designer.vb">
+      <DependentUpon>Pre_rep_morosos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Reportes\Pre_rep_morosos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\frmrecibo_administrati_cat.designer.vb">
+      <DependentUpon>frmrecibo_administrati_cat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\frmrecibo_administrati_cat.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Contador_medidas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contador_medidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_catastroConnectionString1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_catastroConnectionString1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_catastroDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_catastroDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_catastroDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_catastroDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_catastroDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_catastroDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CReporteAvisos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_CReporteAvisos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_fechaImp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_fechaImp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_fechaImp.vb">
+      <DependentUpon>db_fechaImp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSAgrupaciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAgrupaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAlaldia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAlaldia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsavisos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsavisos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsAvisosCobrosGrupos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAvisosCobrosGrupos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSavisosPorFechasGroup.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSavisosPorFechasGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAvisosRespaldo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAvisosRespaldo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dsbitacora.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dsbitacora.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsConsumoAgua.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsConsumoAgua.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSCOntadores_medidas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCOntadores_medidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSCOntadores_medidas.vb">
+      <DependentUpon>DSCOntadores_medidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEmpleados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSEmpresasGenerales.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEmpresasGenerales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEmpresasMorosas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEmpresasMorosas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEstadosdeAgua.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEstadosdeAgua.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEstadosdeCuentaEmpresas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEstadosdeCuentaEmpresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSEstaodeCuentaAgrupaciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEstaodeCuentaAgrupaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSEstaodeCuentaAgrupaciones.vb">
+      <DependentUpon>DSEstaodeCuentaAgrupaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSimpuestos_cancelados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSimpuestos_cancelados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsIngresosPorTributos1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsIngresosPorTributos1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSINmueblesGenerales.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSINmueblesGenerales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsINmueblesMorosos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsINmueblesMorosos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSInmueblesYPropietarios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInmueblesYPropietarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSINmueblesy_Propietario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSINmueblesy_Propietario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsMoraTributaria.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsMoraTributaria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSpendientes_pagos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSpendientes_pagos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSpendientes_pagos_ultimo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSpendientes_pagos_ultimo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsPorFechas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPorFechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSPropiedadesEmpresa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPropiedadesEmpresa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSPropiedadesPorFechasF.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPropiedadesPorFechasF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsPropiedadesxColonias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPropiedadesxColonias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRecibosAdministrativos_reporte.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRecibosAdministrativos_reporte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReporteEstado_x_contribuyente.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReporteEstado_x_contribuyente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DStributos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DStributos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dstributos_reporte_F.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstributos_reporte_F.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds_AvisosCobros_fecha.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_AvisosCobros_fecha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_EstadosCuenta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EstadosCuenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Impuestos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Impuestos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_PorfechasPropiedades.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PorfechasPropiedades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_PorImpuestos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PorImpuestos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Propietarios_Carnet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Propietarios_Carnet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_reporteImpuestosPorFechas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_reporteImpuestosPorFechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DtsetPropiedaesPorColonias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DtsetPropiedaesPorColonias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DT_PROPIEDADES_E_IMPUESTOS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DT_PROPIEDADES_E_IMPUESTOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DT_PROPIEDADES_E_IMPUESTOS.vb">
+      <DependentUpon>DT_PROPIEDADES_E_IMPUESTOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\alcaldia\frmAlcaldia.designer.vb">
+      <DependentUpon>frmAlcaldia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\alcaldia\frmAlcaldia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\editmedidasEmpresas.Designer.vb">
+      <DependentUpon>editmedidasEmpresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\editmedidasEmpresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\frmDeleteEmpresa.Designer.vb">
+      <DependentUpon>frmDeleteEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\frmDeleteEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\frmEmpresasEdit.Designer.vb">
+      <DependentUpon>frmEmpresasEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\frmEmpresasEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmEditImpuestoAplicado.Designer.vb">
+      <DependentUpon>frmEditImpuestoAplicado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmEditImpuestoAplicado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmImpuestosAddNew.Designer.vb">
+      <DependentUpon>frmImpuestosAddNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmImpuestosAddNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmimpuestosdel.Designer.vb">
+      <DependentUpon>frmimpuestosdel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmimpuestosdel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmAddImnuebleDespensa.Designer.vb">
+      <DependentUpon>frmAddImnuebleDespensa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmAddImnuebleDespensa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmdeleteInmueblesDispensa.Designer.vb">
+      <DependentUpon>frmdeleteInmueblesDispensa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmdeleteInmueblesDispensa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmeditInmueblesDispensa.Designer.vb">
+      <DependentUpon>frmeditInmueblesDispensa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmeditInmueblesDispensa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmInmueblesDispensa.Designer.vb">
+      <DependentUpon>frmInmueblesDispensa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmInmueblesDispensa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmSearchPropietario.Designer.vb">
+      <DependentUpon>frmSearchPropietario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmuebles Dispensa\frmSearchPropietario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmdeleteInmueble.designer.vb">
+      <DependentUpon>frmdeleteInmueble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmdeleteInmueble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\FrmAdd_Empresa.Designer.vb">
+      <DependentUpon>FrmAdd_Empresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\FrmAdd_Empresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmImpuestoEdit.Designer.vb">
+      <DependentUpon>frmImpuestoEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmImpuestoEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmimpuestoQuitar.Designer.vb">
+      <DependentUpon>frmimpuestoQuitar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmimpuestoQuitar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmeditInmueble.Designer.vb">
+      <DependentUpon>frmeditInmueble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmeditInmueble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paralasfiestas.Designer.vb">
+      <DependentUpon>Paralasfiestas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paralasfiestas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Alcadia\alcaldiareporte.Designer.vb">
+      <DependentUpon>alcaldiareporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Alcadia\alcaldiareporte.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\avisos_de_cobrosDetallado.designer.vb">
+      <DependentUpon>avisos_de_cobrosDetallado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\avisos_de_cobrosDetallado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Alcadia\Empleadosrep.Designer.vb">
+      <DependentUpon>Empleadosrep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Alcadia\Empleadosrep.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\avisos de cobros.designer.vb">
+      <DependentUpon>avisos de cobros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\avisos de cobros.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\ReporteAvisosPorFecha.Designer.vb">
+      <DependentUpon>ReporteAvisosPorFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\ReporteAvisosPorFecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\reportesAvisosEmitidosPorFecha.Designer.vb">
+      <DependentUpon>reportesAvisosEmitidosPorFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\avisos de cobros\reportesAvisosEmitidosPorFecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Bitacora\Bitacora.Designer.vb">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Bitacora\Bitacora.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Bitacora\prebitacora.Designer.vb">
+      <DependentUpon>prebitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Bitacora\prebitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Consolidado_pagos.Designer.vb">
+      <DependentUpon>Consolidado_pagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Consolidado_pagos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Contadores\pre-Contadores.Designer.vb">
+      <DependentUpon>pre-Contadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Contadores\pre-Contadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Contadores\Reporte_contadores.Designer.vb">
+      <DependentUpon>Reporte_contadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Contadores\Reporte_contadores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Estados de Cuenta por Grupo\Estado de Cuentas Por Grupos.Designer.vb">
+      <DependentUpon>Estado de Cuentas Por Grupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Estados de Cuenta por Grupo\Estado de Cuentas Por Grupos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadoCuentaGeneralXcontribuyente.Designer.vb">
+      <DependentUpon>EstadoCuentaGeneralXcontribuyente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadoCuentaGeneralXcontribuyente.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadodeCuenta-X-Contribuyente.Designer.vb">
+      <DependentUpon>EstadodeCuenta-X-Contribuyente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadodeCuenta-X-Contribuyente.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadodecuentaPorfecha.Designer.vb">
+      <DependentUpon>EstadodecuentaPorfecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadodecuentaPorfecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadosDEcuentadeAgua.Designer.vb">
+      <DependentUpon>EstadosDEcuentadeAgua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Estados\EstadosDEcuentadeAgua.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\InformedeAvisosdeCobros.Designer.vb">
+      <DependentUpon>InformedeAvisosdeCobros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\InformedeAvisosdeCobros.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos Diarios\Ingresos diarios.Designer.vb">
+      <DependentUpon>Ingresos diarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos Diarios\Ingresos diarios.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\ReporteTributosCuentas.Designer.vb">
+      <DependentUpon>ReporteTributosCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\ReporteTributosCuentas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\fempreRepTributos_categoria.Designer.vb">
+      <DependentUpon>fempreRepTributos_categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\fempreRepTributos_categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\Repor_deudas_cte.Designer.vb">
+      <DependentUpon>Repor_deudas_cte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\Repor_deudas_cte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\fempreRepTributos_no_pagado.Designer.vb">
+      <DependentUpon>fempreRepTributos_no_pagado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\fempreRepTributos_no_pagado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\fempreRepTributos.Designer.vb">
+      <DependentUpon>fempreRepTributos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\fempreRepTributos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\ReporIngrescte.Designer.vb">
+      <DependentUpon>ReporIngrescte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\ReporIngrescte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\ReporteTributos.Designer.vb">
+      <DependentUpon>ReporteTributos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Ingresos por Tributos\ReporteTributos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Inmuebles Agrupados\propiedadesAgrupadas.Designer.vb">
+      <DependentUpon>propiedadesAgrupadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Inmuebles Agrupados\propiedadesAgrupadas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Inmuebles\InmueblesGenerales.Designer.vb">
+      <DependentUpon>InmueblesGenerales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Inmuebles\InmueblesGenerales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Inmuebles\inmueblesXcolonia.Designer.vb">
+      <DependentUpon>inmueblesXcolonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Inmuebles\inmueblesXcolonia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\inmueblesDispensos\InmueblesDispensos.Designer.vb">
+      <DependentUpon>InmueblesDispensos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\inmueblesDispensos\InmueblesDispensos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Inmuebles\Tarjetas_Por_dia.Designer.vb">
+      <DependentUpon>Tarjetas_Por_dia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Inmuebles\Tarjetas_Por_dia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\mora por inmueble\moraPorInmueble.Designer.vb">
+      <DependentUpon>moraPorInmueble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\mora por inmueble\moraPorInmueble.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Recibos Administrativos\Reporte_aministrativo_fecha.Designer.vb">
+      <DependentUpon>Reporte_aministrativo_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recibos Administrativos\Reporte_aministrativo_fecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\reporteImpuestoyFechas.Designer.vb">
+      <DependentUpon>reporteImpuestoyFechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\reporteImpuestoyFechas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\ReporteMoraTributaria.Designer.vb">
+      <DependentUpon>ReporteMoraTributaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\ReporteMoraTributaria.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Reporte_Por_Impuestos.Designer.vb">
+      <DependentUpon>Reporte_Por_Impuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reporte_Por_Impuestos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\tarjetas\tajetas.Designer.vb">
+      <DependentUpon>tajetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\tarjetas\tajetas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\tributos\TributosGenerales.Designer.vb">
+      <DependentUpon>TributosGenerales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\tributos\TributosGenerales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="settings\frmsetrec.Designer.vb">
+      <DependentUpon>frmsetrec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frmsetrec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmAplicarImpuesto.Designer.vb">
+      <DependentUpon>frmAplicarImpuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmAplicarImpuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmImpuesto.Designer.vb">
+      <DependentUpon>frmImpuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Impuestos\frmImpuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\FrmAddInmuebles.Designer.vb">
+      <DependentUpon>FrmAddInmuebles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\FrmAddInmuebles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmInmuebles.Designer.vb">
+      <DependentUpon>frmInmuebles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Inmueble\frmInmuebles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobros\Formularios\modulos\modeleVariables.vb" />
+    <Compile Include="cobros\Formularios\Empresas\FrmEmpresas.Designer.vb">
+      <DependentUpon>FrmEmpresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cobros\Formularios\Empresas\FrmEmpresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reportes\contribuyente\Reportdatos_imueble vb.Designer.vb">
+      <DependentUpon>Reportdatos_imueble vb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\contribuyente\Reportdatos_imueble vb.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="settings\frmThemas.Designer.vb">
+      <DependentUpon>frmThemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frmThemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\XtraForm1.Designer.vb">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings\XtraForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solvencias\DatosParaSolvencia.Designer.vb">
+      <DependentUpon>DatosParaSolvencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solvencias\DatosParaSolvencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solvencias\Solvenciasfrm.Designer.vb">
+      <DependentUpon>Solvenciasfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solvencias\Solvenciasfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\frmAddUsers.designer.vb">
+      <DependentUpon>frmAddUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users\frmAddUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\frmdeleteuser.designer.vb">
+      <DependentUpon>frmdeleteuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users\frmdeleteuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\frmedituser.designer.vb">
+      <DependentUpon>frmedituser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users\frmedituser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\frmUsuarios.designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Avisos\frmcobros_anticipo.resx">
+      <DependentUpon>frmcobros_anticipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Avisos\frmseleccion_propiedad.resx">
+      <DependentUpon>frmseleccion_propiedad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Avisos\Generar_Recibos_de_Avisos.resx">
+      <DependentUpon>Generar_Recibos_de_Avisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cobros Anticipados\frmanticipos_gerarrecibo.resx">
+      <DependentUpon>frmanticipos_gerarrecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cobros Anticipados\frmgeneranuevorecibo_anticipogrupo.resx">
+      <DependentUpon>frmgeneranuevorecibo_anticipogrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cobros Anticipados\frmresivosanticipos .resx">
+      <DependentUpon>frmresivosanticipos .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Conceptos\frmaddgrupos.resx">
+      <DependentUpon>frmaddgrupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Conceptos\frmeditgrupos.resx">
+      <DependentUpon>frmeditgrupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Conceptos\frmeliminargrupos.resx">
+      <DependentUpon>frmeliminargrupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Conceptos\frmpanelgrupo.resx">
+      <DependentUpon>frmpanelgrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Cuentas\frmaddcuentas.resx">
+      <DependentUpon>frmaddcuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Cuentas\frmeditcuenta.resx">
+      <DependentUpon>frmeditcuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Cuentas\frmeliminarcuenta.resx">
+      <DependentUpon>frmeliminarcuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Cuentas\frmpanelcuentas.resx">
+      <DependentUpon>frmpanelcuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\Cuentas\Reporte_de_Cuenta.resx">
+      <DependentUpon>Reporte_de_Cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\fempreRepTributos_CUENTA_CORRIETE.resx">
+      <DependentUpon>fempreRepTributos_CUENTA_CORRIETE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\pago cc\frmpanelreciboadministrativo.resx">
+      <DependentUpon>frmpanelreciboadministrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\pago cc\frmrecibo_administrativo.resx">
+      <DependentUpon>frmrecibo_administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\pago cc\frmreimprimir_administrativo.resx">
+      <DependentUpon>frmreimprimir_administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Cuenta Corrientes\RE_Recibo_administrativo.resx">
+      <DependentUpon>RE_Recibo_administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Edit Recibos\frmeditrecibo.resx">
+      <DependentUpon>frmeditrecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\agua\MedidaNew.resx">
+      <DependentUpon>MedidaNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\frmMapaCatastral.resx">
+      <DependentUpon>frmMapaCatastral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\frmMapeoGeneral.resx">
+      <DependentUpon>frmMapeoGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\frmSupport.resx">
+      <DependentUpon>frmSupport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\MapasCompleto.resx">
+      <DependentUpon>MapasCompleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\MostrarMapa.resx">
+      <DependentUpon>MostrarMapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\reporte_inmuebles\propiedadesYPropietariosGenerales.resx">
+      <DependentUpon>propiedadesYPropietariosGenerales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\frmnewrecibo_individual .resx">
+      <DependentUpon>frmnewrecibo_individual .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\newrecibogrupo .resx">
+      <DependentUpon>newrecibogrupo .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Recibos Por Grupos\frmrgenera_recibopor_grupo.resx">
+      <DependentUpon>frmrgenera_recibopor_grupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ReportePendiente_ypagado.resx">
+      <DependentUpon>ReportePendiente_ypagado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Datosdepago.resx">
+      <DependentUpon>Datosdepago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\fasales.resx">
+      <DependentUpon>fasales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\agua\administracion_contadores.resx">
+      <DependentUpon>administracion_contadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\agua\frmacivacontadores.resx">
+      <DependentUpon>frmacivacontadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\agua\frmmedidas_ de_Agua .resx">
+      <DependentUpon>frmmedidas_ de_Agua .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\agua\ReporteMedidasdeAguayConsumo.resx">
+      <DependentUpon>ReporteMedidasdeAguayConsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Colonias\frmcoloniapanel.resx">
+      <DependentUpon>frmcoloniapanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Colonias\frmddColonia.resx">
+      <DependentUpon>frmddColonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Colonias\frmeditcolonia.resx">
+      <DependentUpon>frmeditcolonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Colonias\frmeliminarcolonia.resx">
+      <DependentUpon>frmeliminarcolonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Colonias\Reporte_Colonia.resx">
+      <DependentUpon>Reporte_Colonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\empleados\frmAddEmpleado.resx">
+      <DependentUpon>frmAddEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\empleados\frmdelEmpleado.resx">
+      <DependentUpon>frmdelEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\empleados\frmEditEmpleado.resx">
+      <DependentUpon>frmEditEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\empleados\frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\empleados\frmEmpleadoSelections.resx">
+      <DependentUpon>frmEmpleadoSelections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\RepEmpresa\EstadosdeCuentaEmpresas.resx">
+      <DependentUpon>EstadosdeCuentaEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\RepEmpresa\ReportEmpresasGenerales.resx">
+      <DependentUpon>ReportEmpresasGenerales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Categoria_impuestos\frmCategorias.resx">
+      <DependentUpon>frmCategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Categoria_impuestos\frmcatedit.resx">
+      <DependentUpon>frmcatedit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Categoria_impuestos\frmcatnew.resx">
+      <DependentUpon>frmcatnew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Categoria_impuestos\frmcatedel.resx">
+      <DependentUpon>frmcatedel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmAgruparPropiedades.resx">
+      <DependentUpon>frmAgruparPropiedades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmeditgrupos_imueble.resx">
+      <DependentUpon>frmeditgrupos_imueble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmeliminar_grupos_imueble.resx">
+      <DependentUpon>frmeliminar_grupos_imueble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\reporte_inmuebles\Agrupar Inmuebles\frmpanelagruparinmueble1.resx">
+      <DependentUpon>frmpanelagruparinmueble1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\reporte_inmuebles\propiedadesYPropietarios.resx">
+      <DependentUpon>propiedadesYPropietarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Periodos\frmperiodos.resx">
+      <DependentUpon>frmperiodos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Zonas\add_nueva_zona.resx">
+      <DependentUpon>add_nueva_zona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Zonas\Edit_zona.resx">
+      <DependentUpon>Edit_zona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Zonas\frmeliminarzona.resx">
+      <DependentUpon>frmeliminarzona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Zonas\frmpanelzona.resx">
+      <DependentUpon>frmpanelzona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\frmreport_estado.resx">
+      <DependentUpon>frmreport_estado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\frver_Recibo.resx">
+      <DependentUpon>frver_Recibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Historia\frmaurora.resx">
+      <DependentUpon>frmaurora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Historia\frmcontribuyente.resx">
+      <DependentUpon>frmcontribuyente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Historia\Frmlista_impuesto_historia.resx">
+      <DependentUpon>Frmlista_impuesto_historia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\cobrar.resx">
+      <DependentUpon>cobrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\frmadd_impuestoExtra.resx">
+      <DependentUpon>frmadd_impuestoExtra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\frmCobros_individuales.resx">
+      <DependentUpon>frmCobros_individuales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\frmEliminarRecibo.resx">
+      <DependentUpon>frmEliminarRecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\frmrecibospagados.resx">
+      <DependentUpon>frmrecibospagados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\Movimientos.resx">
+      <DependentUpon>Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\impresion de recibos .resx">
+      <DependentUpon>impresion de recibos .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\Nuevo_recivo.resx">
+      <DependentUpon>Nuevo_recivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ModCobros\Printer.resx">
+      <DependentUpon>Printer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Reactivar Recibos\frmpanelanulados.resx">
+      <DependentUpon>frmpanelanulados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\ReportePendiente.resx">
+      <DependentUpon>ReportePendiente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Reportes\Morosos.resx">
+      <DependentUpon>Morosos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Reportes\Pre_rep_morosos.resx">
+      <DependentUpon>Pre_rep_morosos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\frmrecibo_administrati_cat.resx">
+      <DependentUpon>frmrecibo_administrati_cat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\alcaldia\frmAlcaldia.resx">
+      <DependentUpon>frmAlcaldia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\editmedidasEmpresas.resx">
+      <DependentUpon>editmedidasEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\frmDeleteEmpresa.resx">
+      <DependentUpon>frmDeleteEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\frmEmpresasEdit.resx">
+      <DependentUpon>frmEmpresasEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmEditImpuestoAplicado.resx">
+      <DependentUpon>frmEditImpuestoAplicado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmImpuestosAddNew.resx">
+      <DependentUpon>frmImpuestosAddNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmimpuestosdel.resx">
+      <DependentUpon>frmimpuestosdel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmuebles Dispensa\frmAddImnuebleDespensa.resx">
+      <DependentUpon>frmAddImnuebleDespensa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmuebles Dispensa\frmdeleteInmueblesDispensa.resx">
+      <DependentUpon>frmdeleteInmueblesDispensa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmuebles Dispensa\frmeditInmueblesDispensa.resx">
+      <DependentUpon>frmeditInmueblesDispensa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmuebles Dispensa\frmInmueblesDispensa.resx">
+      <DependentUpon>frmInmueblesDispensa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmuebles Dispensa\frmSearchPropietario.resx">
+      <DependentUpon>frmSearchPropietario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\frmdeleteInmueble.resx">
+      <DependentUpon>frmdeleteInmueble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\FrmAdd_Empresa.resx">
+      <DependentUpon>FrmAdd_Empresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmImpuestoEdit.resx">
+      <DependentUpon>frmImpuestoEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmimpuestoQuitar.resx">
+      <DependentUpon>frmimpuestoQuitar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\frmeditInmueble.resx">
+      <DependentUpon>frmeditInmueble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Paralasfiestas.resx">
+      <DependentUpon>Paralasfiestas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Alcadia\alcaldiareporte.resx">
+      <DependentUpon>alcaldiareporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\avisos de cobros\avisos_de_cobrosDetallado.resx">
+      <DependentUpon>avisos_de_cobrosDetallado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Alcadia\Empleadosrep.resx">
+      <DependentUpon>Empleadosrep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\avisos de cobros\avisos de cobros.resx">
+      <DependentUpon>avisos de cobros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\avisos de cobros\ReporteAvisosPorFecha.resx">
+      <DependentUpon>ReporteAvisosPorFecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\avisos de cobros\reportesAvisosEmitidosPorFecha.resx">
+      <DependentUpon>reportesAvisosEmitidosPorFecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Bitacora\Bitacora.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Bitacora\prebitacora.resx">
+      <DependentUpon>prebitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Consolidado_pagos.resx">
+      <DependentUpon>Consolidado_pagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Contadores\pre-Contadores.resx">
+      <DependentUpon>pre-Contadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Contadores\Reporte_contadores.resx">
+      <DependentUpon>Reporte_contadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Estados de Cuenta por Grupo\Estado de Cuentas Por Grupos.resx">
+      <DependentUpon>Estado de Cuentas Por Grupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Estados\EstadoCuentaGeneralXcontribuyente.resx">
+      <DependentUpon>EstadoCuentaGeneralXcontribuyente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Estados\EstadodeCuenta-X-Contribuyente.resx">
+      <DependentUpon>EstadodeCuenta-X-Contribuyente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Estados\EstadodecuentaPorfecha.resx">
+      <DependentUpon>EstadodecuentaPorfecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Estados\EstadosDEcuentadeAgua.resx">
+      <DependentUpon>EstadosDEcuentadeAgua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\InformedeAvisosdeCobros.resx">
+      <DependentUpon>InformedeAvisosdeCobros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos Diarios\Ingresos diarios.resx">
+      <DependentUpon>Ingresos diarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\ReporteTributosCuentas.resx">
+      <DependentUpon>ReporteTributosCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\fempreRepTributos_categoria.resx">
+      <DependentUpon>fempreRepTributos_categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\Repor_deudas_cte.resx">
+      <DependentUpon>Repor_deudas_cte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\fempreRepTributos_no_pagado.resx">
+      <DependentUpon>fempreRepTributos_no_pagado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\fempreRepTributos.resx">
+      <DependentUpon>fempreRepTributos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\ReporIngrescte.resx">
+      <DependentUpon>ReporIngrescte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Ingresos por Tributos\ReporteTributos.resx">
+      <DependentUpon>ReporteTributos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Inmuebles Agrupados\propiedadesAgrupadas.resx">
+      <DependentUpon>propiedadesAgrupadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Inmuebles\InmueblesGenerales.resx">
+      <DependentUpon>InmueblesGenerales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Inmuebles\inmueblesXcolonia.resx">
+      <DependentUpon>inmueblesXcolonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\inmueblesDispensos\InmueblesDispensos.resx">
+      <DependentUpon>InmueblesDispensos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Inmuebles\Tarjetas_Por_dia.resx">
+      <DependentUpon>Tarjetas_Por_dia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\mora por inmueble\moraPorInmueble.resx">
+      <DependentUpon>moraPorInmueble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Recibos Administrativos\Reporte_aministrativo_fecha.resx">
+      <DependentUpon>Reporte_aministrativo_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\reporteImpuestoyFechas.resx">
+      <DependentUpon>reporteImpuestoyFechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\ReporteMoraTributaria.resx">
+      <DependentUpon>ReporteMoraTributaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Reporte_Por_Impuestos.resx">
+      <DependentUpon>Reporte_Por_Impuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\tarjetas\tajetas.resx">
+      <DependentUpon>tajetas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\tributos\TributosGenerales.resx">
+      <DependentUpon>TributosGenerales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frmsetrec.resx">
+      <DependentUpon>frmsetrec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmAplicarImpuesto.resx">
+      <DependentUpon>frmAplicarImpuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Impuestos\frmImpuesto.resx">
+      <DependentUpon>frmImpuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\FrmAddInmuebles.resx">
+      <DependentUpon>FrmAddInmuebles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Empresas\FrmEmpresas.resx">
+      <DependentUpon>FrmEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobros\Formularios\Inmueble\frmInmuebles.resx">
+      <DependentUpon>frmInmuebles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\contribuyente\Reportdatos_imueble vb.resx">
+      <DependentUpon>Reportdatos_imueble vb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frmThemas.resx">
+      <DependentUpon>frmThemas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\XtraForm1.resx">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solvencias\DatosParaSolvencia.resx">
+      <DependentUpon>DatosParaSolvencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solvencias\Solvenciasfrm.resx">
+      <DependentUpon>Solvenciasfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\frmAddUsers.resx">
+      <DependentUpon>frmAddUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\frmdeleteuser.resx">
+      <DependentUpon>frmdeleteuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\frmedituser.resx">
+      <DependentUpon>frmedituser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Contador_medidas.xsc">
+      <DependentUpon>Contador_medidas.xsd</DependentUpon>
+    </None>
+    <None Include="Contador_medidas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Contador_medidas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Contador_medidas.xss">
+      <DependentUpon>Contador_medidas.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroConnectionString1.xsc">
+      <DependentUpon>DB_catastroConnectionString1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroConnectionString1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_catastroConnectionString1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_catastroConnectionString1.xss">
+      <DependentUpon>DB_catastroConnectionString1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroDataSet1.xsc">
+      <DependentUpon>DB_catastroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_catastroDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_catastroDataSet1.xss">
+      <DependentUpon>DB_catastroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroDataSet2.xsc">
+      <DependentUpon>DB_catastroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_catastroDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_catastroDataSet2.xss">
+      <DependentUpon>DB_catastroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroDataSet3.xsc">
+      <DependentUpon>DB_catastroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_catastroDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_catastroDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_catastroDataSet3.xss">
+      <DependentUpon>DB_catastroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_CReporteAvisos.xsc">
+      <DependentUpon>DB_CReporteAvisos.xsd</DependentUpon>
+    </None>
+    <None Include="DB_CReporteAvisos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_CReporteAvisos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_CReporteAvisos.xss">
+      <DependentUpon>DB_CReporteAvisos.xsd</DependentUpon>
+    </None>
+    <None Include="db_fechaImp.xsc">
+      <DependentUpon>db_fechaImp.xsd</DependentUpon>
+    </None>
+    <None Include="db_fechaImp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_fechaImp.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_fechaImp.xss">
+      <DependentUpon>db_fechaImp.xsd</DependentUpon>
+    </None>
+    <None Include="DSAgrupaciones.xsc">
+      <DependentUpon>DSAgrupaciones.xsd</DependentUpon>
+    </None>
+    <None Include="DSAgrupaciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAgrupaciones.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSAgrupaciones.xss">
+      <DependentUpon>DSAgrupaciones.xsd</DependentUpon>
+    </None>
+    <None Include="dsAlaldia.xsc">
+      <DependentUpon>dsAlaldia.xsd</DependentUpon>
+    </None>
+    <None Include="dsAlaldia.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAlaldia.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAlaldia.xss">
+      <DependentUpon>dsAlaldia.xsd</DependentUpon>
+    </None>
+    <None Include="dsavisos.xsc">
+      <DependentUpon>dsavisos.xsd</DependentUpon>
+    </None>
+    <None Include="dsavisos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsavisos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsavisos.xss">
+      <DependentUpon>dsavisos.xsd</DependentUpon>
+    </None>
+    <None Include="DsAvisosCobrosGrupos.xsc">
+      <DependentUpon>DsAvisosCobrosGrupos.xsd</DependentUpon>
+    </None>
+    <None Include="DsAvisosCobrosGrupos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAvisosCobrosGrupos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsAvisosCobrosGrupos.xss">
+      <DependentUpon>DsAvisosCobrosGrupos.xsd</DependentUpon>
+    </None>
+    <None Include="DSavisosPorFechasGroup.xsc">
+      <DependentUpon>DSavisosPorFechasGroup.xsd</DependentUpon>
+    </None>
+    <None Include="DSavisosPorFechasGroup.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSavisosPorFechasGroup.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSavisosPorFechasGroup.xss">
+      <DependentUpon>DSavisosPorFechasGroup.xsd</DependentUpon>
+    </None>
+    <None Include="dsAvisosRespaldo.xsc">
+      <DependentUpon>dsAvisosRespaldo.xsd</DependentUpon>
+    </None>
+    <None Include="dsAvisosRespaldo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAvisosRespaldo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAvisosRespaldo.xss">
+      <DependentUpon>dsAvisosRespaldo.xsd</DependentUpon>
+    </None>
+    <None Include="Dsbitacora.xsc">
+      <DependentUpon>Dsbitacora.xsd</DependentUpon>
+    </None>
+    <None Include="Dsbitacora.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dsbitacora.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dsbitacora.xss">
+      <DependentUpon>Dsbitacora.xsd</DependentUpon>
+    </None>
+    <None Include="DsConsumoAgua.xsc">
+      <DependentUpon>DsConsumoAgua.xsd</DependentUpon>
+    </None>
+    <None Include="DsConsumoAgua.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsConsumoAgua.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsConsumoAgua.xss">
+      <DependentUpon>DsConsumoAgua.xsd</DependentUpon>
+    </None>
+    <None Include="DSCOntadores_medidas.xsc">
+      <DependentUpon>DSCOntadores_medidas.xsd</DependentUpon>
+    </None>
+    <None Include="DSCOntadores_medidas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCOntadores_medidas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSCOntadores_medidas.xss">
+      <DependentUpon>DSCOntadores_medidas.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpleados.xsc">
+      <DependentUpon>DsEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEmpleados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEmpleados.xss">
+      <DependentUpon>DsEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="DSEmpresasGenerales.xsc">
+      <DependentUpon>DSEmpresasGenerales.xsd</DependentUpon>
+    </None>
+    <None Include="DSEmpresasGenerales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEmpresasGenerales.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSEmpresasGenerales.xss">
+      <DependentUpon>DSEmpresasGenerales.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpresasMorosas.xsc">
+      <DependentUpon>DsEmpresasMorosas.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpresasMorosas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEmpresasMorosas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEmpresasMorosas.xss">
+      <DependentUpon>DsEmpresasMorosas.xsd</DependentUpon>
+    </None>
+    <None Include="DsEstadosdeAgua.xsc">
+      <DependentUpon>DsEstadosdeAgua.xsd</DependentUpon>
+    </None>
+    <None Include="DsEstadosdeAgua.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEstadosdeAgua.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEstadosdeAgua.xss">
+      <DependentUpon>DsEstadosdeAgua.xsd</DependentUpon>
+    </None>
+    <None Include="DsEstadosdeCuentaEmpresas.xsc">
+      <DependentUpon>DsEstadosdeCuentaEmpresas.xsd</DependentUpon>
+    </None>
+    <None Include="DsEstadosdeCuentaEmpresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEstadosdeCuentaEmpresas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEstadosdeCuentaEmpresas.xss">
+      <DependentUpon>DsEstadosdeCuentaEmpresas.xsd</DependentUpon>
+    </None>
+    <None Include="DSEstaodeCuentaAgrupaciones.xsc">
+      <DependentUpon>DSEstaodeCuentaAgrupaciones.xsd</DependentUpon>
+    </None>
+    <None Include="DSEstaodeCuentaAgrupaciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEstaodeCuentaAgrupaciones.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSEstaodeCuentaAgrupaciones.xss">
+      <DependentUpon>DSEstaodeCuentaAgrupaciones.xsd</DependentUpon>
+    </None>
+    <None Include="DSimpuestos_cancelados.xsc">
+      <DependentUpon>DSimpuestos_cancelados.xsd</DependentUpon>
+    </None>
+    <None Include="DSimpuestos_cancelados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSimpuestos_cancelados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSimpuestos_cancelados.xss">
+      <DependentUpon>DSimpuestos_cancelados.xsd</DependentUpon>
+    </None>
+    <None Include="DsIngresosPorTributos1.xsc">
+      <DependentUpon>DsIngresosPorTributos1.xsd</DependentUpon>
+    </None>
+    <None Include="DsIngresosPorTributos1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsIngresosPorTributos1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsIngresosPorTributos1.xss">
+      <DependentUpon>DsIngresosPorTributos1.xsd</DependentUpon>
+    </None>
+    <None Include="DSINmueblesGenerales.xsc">
+      <DependentUpon>DSINmueblesGenerales.xsd</DependentUpon>
+    </None>
+    <None Include="DSINmueblesGenerales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSINmueblesGenerales.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSINmueblesGenerales.xss">
+      <DependentUpon>DSINmueblesGenerales.xsd</DependentUpon>
+    </None>
+    <None Include="DsINmueblesMorosos.xsc">
+      <DependentUpon>DsINmueblesMorosos.xsd</DependentUpon>
+    </None>
+    <None Include="DsINmueblesMorosos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsINmueblesMorosos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsINmueblesMorosos.xss">
+      <DependentUpon>DsINmueblesMorosos.xsd</DependentUpon>
+    </None>
+    <None Include="DSInmueblesYPropietarios.xsc">
+      <DependentUpon>DSInmueblesYPropietarios.xsd</DependentUpon>
+    </None>
+    <None Include="DSInmueblesYPropietarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInmueblesYPropietarios.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSInmueblesYPropietarios.xss">
+      <DependentUpon>DSInmueblesYPropietarios.xsd</DependentUpon>
+    </None>
+    <None Include="DSINmueblesy_Propietario.xsc">
+      <DependentUpon>DSINmueblesy_Propietario.xsd</DependentUpon>
+    </None>
+    <None Include="DSINmueblesy_Propietario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSINmueblesy_Propietario.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSINmueblesy_Propietario.xss">
+      <DependentUpon>DSINmueblesy_Propietario.xsd</DependentUpon>
+    </None>
+    <None Include="DsMoraTributaria.xsc">
+      <DependentUpon>DsMoraTributaria.xsd</DependentUpon>
+    </None>
+    <None Include="DsMoraTributaria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsMoraTributaria.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsMoraTributaria.xss">
+      <DependentUpon>DsMoraTributaria.xsd</DependentUpon>
+    </None>
+    <None Include="DSpendientes_pagos.xsc">
+      <DependentUpon>DSpendientes_pagos.xsd</DependentUpon>
+    </None>
+    <None Include="DSpendientes_pagos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSpendientes_pagos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSpendientes_pagos.xss">
+      <DependentUpon>DSpendientes_pagos.xsd</DependentUpon>
+    </None>
+    <None Include="DSpendientes_pagos_ultimo.xsc">
+      <DependentUpon>DSpendientes_pagos_ultimo.xsd</DependentUpon>
+    </None>
+    <None Include="DSpendientes_pagos_ultimo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSpendientes_pagos_ultimo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSpendientes_pagos_ultimo.xss">
+      <DependentUpon>DSpendientes_pagos_ultimo.xsd</DependentUpon>
+    </None>
+    <None Include="DsPorFechas.xsc">
+      <DependentUpon>DsPorFechas.xsd</DependentUpon>
+    </None>
+    <None Include="DsPorFechas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPorFechas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsPorFechas.xss">
+      <DependentUpon>DsPorFechas.xsd</DependentUpon>
+    </None>
+    <None Include="DSPropiedadesEmpresa.xsc">
+      <DependentUpon>DSPropiedadesEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DSPropiedadesEmpresa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPropiedadesEmpresa.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSPropiedadesEmpresa.xss">
+      <DependentUpon>DSPropiedadesEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DSPropiedadesPorFechasF.xsc">
+      <DependentUpon>DSPropiedadesPorFechasF.xsd</DependentUpon>
+    </None>
+    <None Include="DSPropiedadesPorFechasF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPropiedadesPorFechasF.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSPropiedadesPorFechasF.xss">
+      <DependentUpon>DSPropiedadesPorFechasF.xsd</DependentUpon>
+    </None>
+    <None Include="DsPropiedadesxColonias.xsc">
+      <DependentUpon>DsPropiedadesxColonias.xsd</DependentUpon>
+    </None>
+    <None Include="DsPropiedadesxColonias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPropiedadesxColonias.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsPropiedadesxColonias.xss">
+      <DependentUpon>DsPropiedadesxColonias.xsd</DependentUpon>
+    </None>
+    <None Include="DSRecibosAdministrativos_reporte.xsc">
+      <DependentUpon>DSRecibosAdministrativos_reporte.xsd</DependentUpon>
+    </None>
+    <None Include="DSRecibosAdministrativos_reporte.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRecibosAdministrativos_reporte.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSRecibosAdministrativos_reporte.xss">
+      <DependentUpon>DSRecibosAdministrativos_reporte.xsd</DependentUpon>
+    </None>
+    <None Include="dsReporteEstado_x_contribuyente.xsc">
+      <DependentUpon>dsReporteEstado_x_contribuyente.xsd</DependentUpon>
+    </None>
+    <None Include="dsReporteEstado_x_contribuyente.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReporteEstado_x_contribuyente.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsReporteEstado_x_contribuyente.xss">
+      <DependentUpon>dsReporteEstado_x_contribuyente.xsd</DependentUpon>
+    </None>
+    <None Include="DStributos.xsc">
+      <DependentUpon>DStributos.xsd</DependentUpon>
+    </None>
+    <None Include="DStributos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DStributos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DStributos.xss">
+      <DependentUpon>DStributos.xsd</DependentUpon>
+    </None>
+    <None Include="dstributos_reporte_F.xsc">
+      <DependentUpon>dstributos_reporte_F.xsd</DependentUpon>
+    </None>
+    <None Include="dstributos_reporte_F.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstributos_reporte_F.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dstributos_reporte_F.xss">
+      <DependentUpon>dstributos_reporte_F.xsd</DependentUpon>
+    </None>
+    <None Include="ds_AvisosCobros_fecha.xsc">
+      <DependentUpon>ds_AvisosCobros_fecha.xsd</DependentUpon>
+    </None>
+    <None Include="ds_AvisosCobros_fecha.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_AvisosCobros_fecha.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds_AvisosCobros_fecha.xss">
+      <DependentUpon>ds_AvisosCobros_fecha.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_EstadosCuenta.xsc">
+      <DependentUpon>Ds_EstadosCuenta.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_EstadosCuenta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EstadosCuenta.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds_EstadosCuenta.xss">
+      <DependentUpon>Ds_EstadosCuenta.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Impuestos.xsc">
+      <DependentUpon>DS_Impuestos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Impuestos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Impuestos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Impuestos.xss">
+      <DependentUpon>DS_Impuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_PorfechasPropiedades.xsc">
+      <DependentUpon>Ds_PorfechasPropiedades.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_PorfechasPropiedades.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PorfechasPropiedades.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds_PorfechasPropiedades.xss">
+      <DependentUpon>Ds_PorfechasPropiedades.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_PorImpuestos.xsc">
+      <DependentUpon>Ds_PorImpuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_PorImpuestos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PorImpuestos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds_PorImpuestos.xss">
+      <DependentUpon>Ds_PorImpuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Propietarios_Carnet.xsc">
+      <DependentUpon>Ds_Propietarios_Carnet.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Propietarios_Carnet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Propietarios_Carnet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds_Propietarios_Carnet.xss">
+      <DependentUpon>Ds_Propietarios_Carnet.xsd</DependentUpon>
+    </None>
+    <None Include="DS_reporteImpuestosPorFechas.xsc">
+      <DependentUpon>DS_reporteImpuestosPorFechas.xsd</DependentUpon>
+    </None>
+    <None Include="DS_reporteImpuestosPorFechas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_reporteImpuestosPorFechas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_reporteImpuestosPorFechas.xss">
+      <DependentUpon>DS_reporteImpuestosPorFechas.xsd</DependentUpon>
+    </None>
+    <None Include="DtsetPropiedaesPorColonias.xsc">
+      <DependentUpon>DtsetPropiedaesPorColonias.xsd</DependentUpon>
+    </None>
+    <None Include="DtsetPropiedaesPorColonias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DtsetPropiedaesPorColonias.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DtsetPropiedaesPorColonias.xss">
+      <DependentUpon>DtsetPropiedaesPorColonias.xsd</DependentUpon>
+    </None>
+    <None Include="DT_PROPIEDADES_E_IMPUESTOS.xsc">
+      <DependentUpon>DT_PROPIEDADES_E_IMPUESTOS.xsd</DependentUpon>
+    </None>
+    <None Include="DT_PROPIEDADES_E_IMPUESTOS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DT_PROPIEDADES_E_IMPUESTOS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DT_PROPIEDADES_E_IMPUESTOS.xss">
+      <DependentUpon>DT_PROPIEDADES_E_IMPUESTOS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conexion_OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_catastro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inmuebles_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conexion_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header_impuesto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_inactivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_minimize_inactivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_inactivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Private.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresa_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresa_logo_activo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresa_logo_EDICION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inmueble_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InmuebleDispensa_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estado_de_cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imprimir_estado_de_cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estado_de_cuenta_agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ColumnChart.ico" />
+    <None Include="Resources\bosale_32x32.png" />
+    <None Include="Resources\printarea_32x32.png" />
+    <None Include="Resources\delete_32x321.png" />
+    <None Include="Resources\deletedatasource_32x32.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\customer_32x32.png" />
+    <None Include="Resources\remove_32x321.png" />
+    <Content Include="SAC.fw.ico" />
+    <None Include="Resources\currency_32x321.png" />
+    <None Include="Resources\currency_16x161.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\checkbox_32x32.png" />
+    <None Include="Resources\delete_32x32.png" />
+    <None Include="Resources\download_32x32.png" />
+    <None Include="Resources\print_32x32.png" />
+    <None Include="Resources\remove_32x32.png" />
+    <None Include="Resources\today_32x32.png" />
+    <None Include="Resources\converttoparagraphs_32x32.png" />
+    <None Include="Resources\close_32x32.png" />
+    <None Include="Resources\switchtimescalesto_32x32.png" />
+    <None Include="Resources\open_16x161.png" />
+    <None Include="Resources\navigationbar_16x161.png" />
+    <None Include="Resources\country_16x161.png" />
+    <None Include="Resources\design_16x161.png" />
+    <None Include="Resources\status_16x16.png" />
+    <None Include="Resources\example_16x16.png" />
+    <None Include="Resources\properties_16x16.png" />
+    <None Include="Resources\article_16x16.png" />
+    <None Include="Resources\pivot_16x16.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\team_16x16.png" />
+    <None Include="Resources\tag_16x16.png" />
+    <None Include="Resources\design_16x16.png" />
+    <None Include="Resources\country_16x16.png" />
+    <None Include="Resources\navigationbar_16x16.png" />
+    <None Include="Resources\open_16x16.png" />
+    <None Include="Resources\loadding.gif" />
+    <None Include="Resources\mapa.png" />
+    <None Include="Resources\header_categorias.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\cargando.gif" />
+    <None Include="Resources\bienvenidos.png" />
+    <None Include="Resources\logo_bienvenida.png" />
+    <None Include="Resources\listadoproductos.png" />
+    <None Include="Resources\buscar.jpg" />
+    <None Include="Resources\Header_Activar_administrar_contadores.png" />
+    <None Include="Resources\ccleaner_icon_01.png" />
+    <None Include="Resources\Header_anular.png" />
+    <None Include="Resources\Header_Cobros.png" />
+    <None Include="Resources\abonar and print.png" />
+    <None Include="Resources\FLECHA.PNG" />
+    <None Include="Resources\BackUps.png" />
+    <None Include="Resources\restore.png" />
+    <None Include="Resources\Header_Agrupacion_propiedaes.png" />
+    <None Include="Resources\Header_Empleados.png" />
+    <None Include="Resources\Header_Activar_anulados.png" />
+    <None Include="Resources\databaseRep.png" />
+    <None Include="Resources\databaseDell.png" />
+    <None Include="Resources\databaseEdit.png" />
+    <None Include="Resources\databaseAdd.png" />
+    <None Include="Resources\BackUpRestore.png" />
+    <None Include="Resources\workerPrint.png" />
+    <None Include="Resources\worker.png" />
+    <None Include="Resources\PrintdatosAlcaldia.png" />
+    <None Include="Resources\alcaldiadatos.png" />
+    <None Include="Resources\UltimosAvisoEmitidos.png" />
+    <None Include="Resources\ultimosemitidosGrupales.png" />
+    <None Include="Resources\GenerarAvisoGrupos1.png" />
+    <None Include="Resources\ultimosemitidosIndividuales.png" />
+    <None Include="Resources\GenerarAvisoIndividuales.png" />
+    <None Include="Resources\repIngresosDiarios.png" />
+    <None Include="Resources\pagosAnticipados.png" />
+    <None Include="Resources\movimientos.png" />
+    <None Include="Resources\activarrecAnulados.png" />
+    <None Include="Resources\listadoContadores.png" />
+    <None Include="Resources\RmedidasContadores.png" />
+    <None Include="Resources\activarContadores.png" />
+    <None Include="Resources\anularrecibos.png" />
+    <None Include="Resources\recibosIngresosreporte.png" />
+    <None Include="Resources\newcuenta.png" />
+    <None Include="Resources\recibosIngresos.png" />
+    <None Include="Resources\creaciongruposcte.png" />
+    <None Include="Resources\GenerarAvisoGrupos.png" />
+    <None Include="Resources\agrupacionPropiedaes.png" />
+    <None Include="Resources\impuestos.png" />
+    <None Include="Resources\ingresosxImpuestoMenu.png" />
+    <None Include="Resources\zonas.png" />
+    <None Include="Resources\colonias.png" />
+    <None Include="Resources\moraxEmpresas.png" />
+    <None Include="Resources\todaslasempresas los inmuebles.png" />
+    <None Include="Resources\ingresosxImpuesto.png" />
+    <None Include="Resources\moraxINmuebles.png" />
+    <None Include="Resources\todos los inmuebles.png" />
+    <None Include="Resources\inmueblesxcolonias.png" />
+    <None Include="Resources\solvencias.png" />
+    <None Include="Resources\loggin.png" />
+    <None Include="Resources\User1.ico" />
+    <None Include="Resources\edit_mini.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\Header_Zonas.png" />
+    <None Include="Resources\about1.png" />
+    <None Include="Resources\Info.ico" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\change_User.png" />
+    <None Include="Resources\Ivass1.png" />
+    <None Include="Resources\NetFolder Closed.png" />
+    <None Include="Resources\bitacora.png" />
+    <None Include="Resources\updateIva.png" />
+    <None Include="Resources\User.ico" />
+    <None Include="Resources\Salir.png" />
+    <None Include="Resources\verventanas.png" />
+    <None Include="Resources\cerrarventanas.png" />
+    <None Include="Resources\cascada.png" />
+    <None Include="Resources\vertical.png" />
+    <None Include="Resources\horizontal.png" />
+    <None Include="Resources\text_edit.png" />
+    <None Include="Resources\ThemeManager.png" />
+    <None Include="Resources\Header_administrativos.png" />
+    <None Include="Resources\Header_Grupos.png" />
+    <None Include="Resources\Header_Cuentas.png" />
+    <None Include="Resources\Header_colonias.png" />
+    <None Include="Resources\Recherche fichier texte.png" />
+    <None Include="Resources\Header_empresas.png" />
+    <None Include="Resources\Header_inmuebles_dispensos.png" />
+    <None Include="Resources\Money Twins.png" />
+    <None Include="Resources\Lilian.png" />
+    <None Include="Resources\iMaginary.png" />
+    <None Include="Resources\DevExpress.png" />
+    <None Include="Resources\DevExpress Dark Style.png" />
+    <None Include="Resources\caramel.png" />
+    <None Include="Resources\blue.png" />
+    <None Include="Resources\black.png" />
+    <None Include="Resources\Office 2010 Silver.png" />
+    <None Include="Resources\Zenith recycle bin %28full%29.ico" />
+    <None Include="Resources\bg_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

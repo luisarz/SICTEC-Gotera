@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B41466C-99DA-45AB-A266-831BA1C2BABD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Formularios_de_Sistema_de_Cuenta_Corriente.My.MyApplication</StartupObject>
+    <RootNamespace>Formularios_de_Sistema_de_Cuenta_Corriente</RootNamespace>
+    <AssemblyName>SICTEC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\Guillermo\Desktop\Compilado Paraiso\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SICTEC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>true</Optimize>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SICTEC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SAC.fw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>26B03C78B23C233E254B89C7D7A91E97AFAD6350</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sac-SanEstebanCatarina_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\Downloads\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clases\Classcodcatatro.vb" />
+    <Compile Include="clases\LiberarRam.vb" />
+    <Compile Include="clases\Module1.vb" />
+    <Compile Include="clases\VariableGlobales.vb" />
+    <Compile Include="Formularios\tituloPerpetuidad\ficha_titulo.Designer.vb">
+      <DependentUpon>ficha_titulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\ficha_titulo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\frmTituloPerpetuidadPanel.designer.vb">
+      <DependentUpon>frmTituloPerpetuidadPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\frmTituloPerpetuidadPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmcoloniapanel.designer.vb">
+      <DependentUpon>frmcoloniapanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmcoloniapanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmddColonia.designer.vb">
+      <DependentUpon>frmddColonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmddColonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmeditcolonia.designer.vb">
+      <DependentUpon>frmeditcolonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmeditcolonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmeliminarcolonia.designer.vb">
+      <DependentUpon>frmeliminarcolonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Colonias\frmeliminarcolonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Colonias\Reporte_Colonia.designer.vb">
+      <DependentUpon>Reporte_Colonia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Colonias\Reporte_Colonia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmAddEmpleado.designer.vb">
+      <DependentUpon>frmAddEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmAddEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmdelEmpleado.designer.vb">
+      <DependentUpon>frmdelEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmdelEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmEditEmpleado.designer.vb">
+      <DependentUpon>frmEditEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmEditEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmEmpleado.designer.vb">
+      <DependentUpon>frmEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmEmpleadoSelections.designer.vb">
+      <DependentUpon>frmEmpleadoSelections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\empleados\frmEmpleadoSelections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dsbitacora.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dsbitacora.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEmpleados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\alcaldia\frmAlcaldia.designer.vb">
+      <DependentUpon>frmAlcaldia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\alcaldia\frmAlcaldia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Alcadia\Empleadosrep.Designer.vb">
+      <DependentUpon>Empleadosrep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Alcadia\Empleadosrep.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\Bitacora\Bitacora.Designer.vb">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Bitacora\Bitacora.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sacChilangaDataSet1TituloPerpetuidad.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\modulos\modeleVariables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Formularios\settings\frmThemas.Designer.vb">
+      <DependentUpon>frmThemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\settings\frmThemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\users\frmAddUsers.designer.vb">
+      <DependentUpon>frmAddUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\users\frmAddUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\users\frmdeleteuser.designer.vb">
+      <DependentUpon>frmdeleteuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\users\frmdeleteuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\users\frmedituser.designer.vb">
+      <DependentUpon>frmedituser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\users\frmedituser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\users\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\users\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\users\frmUsuarios.designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\users\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\ficha_titulo.resx">
+      <DependentUpon>ficha_titulo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\frmTituloPerpetuidadPanel.resx">
+      <DependentUpon>frmTituloPerpetuidadPanel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Colonias\frmcoloniapanel.resx">
+      <DependentUpon>frmcoloniapanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Colonias\frmddColonia.resx">
+      <DependentUpon>frmddColonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Colonias\frmeditcolonia.resx">
+      <DependentUpon>frmeditcolonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Colonias\frmeliminarcolonia.resx">
+      <DependentUpon>frmeliminarcolonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Colonias\Reporte_Colonia.resx">
+      <DependentUpon>Reporte_Colonia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\empleados\frmAddEmpleado.resx">
+      <DependentUpon>frmAddEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\empleados\frmdelEmpleado.resx">
+      <DependentUpon>frmdelEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\empleados\frmEditEmpleado.resx">
+      <DependentUpon>frmEditEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\empleados\frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\empleados\frmEmpleadoSelections.resx">
+      <DependentUpon>frmEmpleadoSelections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\alcaldia\frmAlcaldia.resx">
+      <DependentUpon>frmAlcaldia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="reportes\Alcadia\Empleadosrep.resx">
+      <DependentUpon>Empleadosrep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Bitacora\Bitacora.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\settings\frmThemas.resx">
+      <DependentUpon>frmThemas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\users\frmAddUsers.resx">
+      <DependentUpon>frmAddUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\users\frmdeleteuser.resx">
+      <DependentUpon>frmdeleteuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\users\frmedituser.resx">
+      <DependentUpon>frmedituser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\users\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\users\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Dsbitacora.xsc">
+      <DependentUpon>Dsbitacora.xsd</DependentUpon>
+    </None>
+    <None Include="Dsbitacora.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dsbitacora.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dsbitacora.xss">
+      <DependentUpon>Dsbitacora.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpleados.xsc">
+      <DependentUpon>DsEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="DsEmpleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEmpleados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEmpleados.xss">
+      <DependentUpon>DsEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sac-SanEstebanCatarina_TemporaryKey.pfx" />
+    <None Include="sacChilangaDataSet1TituloPerpetuidad.xsc">
+      <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
+    </None>
+    <None Include="sacChilangaDataSet1TituloPerpetuidad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sacChilangaDataSet1TituloPerpetuidad.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sacChilangaDataSet1TituloPerpetuidad.xss">
+      <DependentUpon>sacChilangaDataSet1TituloPerpetuidad.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conexion_OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inmuebles_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conexion_help.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Empresa_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresa_logo_activo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empresa_logo_EDICION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InmuebleDispensa_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estado_de_cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estado_de_cuenta_agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\intro\assets\images\bannerHome.png" />
+    <Content Include="ColumnChart.ico" />
+    <None Include="Resources\bosale_32x32.png" />
+    <None Include="Resources\delete_32x321.png" />
+    <None Include="Resources\deletedatasource_32x32.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\customer_32x32.png" />
+    <None Include="Resources\remove_32x321.png" />
+    <None Include="Resources\fierro.png" />
+    <None Include="Resources\fierroIcon.png" />
+    <None Include="Resources\noIm.png" />
+    <None Include="Resources\cartaventa.png" />
+    <None Include="Resources\tituloPerpetuidad_Mesa de trabajo 1.png" />
+    <None Include="Resources\bannerHome.png" />
+    <Content Include="SAC.fw.ico" />
+    <None Include="Resources\currency_32x321.png" />
+    <None Include="Resources\currency_16x161.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\checkbox_32x32.png" />
+    <None Include="Resources\delete_32x32.png" />
+    <None Include="Resources\download_32x32.png" />
+    <None Include="Resources\remove_32x32.png" />
+    <None Include="Resources\converttoparagraphs_32x32.png" />
+    <None Include="Resources\close_32x32.png" />
+    <None Include="Resources\switchtimescalesto_32x32.png" />
+    <None Include="Resources\open_16x161.png" />
+    <None Include="Resources\country_16x161.png" />
+    <None Include="Resources\design_16x161.png" />
+    <None Include="Resources\status_16x16.png" />
+    <None Include="Resources\example_16x16.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\team_16x16.png" />
+    <None Include="Resources\tag_16x16.png" />
+    <None Include="Resources\design_16x16.png" />
+    <None Include="Resources\country_16x16.png" />
+    <None Include="Resources\open_16x16.png" />
+    <None Include="Resources\loadding.gif" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\listadoproductos.png" />
+    <None Include="Resources\buscar.jpg" />
+    <None Include="Resources\FLECHA.PNG" />
+    <None Include="Resources\restore.png" />
+    <None Include="Resources\Header_Empleados.png" />
+    <None Include="Resources\databaseRep.png" />
+    <None Include="Resources\databaseDell.png" />
+    <None Include="Resources\databaseEdit.png" />
+    <None Include="Resources\databaseAdd.png" />
+    <None Include="Resources\GenerarAvisoGrupos1.png" />
+    <None Include="Resources\GenerarAvisoIndividuales.png" />
+    <None Include="Resources\repIngresosDiarios.png" />
+    <None Include="Resources\listadoContadores.png" />
+    <None Include="Resources\RmedidasContadores.png" />
+    <None Include="Resources\creaciongruposcte.png" />
+    <None Include="Resources\GenerarAvisoGrupos.png" />
+    <None Include="Resources\colonias.png" />
+    <None Include="Resources\inmueblesxcolonias.png" />
+    <None Include="Resources\solvencias.png" />
+    <None Include="Resources\loggin.png" />
+    <None Include="Resources\edit_mini.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\change_User.png" />
+    <None Include="Resources\Ivass1.png" />
+    <None Include="Resources\bitacora.png" />
+    <None Include="Resources\Salir.png" />
+    <None Include="Resources\cascada.png" />
+    <None Include="Resources\text_edit.png" />
+    <None Include="Resources\ThemeManager.png" />
+    <None Include="Resources\Header_colonias.png" />
+    <None Include="Resources\Lilian.png" />
+    <None Include="Resources\DevExpress.png" />
+    <None Include="Resources\DevExpress Dark Style.png" />
+    <None Include="Resources\Office 2010 Silver.png" />
+    <None Include="Resources\bg_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
