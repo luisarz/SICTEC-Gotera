@@ -36,7 +36,7 @@ Partial Class Inicio
         Me.PanelControl3.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PanelControl3.Name = "PanelControl3"
-        Me.PanelControl3.Size = New System.Drawing.Size(1224, 564)
+        Me.PanelControl3.Size = New System.Drawing.Size(1214, 577)
         Me.PanelControl3.TabIndex = 2
         '
         'PictureBox1
@@ -46,7 +46,7 @@ Partial Class Inicio
         Me.PictureBox1.Location = New System.Drawing.Point(2, 2)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1220, 457)
+        Me.PictureBox1.Size = New System.Drawing.Size(1210, 493)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -54,17 +54,17 @@ Partial Class Inicio
         'Panel1
         '
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(2, 459)
+        Me.Panel1.Location = New System.Drawing.Point(2, 495)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1220, 103)
+        Me.Panel1.Size = New System.Drawing.Size(1210, 80)
         Me.Panel1.TabIndex = 1
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1224, 564)
+        Me.ClientSize = New System.Drawing.Size(1214, 577)
         Me.ControlBox = False
         Me.Controls.Add(Me.PanelControl3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -74,7 +74,7 @@ Partial Class Inicio
         Me.MinimizeBox = False
         Me.Name = "Inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Inicio"
+        Me.Text = "Home"
         CType(Me.PanelControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl3.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

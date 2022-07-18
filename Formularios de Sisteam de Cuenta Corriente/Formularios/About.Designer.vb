@@ -31,7 +31,7 @@ Partial Class About
         Me.Copyright.BackColor = System.Drawing.Color.Transparent
         Me.Copyright.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Copyright.ForeColor = System.Drawing.Color.White
-        Me.Copyright.Location = New System.Drawing.Point(633, 427)
+        Me.Copyright.Location = New System.Drawing.Point(746, 417)
         Me.Copyright.Name = "Copyright"
         Me.Copyright.Size = New System.Drawing.Size(474, 103)
         Me.Copyright.TabIndex = 4
@@ -39,13 +39,14 @@ Partial Class About
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.Formularios_de_Sistema_de_Cuenta_Corriente.My.Resources.Resources.splash
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1132, 575)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.Size = New System.Drawing.Size(1359, 554)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
@@ -55,10 +56,12 @@ Partial Class About
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile
         Me.BackgroundImageStore = Global.Formularios_de_Sistema_de_Cuenta_Corriente.My.Resources.Resources.splash
-        Me.ClientSize = New System.Drawing.Size(1132, 575)
+        Me.ClientSize = New System.Drawing.Size(1359, 554)
+        Me.ControlBox = False
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Copyright)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False

@@ -121,14 +121,13 @@ Partial Public Class ficha_titulo
         Me.SqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource(Me.components)
         Me.Parameter1 = New DevExpress.XtraReports.Parameters.Parameter()
         Me.CalculatedField1 = New DevExpress.XtraReports.UI.CalculatedField()
-        Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
         Me.CalculatedField2 = New DevExpress.XtraReports.UI.CalculatedField()
         CType(Me.XrRichText1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'Detail
         '
-        Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel8, Me.XrLabel7, Me.XrLabel6, Me.XrRichText1, Me.XrLabel5})
+        Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel7, Me.XrLabel6, Me.XrRichText1, Me.XrLabel5})
         Me.Detail.HeightF = 925.0!
         Me.Detail.Name = "Detail"
         Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100.0!)
@@ -454,21 +453,13 @@ Partial Public Class ficha_titulo
         Me.Parameter1.Name = "Parameter1"
         Me.Parameter1.Type = GetType(Integer)
         Me.Parameter1.ValueInfo = "0"
+        Me.Parameter1.Visible = False
         '
         'CalculatedField1
         '
         Me.CalculatedField1.DataMember = "titulo_perpetuidad"
         Me.CalculatedField1.Expression = "FormatString('{0:dddd, d ""de"" MMMM ""de"" yyyy}',[fecha_recibo])"
         Me.CalculatedField1.Name = "CalculatedField1"
-        '
-        'XrLabel8
-        '
-        Me.XrLabel8.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CalculatedField1]")})
-        Me.XrLabel8.LocationFloat = New DevExpress.Utils.PointFloat(12.5!, 872.6666!)
-        Me.XrLabel8.Name = "XrLabel8"
-        Me.XrLabel8.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96.0!)
-        Me.XrLabel8.SizeF = New System.Drawing.SizeF(100.0!, 23.0!)
-        Me.XrLabel8.TextFormatString = "{0:d 'de' MMMM 'de' yyyy}"
         '
         'CalculatedField2
         '
@@ -508,7 +499,6 @@ Partial Public Class ficha_titulo
     Friend WithEvents XrLabel9 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents SqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
     Friend WithEvents Parameter1 As DevExpress.XtraReports.Parameters.Parameter
-    Friend WithEvents XrLabel8 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents CalculatedField1 As DevExpress.XtraReports.UI.CalculatedField
     Friend WithEvents CalculatedField2 As DevExpress.XtraReports.UI.CalculatedField
 End Class

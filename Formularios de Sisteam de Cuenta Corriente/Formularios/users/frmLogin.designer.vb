@@ -39,7 +39,7 @@ Partial Class frmLogin
         'txtpass
         '
         Me.txtpass.EditValue = ""
-        Me.txtpass.Location = New System.Drawing.Point(54, 169)
+        Me.txtpass.Location = New System.Drawing.Point(54, 174)
         Me.txtpass.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtpass.Name = "txtpass"
         Me.txtpass.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -67,12 +67,12 @@ Partial Class frmLogin
         '
         Me.lblEmpresa.Appearance.Font = New System.Drawing.Font("Book Antiqua", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEmpresa.Appearance.Options.UseFont = True
-        Me.lblEmpresa.Location = New System.Drawing.Point(91, 13)
+        Me.lblEmpresa.Location = New System.Drawing.Point(66, 13)
         Me.lblEmpresa.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.lblEmpresa.Name = "lblEmpresa"
-        Me.lblEmpresa.Size = New System.Drawing.Size(238, 48)
+        Me.lblEmpresa.Size = New System.Drawing.Size(282, 48)
         Me.lblEmpresa.TabIndex = 3
-        Me.lblEmpresa.Text = "SAC -  Alcaldía Municipal " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "VILLA EL PARAISO"
+        Me.lblEmpresa.Text = "SICTEC -Alcaldia municipal de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "San Francisco Gotera"
         '
         'LabelControl2
         '
@@ -89,7 +89,7 @@ Partial Class frmLogin
         '
         Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Book Antiqua", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl3.Appearance.Options.UseFont = True
-        Me.LabelControl3.Location = New System.Drawing.Point(54, 137)
+        Me.LabelControl3.Location = New System.Drawing.Point(54, 142)
         Me.LabelControl3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(94, 24)
@@ -98,7 +98,7 @@ Partial Class frmLogin
         '
         'chcargsuser
         '
-        Me.chcargsuser.Location = New System.Drawing.Point(55, 206)
+        Me.chcargsuser.Location = New System.Drawing.Point(55, 215)
         Me.chcargsuser.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.chcargsuser.Name = "chcargsuser"
         Me.chcargsuser.Properties.Caption = "Recordar"
@@ -134,12 +134,12 @@ Partial Class frmLogin
         '
         Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Book Antiqua", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelControl1.Appearance.Options.UseFont = True
-        Me.LabelControl1.Location = New System.Drawing.Point(248, 316)
+        Me.LabelControl1.Location = New System.Drawing.Point(172, 316)
         Me.LabelControl1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(134, 24)
+        Me.LabelControl1.Size = New System.Drawing.Size(210, 24)
         Me.LabelControl1.TabIndex = 5
-        Me.LabelControl1.Text = "Alpha Systems"
+        Me.LabelControl1.Text = "CompuTec Consultores"
         '
         'frmLogin
         '

@@ -3,7 +3,7 @@ Imports System.Data
 Imports DevExpress.XtraReports.UI
 Imports System.IO
 
-Public Class AddTituloperpetuidad
+Public Class tituloPerpetuidadAdd
 
 
     Private Sub AddTituloperpetuidad_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -68,6 +68,8 @@ Public Class AddTituloperpetuidad
                         Dim ImgStream As New IO.MemoryStream(CType(lectorCmd("IMAGEN_RECIBO"), Byte()))
                         escaneo.Image = Image.FromStream(ImgStream)
                         ImgStream.Dispose()
+                    Else
+                        escaneo.Image = Formularios_de_Sistema_de_Cuenta_Corriente.My.Resources.Resources.Image_not_available
                     End If
 
                 End If
@@ -136,9 +138,7 @@ Public Class AddTituloperpetuidad
 
 
             rowsAffected = cmd.ExecuteNonQuery()
-            Dim id As Integer = CInt(cmd.Parameters("@ID_TITULO").Value)
-            MsgBox(id.ToString)
-            Dispose()
+            lblid.Text = CInt(cmd.Parameters("@ID_TITULO").Value)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -153,6 +153,7 @@ Public Class AddTituloperpetuidad
             Dim bm As Bitmap = New Bitmap(escaneo.Image)
             bm.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
             Dim arrPic() As Byte = ms.GetBuffer()
+
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.Add(New SqlClient.SqlParameter("@NUMERO_TITULO", numero_titulo.Text))
             cmd.Parameters.Add(New SqlClient.SqlParameter("@FECHA_REGISTRO_TITULO", fecha_registro_titulo.Text))
@@ -196,18 +197,50 @@ Public Class AddTituloperpetuidad
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ESTADO", 1))
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ID_TITULO", lblid.Text))
             rowsAffected = cmd.ExecuteNonQuery()
-            MsgBox("actualzido")
-            Dispose()
+            MsgBox("Registro Modificado con exito", MsgBoxStyle.Information)
         Catch ex As Exception
-            Throw ex
+            MsgBox(ex.Message)
         End Try
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         If btnAdd.Text = "Agregar" Then
             insertar()
+            Dim rep As New ficha_titulo
+            rep.Parameter1.Value = lblid.Text
+            rep.ShowRibbonPreviewDialog()
+            Dispose()
+
         ElseIf btnAdd.Text = "Modificar" Then
             actualizar()
+            Dispose()
+        ElseIf btnAdd.Text = "Eliminar" Then
+            eliminar()
+
         End If
+    End Sub
+    Sub eliminar()
+        Try
+            Dim sp As String = "SpTitulo_perpetuidadEliminar"
+
+            Dim cmd As New SqlClient.SqlCommand(sp, cnxConectionsServer)
+            Dim rowsAffected As Integer = 0
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.Add(New SqlClient.SqlParameter("@ID_TITULO", lblid.Text))
+
+            rowsAffected = cmd.ExecuteNonQuery()
+
+            If rowsAffected > 0 Then
+                MsgBox("Registro Eliminado con Exito", MsgBoxStyle.Information)
+                Dispose()
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+        Dispose()
     End Sub
 End Class

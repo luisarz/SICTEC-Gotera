@@ -44,7 +44,7 @@ Public Class frmUsuarios
 
 
     Private Sub GridView1_RowCellClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs) Handles GridView1.RowCellClick
-        If e.Column.Name = "btnEdit" Then
+        If e.Column.Name = "btnModificar" Then
             My.Forms.frmedituser.txtid.Text = lblid.Text
             My.Forms.frmedituser.ShowDialog()
             consulta_datos()

@@ -91,26 +91,34 @@
     <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
       <HintPath>..\..\..\..\..\Downloads\DevExpress.Utils.v17.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -123,6 +131,7 @@
     <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
@@ -185,10 +194,46 @@
     <Compile Include="Formularios\correlativos_admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\tituloPerpetuidad\AddTituloperpetuidad.Designer.vb">
-      <DependentUpon>AddTituloperpetuidad.vb</DependentUpon>
+    <Compile Include="Formularios\entierros\AddEntierro.Designer.vb">
+      <DependentUpon>AddEntierro.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\tituloPerpetuidad\AddTituloperpetuidad.vb">
+    <Compile Include="Formularios\entierros\AddEntierro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\entierros\rep_entierrros.Designer.vb">
+      <DependentUpon>rep_entierrros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\entierros\rep_entierrros.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\entierros\escaneoEntierro.Designer.vb">
+      <DependentUpon>escaneoEntierro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\entierros\escaneoEntierro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\entierros\ficha_entierro.Designer.vb">
+      <DependentUpon>ficha_entierro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\entierros\ficha_entierro.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\tituloPerpetuidadPanel.designer.vb">
+      <DependentUpon>tituloPerpetuidadPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\tituloPerpetuidadPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\tituloPerpetuidadAdd.Designer.vb">
+      <DependentUpon>tituloPerpetuidadAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\tituloPerpetuidadAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\escaneo.Designer.vb">
+      <DependentUpon>escaneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\tituloPerpetuidad\escaneo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\tituloPerpetuidad\ficha_titulo.Designer.vb">
@@ -285,10 +330,10 @@
     <Compile Include="Formularios\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\tituloPerpetuidad\frmPanelTituloPerpetuidad.designer.vb">
-      <DependentUpon>frmPanelTituloPerpetuidad.vb</DependentUpon>
+    <Compile Include="Formularios\entierros\EntierrosAdmin.designer.vb">
+      <DependentUpon>EntierrosAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\tituloPerpetuidad\frmPanelTituloPerpetuidad.vb">
+    <Compile Include="Formularios\entierros\EntierrosAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\WaitForm1.Designer.vb">
@@ -370,8 +415,27 @@
     <EmbeddedResource Include="Formularios\correlativos_admin.resx">
       <DependentUpon>correlativos_admin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\tituloPerpetuidad\AddTituloperpetuidad.resx">
-      <DependentUpon>AddTituloperpetuidad.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\entierros\AddEntierro.resx">
+      <DependentUpon>AddEntierro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\entierros\rep_entierrros.resx">
+      <DependentUpon>rep_entierrros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\entierros\escaneoEntierro.resx">
+      <DependentUpon>escaneoEntierro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\entierros\ficha_entierro.resx">
+      <DependentUpon>ficha_entierro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\tituloPerpetuidadPanel.resx">
+      <DependentUpon>tituloPerpetuidadPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\tituloPerpetuidadAdd.resx">
+      <DependentUpon>tituloPerpetuidadAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\tituloPerpetuidad\escaneo.resx">
+      <DependentUpon>escaneo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\tituloPerpetuidad\ficha_titulo.resx">
       <DependentUpon>ficha_titulo.vb</DependentUpon>
@@ -417,8 +481,8 @@
     <EmbeddedResource Include="Formularios\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\tituloPerpetuidad\frmPanelTituloPerpetuidad.resx">
-      <DependentUpon>frmPanelTituloPerpetuidad.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\entierros\EntierrosAdmin.resx">
+      <DependentUpon>EntierrosAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\WaitForm1.resx">
       <DependentUpon>WaitForm1.vb</DependentUpon>
@@ -514,6 +578,11 @@
     <None Include="Resources\bannerHome.png" />
     <None Include="Resources\tituloPerpetuidad_Mesa de trabajo 11.png" />
     <None Include="Resources\Header_Empleados1.png" />
+    <None Include="Resources\Image_not_available.png" />
+    <None Include="Resources\titulos-perpetuidad-banner.fw.png" />
+    <None Include="Resources\entierros-banner.fw.png" />
+    <None Include="Resources\empleados-banner.fw.png" />
+    <None Include="Resources\usuarios-banner.fw.png" />
     <Content Include="SAC.fw.ico" />
     <None Include="Resources\checkbox_32x32.png" />
     <None Include="Resources\delete_32x32.png" />

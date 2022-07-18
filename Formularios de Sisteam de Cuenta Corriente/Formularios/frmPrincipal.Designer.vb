@@ -77,6 +77,7 @@ Partial Class FrmPrincipal
         Me.BarButtonItem51 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem52 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem6 = New DevExpress.XtraBars.BarButtonItem()
         Me.RibbonPage5 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup30 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPage7 = New DevExpress.XtraBars.Ribbon.RibbonPage()
@@ -96,7 +97,6 @@ Partial Class FrmPrincipal
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.BarButtonItem60 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem6 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackstageViewControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApplicationMenu2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -520,6 +520,15 @@ Partial Class FrmPrincipal
         Me.BarButtonItem4.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
             Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
+        'BarButtonItem6
+        '
+        Me.BarButtonItem6.Caption = "Correlativo"
+        Me.BarButtonItem6.Id = 181
+        Me.BarButtonItem6.ImageOptions.Image = CType(resources.GetObject("BarButtonItem6.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem6.Name = "BarButtonItem6"
+        Me.BarButtonItem6.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
+            Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
+        '
         'RibbonPage5
         '
         Me.RibbonPage5.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -656,15 +665,6 @@ Partial Class FrmPrincipal
         Me.BarButtonItem60.ImageOptions.Image = CType(resources.GetObject("BarButtonItem60.ImageOptions.Image"), System.Drawing.Image)
         Me.BarButtonItem60.Name = "BarButtonItem60"
         Me.BarButtonItem60.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
-            Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
-        '
-        'BarButtonItem6
-        '
-        Me.BarButtonItem6.Caption = "Correlativo"
-        Me.BarButtonItem6.Id = 181
-        Me.BarButtonItem6.ImageOptions.Image = CType(resources.GetObject("BarButtonItem6.ImageOptions.Image"), System.Drawing.Image)
-        Me.BarButtonItem6.Name = "BarButtonItem6"
-        Me.BarButtonItem6.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
             Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
         'FrmPrincipal

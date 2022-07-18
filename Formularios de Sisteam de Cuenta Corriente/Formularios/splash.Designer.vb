@@ -28,12 +28,10 @@ Partial Class splash
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ProgressBarControl1 = New DevExpress.XtraEditors.ProgressBarControl()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblLoading = New DevExpress.XtraEditors.LabelControl()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProgressBarControl1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControlItem2
@@ -61,28 +59,17 @@ Partial Class splash
         'ProgressBarControl1
         '
         Me.ProgressBarControl1.Location = New System.Drawing.Point(7, 522)
-        Me.ProgressBarControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ProgressBarControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.ProgressBarControl1.Name = "ProgressBarControl1"
         Me.ProgressBarControl1.Properties.ShowTitle = True
         Me.ProgressBarControl1.Size = New System.Drawing.Size(1273, 37)
         Me.ProgressBarControl1.TabIndex = 9
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Formularios_de_Sistema_de_Cuenta_Corriente.My.Resources.Resources.splash
-        Me.PictureBox1.Location = New System.Drawing.Point(3, -1)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1287, 576)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
         'lblLoading
         '
         Me.lblLoading.Appearance.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLoading.Appearance.Options.UseFont = True
-        Me.lblLoading.Location = New System.Drawing.Point(294, 31)
+        Me.lblLoading.Location = New System.Drawing.Point(54, 493)
         Me.lblLoading.Name = "lblLoading"
         Me.lblLoading.Size = New System.Drawing.Size(18, 22)
         Me.lblLoading.TabIndex = 11
@@ -93,13 +80,14 @@ Partial Class splash
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Formularios_de_Sistema_de_Cuenta_Corriente.My.Resources.Resources.splash
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1289, 574)
         Me.Controls.Add(Me.lblLoading)
         Me.Controls.Add(Me.ProgressBarControl1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(661, 379)
         Me.Name = "splash"
@@ -109,7 +97,6 @@ Partial Class splash
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProgressBarControl1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -118,6 +105,5 @@ Partial Class splash
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ProgressBarControl1 As DevExpress.XtraEditors.ProgressBarControl
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents lblLoading As DevExpress.XtraEditors.LabelControl
 End Class

@@ -334,7 +334,7 @@ Public Class FrmPrincipal
 
 
     Private Sub BarButtonItem52_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem52.ItemClick
-        newform(frmPanelTituloPerpetuidad)
+        newform(tituloPerpetuidadPanel)
     End Sub
 
     Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
@@ -343,5 +343,9 @@ Public Class FrmPrincipal
 
     Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
         correlativos_admin.ShowDialog()
+    End Sub
+
+    Private Sub BarButtonItem4_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
+        newform(EntierrosAdmin)
     End Sub
 End Class
