@@ -208,6 +208,7 @@ Partial Class FrmPrincipal
         Me.rcolonias.Name = "rcolonias"
         Me.rcolonias.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
             Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
+        Me.rcolonias.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         '
         'BarButtonItem23
         '

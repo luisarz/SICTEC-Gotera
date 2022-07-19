@@ -300,12 +300,12 @@ Partial Class frmAddusers
         '
         'txtdui
         '
-        Me.txtdui.Location = New System.Drawing.Point(493, 111)
+        Me.txtdui.Location = New System.Drawing.Point(491, 110)
         Me.txtdui.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtdui.Name = "txtdui"
         Me.txtdui.Properties.Mask.EditMask = "00000000-0"
         Me.txtdui.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple
-        Me.txtdui.Size = New System.Drawing.Size(188, 22)
+        Me.txtdui.Size = New System.Drawing.Size(185, 22)
         Me.txtdui.StyleController = Me.LayoutControl1
         Me.txtdui.TabIndex = 6
         '
@@ -323,130 +323,131 @@ Partial Class frmAddusers
         Me.LayoutControl1.Controls.Add(Me.txtempleado)
         Me.LayoutControl1.Controls.Add(Me.txtid)
         Me.LayoutControl1.Controls.Add(Me.bteiddocente)
-        Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControl1.Name = "LayoutControl1"
+        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(778, 155, 812, 500)
         Me.LayoutControl1.Root = Me.LayoutControlGroup1
-        Me.LayoutControl1.Size = New System.Drawing.Size(712, 382)
+        Me.LayoutControl1.Size = New System.Drawing.Size(707, 433)
         Me.LayoutControl1.TabIndex = 2
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'dtfecharegistro
         '
         Me.dtfecharegistro.EditValue = Nothing
-        Me.dtfecharegistro.Location = New System.Drawing.Point(494, 277)
+        Me.dtfecharegistro.Location = New System.Drawing.Point(492, 275)
         Me.dtfecharegistro.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtfecharegistro.Name = "dtfecharegistro"
         Me.dtfecharegistro.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.dtfecharegistro.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.dtfecharegistro.Size = New System.Drawing.Size(187, 22)
+        Me.dtfecharegistro.Size = New System.Drawing.Size(184, 22)
         Me.dtfecharegistro.StyleController = Me.LayoutControl1
         Me.dtfecharegistro.TabIndex = 11
         '
         'cbmtipo
         '
         Me.cbmtipo.EditValue = "--Tipo de Usuario--"
-        Me.cbmtipo.Location = New System.Drawing.Point(166, 277)
+        Me.cbmtipo.Location = New System.Drawing.Point(166, 275)
         Me.cbmtipo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cbmtipo.Name = "cbmtipo"
         Me.cbmtipo.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cbmtipo.Properties.Items.AddRange(New Object() {"Administrador", "Catastro", "Tesorero"})
         Me.cbmtipo.Properties.MaxLength = 49
-        Me.cbmtipo.Size = New System.Drawing.Size(187, 22)
+        Me.cbmtipo.Size = New System.Drawing.Size(185, 22)
         Me.cbmtipo.StyleController = Me.LayoutControl1
         Me.cbmtipo.TabIndex = 10
         '
         'txtreppass
         '
-        Me.txtreppass.Location = New System.Drawing.Point(166, 249)
+        Me.txtreppass.Location = New System.Drawing.Point(166, 247)
         Me.txtreppass.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtreppass.Name = "txtreppass"
         Me.txtreppass.Properties.MaxLength = 30
         Me.txtreppass.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(174)
-        Me.txtreppass.Size = New System.Drawing.Size(515, 22)
+        Me.txtreppass.Size = New System.Drawing.Size(510, 22)
         Me.txtreppass.StyleController = Me.LayoutControl1
         Me.txtreppass.TabIndex = 9
         '
         'txtpass
         '
-        Me.txtpass.Location = New System.Drawing.Point(494, 221)
+        Me.txtpass.Location = New System.Drawing.Point(492, 219)
         Me.txtpass.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtpass.Name = "txtpass"
         Me.txtpass.Properties.MaxLength = 30
         Me.txtpass.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(174)
-        Me.txtpass.Size = New System.Drawing.Size(187, 22)
+        Me.txtpass.Size = New System.Drawing.Size(184, 22)
         Me.txtpass.StyleController = Me.LayoutControl1
         Me.txtpass.TabIndex = 8
         '
         'txtusuario
         '
-        Me.txtusuario.Location = New System.Drawing.Point(166, 221)
+        Me.txtusuario.Location = New System.Drawing.Point(166, 219)
         Me.txtusuario.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtusuario.Name = "txtusuario"
         Me.txtusuario.Properties.MaxLength = 30
-        Me.txtusuario.Size = New System.Drawing.Size(187, 22)
+        Me.txtusuario.Size = New System.Drawing.Size(185, 22)
         Me.txtusuario.StyleController = Me.LayoutControl1
         Me.txtusuario.TabIndex = 7
         '
         'txtcargo
         '
-        Me.txtcargo.Location = New System.Drawing.Point(166, 139)
+        Me.txtcargo.Location = New System.Drawing.Point(166, 138)
         Me.txtcargo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtcargo.Name = "txtcargo"
         Me.txtcargo.Properties.MaxLength = 49
-        Me.txtcargo.Size = New System.Drawing.Size(186, 22)
+        Me.txtcargo.Size = New System.Drawing.Size(184, 22)
         Me.txtcargo.StyleController = Me.LayoutControl1
         Me.txtcargo.TabIndex = 5
         '
         'chktipo
         '
         Me.chktipo.EditValue = True
-        Me.chktipo.Location = New System.Drawing.Point(358, 55)
+        Me.chktipo.Location = New System.Drawing.Point(356, 54)
         Me.chktipo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.chktipo.Name = "chktipo"
         Me.chktipo.Properties.Caption = "Es empleado"
-        Me.chktipo.Size = New System.Drawing.Size(323, 20)
+        Me.chktipo.Size = New System.Drawing.Size(320, 20)
         Me.chktipo.StyleController = Me.LayoutControl1
         Me.chktipo.TabIndex = 1
         '
         'txtnit
         '
-        Me.txtnit.Location = New System.Drawing.Point(493, 83)
+        Me.txtnit.Location = New System.Drawing.Point(491, 82)
         Me.txtnit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtnit.Name = "txtnit"
         Me.txtnit.Properties.MaxLength = 49
         Me.txtnit.Properties.ReadOnly = True
-        Me.txtnit.Size = New System.Drawing.Size(188, 22)
+        Me.txtnit.Size = New System.Drawing.Size(185, 22)
         Me.txtnit.StyleController = Me.LayoutControl1
         Me.txtnit.TabIndex = 3
         '
         'txtempleado
         '
-        Me.txtempleado.Location = New System.Drawing.Point(166, 111)
+        Me.txtempleado.Location = New System.Drawing.Point(166, 110)
         Me.txtempleado.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtempleado.Name = "txtempleado"
         Me.txtempleado.Properties.MaxLength = 49
-        Me.txtempleado.Size = New System.Drawing.Size(186, 22)
+        Me.txtempleado.Size = New System.Drawing.Size(184, 22)
         Me.txtempleado.StyleController = Me.LayoutControl1
         Me.txtempleado.TabIndex = 4
         '
         'txtid
         '
-        Me.txtid.Location = New System.Drawing.Point(166, 55)
+        Me.txtid.Location = New System.Drawing.Point(166, 54)
         Me.txtid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtid.Name = "txtid"
         Me.txtid.Properties.ReadOnly = True
-        Me.txtid.Size = New System.Drawing.Size(186, 22)
+        Me.txtid.Size = New System.Drawing.Size(184, 22)
         Me.txtid.StyleController = Me.LayoutControl1
         Me.txtid.TabIndex = 0
         '
         'bteiddocente
         '
-        Me.bteiddocente.Location = New System.Drawing.Point(166, 83)
+        Me.bteiddocente.Location = New System.Drawing.Point(166, 82)
         Me.bteiddocente.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bteiddocente.Name = "bteiddocente"
         Me.bteiddocente.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
-        Me.bteiddocente.Size = New System.Drawing.Size(186, 22)
+        Me.bteiddocente.Size = New System.Drawing.Size(184, 22)
         Me.bteiddocente.StyleController = Me.LayoutControl1
         Me.bteiddocente.TabIndex = 2
         '
@@ -455,9 +456,9 @@ Partial Class frmAddusers
         Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
         Me.LayoutControlGroup1.GroupBordersVisible = False
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup2, Me.LayoutControlGroup3})
-        Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
+        Me.LayoutControlGroup1.Name = "Root"
         Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 4
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(712, 382)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(707, 433)
         Me.LayoutControlGroup1.TextVisible = False
         '
         'LayoutControlGroup2
@@ -466,7 +467,7 @@ Partial Class frmAddusers
         Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
         Me.LayoutControlGroup2.OptionsItemText.TextToControlDistance = 4
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(686, 166)
+        Me.LayoutControlGroup2.Size = New System.Drawing.Size(681, 165)
         Me.LayoutControlGroup2.Text = "Datos del Empleado"
         '
         'LayoutControlItem1
@@ -474,16 +475,16 @@ Partial Class frmAddusers
         Me.LayoutControlItem1.Control = Me.txtid
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(325, 28)
         Me.LayoutControlItem1.Text = "ID"
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(131, 16)
         '
         'LayoutControlItem2
         '
         Me.LayoutControlItem2.Control = Me.chktipo
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(327, 0)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(325, 0)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(329, 28)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(326, 28)
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem2.TextVisible = False
         '
@@ -492,16 +493,16 @@ Partial Class frmAddusers
         Me.LayoutControlItem3.Control = Me.bteiddocente
         Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 28)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(325, 28)
         Me.LayoutControlItem3.Text = "ID Empleado:"
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(131, 16)
         '
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.Control = Me.txtnit
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(327, 28)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(325, 28)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(329, 28)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(326, 28)
         Me.LayoutControlItem4.Text = "NIT:"
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(131, 16)
         '
@@ -510,16 +511,16 @@ Partial Class frmAddusers
         Me.LayoutControlItem5.Control = Me.txtempleado
         Me.LayoutControlItem5.Location = New System.Drawing.Point(0, 56)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(325, 28)
         Me.LayoutControlItem5.Text = "Nombre:"
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(131, 16)
         '
         'LayoutControlItem7
         '
         Me.LayoutControlItem7.Control = Me.txtdui
-        Me.LayoutControlItem7.Location = New System.Drawing.Point(327, 56)
+        Me.LayoutControlItem7.Location = New System.Drawing.Point(325, 56)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(329, 56)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(326, 56)
         Me.LayoutControlItem7.Text = "Dui;"
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(131, 16)
         '
@@ -528,33 +529,33 @@ Partial Class frmAddusers
         Me.LayoutControlItem6.Control = Me.txtcargo
         Me.LayoutControlItem6.Location = New System.Drawing.Point(0, 84)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(327, 28)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(325, 28)
         Me.LayoutControlItem6.Text = "Cargo"
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(131, 16)
         '
         'LayoutControlGroup3
         '
         Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.LayoutControlItem12})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 166)
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 165)
         Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
         Me.LayoutControlGroup3.OptionsItemText.TextToControlDistance = 4
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(686, 190)
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(681, 242)
         '
         'LayoutControlItem8
         '
         Me.LayoutControlItem8.Control = Me.txtusuario
         Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(328, 28)
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(326, 28)
         Me.LayoutControlItem8.Text = "Usuario:"
         Me.LayoutControlItem8.TextSize = New System.Drawing.Size(131, 16)
         '
         'LayoutControlItem9
         '
         Me.LayoutControlItem9.Control = Me.txtpass
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(328, 0)
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(326, 0)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(328, 28)
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(325, 28)
         Me.LayoutControlItem9.Text = "Contraeña:"
         Me.LayoutControlItem9.TextSize = New System.Drawing.Size(131, 16)
         '
@@ -563,7 +564,7 @@ Partial Class frmAddusers
         Me.LayoutControlItem10.Control = Me.txtreppass
         Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 28)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(656, 28)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(651, 28)
         Me.LayoutControlItem10.Text = "Confirmar Contraseña:"
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(131, 16)
         '
@@ -572,16 +573,16 @@ Partial Class frmAddusers
         Me.LayoutControlItem11.Control = Me.cbmtipo
         Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 56)
         Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(328, 80)
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(326, 133)
         Me.LayoutControlItem11.Text = "Tipo Usuario:"
         Me.LayoutControlItem11.TextSize = New System.Drawing.Size(131, 16)
         '
         'LayoutControlItem12
         '
         Me.LayoutControlItem12.Control = Me.dtfecharegistro
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(328, 56)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(326, 56)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(328, 80)
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(325, 133)
         Me.LayoutControlItem12.Text = "F. Registro:"
         Me.LayoutControlItem12.TextSize = New System.Drawing.Size(131, 16)
         '
@@ -611,7 +612,7 @@ Partial Class frmAddusers
         Me.XtraTabPage1.Controls.Add(Me.LayoutControl1)
         Me.XtraTabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(712, 437)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(707, 433)
         Me.XtraTabPage1.Text = "Nuevo Usuario"
         '
         'XtraTabPage2
@@ -619,7 +620,8 @@ Partial Class frmAddusers
         Me.XtraTabPage2.Controls.Add(Me.XtraTabControl2)
         Me.XtraTabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(712, 437)
+        Me.XtraTabPage2.PageVisible = False
+        Me.XtraTabPage2.Size = New System.Drawing.Size(707, 433)
         Me.XtraTabPage2.Text = "Modulos de Acceso"
         '
         'XtraTabControl2
@@ -629,7 +631,7 @@ Partial Class frmAddusers
         Me.XtraTabControl2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabControl2.Name = "XtraTabControl2"
         Me.XtraTabControl2.SelectedTabPage = Me.XtraTabPage3
-        Me.XtraTabControl2.Size = New System.Drawing.Size(712, 437)
+        Me.XtraTabControl2.Size = New System.Drawing.Size(707, 433)
         Me.XtraTabControl2.TabIndex = 0
         Me.XtraTabControl2.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage3, Me.XtraTabPage4, Me.XtraTabPage5})
         '
@@ -641,7 +643,7 @@ Partial Class frmAddusers
         Me.XtraTabPage3.Controls.Add(Me.GroupControl3)
         Me.XtraTabPage3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage3.Name = "XtraTabPage3"
-        Me.XtraTabPage3.Size = New System.Drawing.Size(710, 407)
+        Me.XtraTabPage3.Size = New System.Drawing.Size(700, 399)
         Me.XtraTabPage3.Text = "Inmuebles|Empresas"
         '
         'LabelControl14
@@ -850,7 +852,7 @@ Partial Class frmAddusers
         Me.XtraTabPage4.Controls.Add(Me.GroupControl11)
         Me.XtraTabPage4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage4.Name = "XtraTabPage4"
-        Me.XtraTabPage4.Size = New System.Drawing.Size(710, 407)
+        Me.XtraTabPage4.Size = New System.Drawing.Size(700, 399)
         Me.XtraTabPage4.Text = "Colonias|Tributos|Recibos|Grupos"
         '
         'GroupControl14
@@ -1106,7 +1108,7 @@ Partial Class frmAddusers
         Me.XtraTabPage5.Controls.Add(Me.GroupControl15)
         Me.XtraTabPage5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.XtraTabPage5.Name = "XtraTabPage5"
-        Me.XtraTabPage5.Size = New System.Drawing.Size(710, 407)
+        Me.XtraTabPage5.Size = New System.Drawing.Size(700, 399)
         Me.XtraTabPage5.Text = "Avisos"
         '
         'GroupControl18

@@ -4,6 +4,7 @@ Imports DevExpress.XtraReports.UI
 Imports System.IO
 
 Public Class AddEntierro
+    Dim bitacora As New Classcodcatatro
 
 
     Private Sub AddEntierro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -135,6 +136,17 @@ Public Class AddEntierro
                 Dim cmdCorrelativo As New SqlCommand("UPDATE correlativo set ultimo_entierro='" & numero_entiero.Text & "'", cnxConectionsServer)
                 If cmdCorrelativo.ExecuteNonQuery > 0 Then
                 End If
+
+                Try
+                    Dim modulo As String = "Entierros"
+                    Dim accion As String = "Registro el Entierro de " & nombres_fallecido.Text & " " & apellidos_fallecido.Text
+                    Dim row As Integer = 0
+                    rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+                    If row > 0 Then
+                    End If
+                Catch ex As Exception
+                End Try
+
             End If
             MsgBox("Datos almacenados de manera exitosa", MsgBoxStyle.Information)
 
@@ -186,6 +198,18 @@ Public Class AddEntierro
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ESCANEO", arrPic))
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ESTADO", 1))
             rowsAffected = cmd.ExecuteNonQuery()
+
+
+            Try
+                Dim modulo As String = "Entierros"
+                Dim accion As String = "Modifico  el Entierro de " & nombres_fallecido.Text & " " & apellidos_fallecido.Text
+                Dim row As Integer = 0
+                rowsAffected = bitacora.bitacoraAdd(modulo, accion)
+                If row > 0 Then
+                End If
+            Catch ex As Exception
+            End Try
+
             MsgBox("Registro Modificado con exito", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -198,6 +222,9 @@ Public Class AddEntierro
             Dim rep As New ficha_entierro
             rep.Parameter1.Value = lblid.Text
             rep.ShowRibbonPreviewDialog()
+
+
+
             Dispose()
 
         ElseIf btnAdd.Text = "Modificar" Then
@@ -218,6 +245,13 @@ Public Class AddEntierro
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ID_ENTIERRO", lblid.Text))
             rowsAffected = cmd.ExecuteNonQuery()
             If rowsAffected > 0 Then
+                    Dim modulo As String = "Entierros"
+                    Dim accion As String = "Elimino el Entierro de " & nombres_fallecido.Text & " " & apellidos_fallecido.Text
+                    Dim row As Integer = 0
+                    rowsAffected = bitacora.bitacoraAdd(modulo, accion)
+                    If row > 0 Then
+                    End If
+                
                 MsgBox("Registro Eliminado con Exito", MsgBoxStyle.Information)
                 Dispose()
             End If

@@ -588,7 +588,7 @@ Public Class frmedituser
 
     End Sub
 
-    Private Sub CheckEdit1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chktipo.CheckedChanged
+    Private Sub CheckEdit1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If chktipo.CheckState = CheckState.Unchecked Then
             bteiddocente.Properties.ReadOnly = True
             bteiddocente.Text = ""
@@ -603,7 +603,7 @@ Public Class frmedituser
     End Sub
 
 
-    Private Sub cbmtipo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbmtipo.SelectedIndexChanged
+    Private Sub cbmtipo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ''''Inicio del modulo administrador''''
         If cbmtipo.Text = "Administrador" Then
             chkinmuebles.CheckState = CheckState.Checked
@@ -717,7 +717,7 @@ Public Class frmedituser
         Dispose()
     End Sub
 
-    Private Sub txtusuario_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtusuario.EditValueChanged
+    Private Sub txtusuario_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'Dim cmdsearh As New SqlCommand("Select * from users where Usuario='" & txtusuario.Text & "' ", cnxConectionsServer)
         'Dim lector As SqlDataReader = cmdsearh.ExecuteReader
         'If lector.Read Then

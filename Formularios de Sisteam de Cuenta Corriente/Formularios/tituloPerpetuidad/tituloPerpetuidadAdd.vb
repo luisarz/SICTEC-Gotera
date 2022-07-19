@@ -4,7 +4,7 @@ Imports DevExpress.XtraReports.UI
 Imports System.IO
 
 Public Class tituloPerpetuidadAdd
-
+    Dim bitacora As New Classcodcatatro
 
     Private Sub AddTituloperpetuidad_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -153,6 +153,13 @@ Public Class tituloPerpetuidadAdd
                 Dim cmdCorrelativo As New SqlCommand("UPDATE correlativo set ultimo_titulo='" & numero_puesto.Text & "'", cnxConectionsServer)
                 If cmdCorrelativo.ExecuteNonQuery > 0 Then
                 End If
+
+                Dim modulo As String = "Titulos A Perpetuidad"
+                Dim accion As String = "Registro el titulo a perpetuidad a avor de: " & derecho_a_favor.Text
+                Dim row As Integer = 0
+                row = Bitacora.bitacoraAdd(modulo, accion)
+                If row > 0 Then
+                End If
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -212,6 +219,13 @@ Public Class tituloPerpetuidadAdd
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ESTADO", 1))
             cmd.Parameters.Add(New SqlClient.SqlParameter("@ID_TITULO", lblid.Text))
             rowsAffected = cmd.ExecuteNonQuery()
+
+            Dim modulo As String = "Titulos A Perpetuidad"
+            Dim accion As String = "Modifico el titulo a perpetuidad a avor de: " & derecho_a_favor.Text
+            Dim row As Integer = 0
+            row = bitacora.bitacoraAdd(modulo, accion)
+            If row > 0 Then
+            End If
             MsgBox("Registro Modificado con exito", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -247,6 +261,13 @@ Public Class tituloPerpetuidadAdd
 
             If rowsAffected > 0 Then
                 MsgBox("Registro Eliminado con Exito", MsgBoxStyle.Information)
+
+                Dim modulo As String = "Titulos A Perpetuidad"
+                Dim accion As String = "Elimino el titulo a perpetuidad a avor de: " & derecho_a_favor.Text
+                Dim row As Integer = 0
+                row = bitacora.bitacoraAdd(modulo, accion)
+                If row > 0 Then
+                End If
                 Dispose()
             End If
 

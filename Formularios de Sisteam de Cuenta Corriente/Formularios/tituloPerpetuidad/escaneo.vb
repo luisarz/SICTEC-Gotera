@@ -1,6 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class escaneo
+    Dim bitacora As New Classcodcatatro
 
     Private Sub escaneo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -20,6 +21,12 @@ Public Class escaneo
 
             End If
             lectorCmd.Close()
+            Dim modulo As String = "Titulos A Perpetuidad "
+            Dim accion As String = "Reviso el Escaneo del titulo a perpetuidad ID: " & lblid.Text
+            Dim row As Integer = 0
+            row = Bitacora.bitacoraAdd(modulo, accion)
+            If row > 0 Then
+            End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

@@ -173,6 +173,15 @@ Public Class FrmPrincipal
     Private Sub BarButtonItem34_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem34.ItemClick
         Try
             newform(frmUsuarios)
+            Try
+                Dim modulo As String = "Usuario"
+                Dim accion As String = "Ingreso al modulo de Usuarios"
+                Dim rowsAffected As Integer = 0
+                rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+                If rowsAffected > 0 Then
+                End If
+            Catch ex As Exception
+            End Try
         Catch ex As Exception
             AlertControl1.Show(Me, "Error", "Error al cargar modulo")
         End Try
@@ -228,7 +237,19 @@ Public Class FrmPrincipal
 
     Private Sub BarButtonItem37_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem37.ItemClick
         Try
+            Try
+                Dim modulo As String = "Bitacora"
+                Dim accion As String = "Ingreso al reporte de Bitacora"
+                Dim rowsAffected As Integer = 0
+                rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+                If rowsAffected > 0 Then
+                End If
+            Catch ex As Exception
+            End Try
+
             Dim rep As New Bitacora
+            rep.Parameter1.Value = Today
+            rep.Parameter2.Value = Today
             rep.ShowRibbonPreviewDialog()
         Catch ex As Exception
             AlertControl1.Show(Me, "Error", "Ocurrio un error al momento de cargarel modulo")
@@ -283,6 +304,16 @@ Public Class FrmPrincipal
 
     Private Sub BarButtonItem11_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem11.ItemClick
         Try
+            Try
+                Dim modulo As String = "BackUp"
+                Dim accion As String = "Ingreso a realizar copia de respaldo de la Base de Datos"
+                Dim rowsAffected As Integer = 0
+                rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+                If rowsAffected > 0 Then
+                End If
+            Catch ex As Exception
+            End Try
+
             Dim v_nombre_respaldo = "cementerios_gotera" & Now.Day & "_" & Now.Month & "_" & Now.Year & "_" & Now.Hour & "_" & Now.Minute & "_" & Now.Second & ".bak"
             SaveFileDialog1.FileName = v_nombre_respaldo
             SaveFileDialog1.ShowDialog()
@@ -300,11 +331,29 @@ Public Class FrmPrincipal
 
     Private Sub BarButtonItem59_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem59.ItemClick
         frmalcaldia.ShowDialog()
+        Try
+            Dim modulo As String = "Conf Alcaldia"
+            Dim accion As String = "Ingreso al modulo de configuracion datos Alcaldia"
+            Dim rowsAffected As Integer = 0
+            rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+            If rowsAffected > 0 Then
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
     Private Sub BarButtonItem58_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem58.ItemClick
         Try
             newform(frmEmpleado)
+            Try
+                Dim modulo As String = "Empleados"
+                Dim accion As String = "Ingreso al modulo de Empleados"
+                Dim rowsAffected As Integer = 0
+                rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+                If rowsAffected > 0 Then
+                End If
+            Catch ex As Exception
+            End Try
         Catch ex As Exception
             AlertControl1.Show(Me, "Error de carga", "Error al cargar el modulo de Empleados")
         End Try
@@ -335,6 +384,15 @@ Public Class FrmPrincipal
 
     Private Sub BarButtonItem52_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem52.ItemClick
         newform(tituloPerpetuidadPanel)
+        Try
+            Dim modulo As String = "Titulos a Perpetuidad"
+            Dim accion As String = "INgreso al modulo titulo Perpetuidad"
+            Dim rowsAffected As Integer = 0
+            rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+            If rowsAffected > 0 Then
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
     Private Sub RibbonControl1_Click(sender As Object, e As EventArgs) Handles RibbonControl1.Click
@@ -342,10 +400,29 @@ Public Class FrmPrincipal
     End Sub
 
     Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
+        Try
+            Dim modulo As String = "Correlativos"
+            Dim accion As String = "Ingreso al modulo de Configuracion de correlativos"
+            Dim rowsAffected As Integer = 0
+            rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+            If rowsAffected > 0 Then
+            End If
+        Catch ex As Exception
+        End Try
         correlativos_admin.ShowDialog()
+
     End Sub
 
     Private Sub BarButtonItem4_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
         newform(EntierrosAdmin)
+        Try
+            Dim modulo As String = "Entierros"
+            Dim accion As String = "Ingreso al modulo de Entierros"
+            Dim rowsAffected As Integer = 0
+            rowsAffected = Bitacora.bitacoraAdd(modulo, accion)
+            If rowsAffected > 0 Then
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 End Class

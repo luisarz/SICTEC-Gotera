@@ -71,7 +71,7 @@ Public Class frmLogin
                     Try
                         usuario = lector(1).ToString
                         'pass = Hash
-                        Dim modulo As String = Me.Text
+                        Dim modulo As String = "SICTEC - LOGIN"
                         Dim accion As String = "Inicio  de Sesión:"
                         Dim registroBitacora As Integer = bitacora.bitacoraAdd(modulo, accion)
 

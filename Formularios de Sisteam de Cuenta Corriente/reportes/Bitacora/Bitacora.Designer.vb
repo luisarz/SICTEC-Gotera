@@ -19,7 +19,20 @@ Partial Public Class Bitacora
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Bitacora))
+        Dim SelectQuery1 As DevExpress.DataAccess.Sql.SelectQuery = New DevExpress.DataAccess.Sql.SelectQuery()
+        Dim Column1 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression1 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table1 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column2 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression2 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column3 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression3 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column4 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression4 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column5 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression5 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
         Me.XrTable1 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow1 = New DevExpress.XtraReports.UI.XRTableRow()
@@ -49,11 +62,9 @@ Partial Public Class Bitacora
         Me.XrPictureBox2 = New DevExpress.XtraReports.UI.XRPictureBox()
         Me.ptblogo = New DevExpress.XtraReports.UI.XRPictureBox()
         Me.XrLabel33 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.Dsbitacora1 = New Formularios_de_Sistema_de_Cuenta_Corriente.Dsbitacora()
-        Me.BitacoraTableAdapter = New Formularios_de_Sistema_de_Cuenta_Corriente.DsbitacoraTableAdapters.BitacoraTableAdapter()
+        Me.SqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource(Me.components)
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dsbitacora1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'Detail
@@ -67,10 +78,10 @@ Partial Public Class Bitacora
         'XrTable1
         '
         Me.XrTable1.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-        Me.XrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0!, 0!)
+        Me.XrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 0.0!)
         Me.XrTable1.Name = "XrTable1"
         Me.XrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow1})
-        Me.XrTable1.SizeF = New System.Drawing.SizeF(794.9999!, 25.0!)
+        Me.XrTable1.SizeF = New System.Drawing.SizeF(1045.0!, 25.0!)
         Me.XrTable1.StylePriority.UseBorders = False
         '
         'XrTableRow1
@@ -83,35 +94,44 @@ Partial Public Class Bitacora
         '
         Me.XrTableCell1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Bitacora.id_bitacora")})
         Me.XrTableCell1.Name = "XrTableCell1"
+        Me.XrTableCell1.StylePriority.UseTextAlignment = False
         Me.XrTableCell1.Text = "XrTableCell1"
-        Me.XrTableCell1.Weight = 0.32975869268258834R
+        Me.XrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell1.Weight = 0.17664865652056397R
         '
         'XrTableCell2
         '
         Me.XrTableCell2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Bitacora.Fecha")})
         Me.XrTableCell2.Name = "XrTableCell2"
+        Me.XrTableCell2.StylePriority.UseTextAlignment = False
         Me.XrTableCell2.Text = "XrTableCell2"
-        Me.XrTableCell2.Weight = 0.5294822017877987R
+        Me.XrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell2.TextFormatString = "{0:d/M/yyyy HH:mm}"
+        Me.XrTableCell2.Weight = 0.36441066666973854R
         '
         'XrTableCell3
         '
         Me.XrTableCell3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Bitacora.Modulo")})
         Me.XrTableCell3.Name = "XrTableCell3"
+        Me.XrTableCell3.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 0, 0, 0, 100.0!)
+        Me.XrTableCell3.StylePriority.UsePadding = False
         Me.XrTableCell3.Text = "XrTableCell3"
-        Me.XrTableCell3.Weight = 1.0207860788142145R
+        Me.XrTableCell3.Weight = 0.731312385381552R
         '
         'XrTableCell4
         '
         Me.XrTableCell4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Bitacora.accion")})
         Me.XrTableCell4.Name = "XrTableCell4"
         Me.XrTableCell4.Text = "XrTableCell4"
-        Me.XrTableCell4.Weight = 0.67398015602746475R
+        Me.XrTableCell4.Weight = 1.3940758720243331R
         '
         'XrTableCell9
         '
         Me.XrTableCell9.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Bitacora.Usuario")})
         Me.XrTableCell9.Name = "XrTableCell9"
-        Me.XrTableCell9.Weight = 0.44599287068793386R
+        Me.XrTableCell9.StylePriority.UseTextAlignment = False
+        Me.XrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell9.Weight = 0.33355241940381231R
         '
         'TopMargin
         '
@@ -136,11 +156,13 @@ Partial Public Class Bitacora
         'XrTable2
         '
         Me.XrTable2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.XrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0!, 0!)
+        Me.XrTable2.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.XrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 0.0!)
         Me.XrTable2.Name = "XrTable2"
         Me.XrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow2})
-        Me.XrTable2.SizeF = New System.Drawing.SizeF(795.0!, 25.0!)
+        Me.XrTable2.SizeF = New System.Drawing.SizeF(1045.0!, 25.0!)
         Me.XrTable2.StylePriority.UseBackColor = False
+        Me.XrTable2.StylePriority.UseFont = False
         '
         'XrTableRow2
         '
@@ -151,56 +173,66 @@ Partial Public Class Bitacora
         'XrTableCell5
         '
         Me.XrTableCell5.Name = "XrTableCell5"
-        Me.XrTableCell5.Text = "BITACORA"
-        Me.XrTableCell5.Weight = 0.32975869268258834R
+        Me.XrTableCell5.StylePriority.UseTextAlignment = False
+        Me.XrTableCell5.Text = "ID"
+        Me.XrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell5.Weight = 0.17664862658355834R
         '
         'XrTableCell6
         '
         Me.XrTableCell6.Name = "XrTableCell6"
+        Me.XrTableCell6.StylePriority.UseTextAlignment = False
         Me.XrTableCell6.Text = "FECHA / HORA"
-        Me.XrTableCell6.Weight = 0.52948214752708245R
+        Me.XrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell6.Weight = 0.36441054146141438R
         '
         'XrTableCell7
         '
         Me.XrTableCell7.Name = "XrTableCell7"
+        Me.XrTableCell7.StylePriority.UseTextAlignment = False
         Me.XrTableCell7.Text = "MODULO DE ACCESO"
-        Me.XrTableCell7.Weight = 1.0207861330749306R
+        Me.XrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell7.Weight = 0.73131228824557193R
         '
         'XrTableCell8
         '
         Me.XrTableCell8.Name = "XrTableCell8"
+        Me.XrTableCell8.StylePriority.UseTextAlignment = False
         Me.XrTableCell8.Text = "ACCIÓN REALIZADA"
-        Me.XrTableCell8.Weight = 0.67397968663305308R
+        Me.XrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell8.Weight = 1.3940754534215176R
         '
         'XrTableCell10
         '
         Me.XrTableCell10.Name = "XrTableCell10"
+        Me.XrTableCell10.StylePriority.UseTextAlignment = False
         Me.XrTableCell10.Text = "USUARIO"
-        Me.XrTableCell10.Weight = 0.44599334008234559R
+        Me.XrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        Me.XrTableCell10.Weight = 0.33355309028793767R
         '
         'Parameter1
         '
         Me.Parameter1.Description = "Desde:"
         Me.Parameter1.Name = "Parameter1"
         Me.Parameter1.Type = GetType(Date)
-        Me.Parameter1.ValueInfo = "11/03/2011 20:35:26"
+        Me.Parameter1.ValueInfo = "2022-07-19"
         '
         'Parameter2
         '
         Me.Parameter2.Description = "Hasta:"
         Me.Parameter2.Name = "Parameter2"
         Me.Parameter2.Type = GetType(Date)
-        Me.Parameter2.ValueInfo = "11/03/2011 20:36:23"
+        Me.Parameter2.ValueInfo = "2022-07-17"
         '
         'ReportHeader
         '
         Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrPageInfo1, Me.lblalcaldia, Me.lbltelefono, Me.D, Me.XrLine10, Me.XrPictureBox2, Me.ptblogo, Me.XrLabel33})
-        Me.ReportHeader.HeightF = 106.0!
+        Me.ReportHeader.HeightF = 103.9584!
         Me.ReportHeader.Name = "ReportHeader"
         '
         'XrPageInfo1
         '
-        Me.XrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(697.5!, 90.95834!)
+        Me.XrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(957.4999!, 90.95835!)
         Me.XrPageInfo1.Name = "XrPageInfo1"
         Me.XrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrPageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime
@@ -210,10 +242,10 @@ Partial Public Class Bitacora
         'lblalcaldia
         '
         Me.lblalcaldia.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblalcaldia.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 0!)
+        Me.lblalcaldia.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 0.0!)
         Me.lblalcaldia.Name = "lblalcaldia"
         Me.lblalcaldia.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.lblalcaldia.SizeF = New System.Drawing.SizeF(575.7498!, 23.0!)
+        Me.lblalcaldia.SizeF = New System.Drawing.SizeF(835.7497!, 23.0!)
         Me.lblalcaldia.StylePriority.UseFont = False
         Me.lblalcaldia.StylePriority.UseTextAlignment = False
         Me.lblalcaldia.Text = "lblalcaldia"
@@ -221,34 +253,34 @@ Partial Public Class Bitacora
         '
         'lbltelefono
         '
-        Me.lbltelefono.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 46.0!)
+        Me.lbltelefono.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 46.00001!)
         Me.lbltelefono.Name = "lbltelefono"
         Me.lbltelefono.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.lbltelefono.SizeF = New System.Drawing.SizeF(575.7498!, 23.0!)
+        Me.lbltelefono.SizeF = New System.Drawing.SizeF(835.7497!, 23.0!)
         Me.lbltelefono.StylePriority.UseTextAlignment = False
         Me.lbltelefono.Text = "lbltelefono"
         Me.lbltelefono.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
         'D
         '
-        Me.D.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 23.0!)
+        Me.D.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 23.00001!)
         Me.D.Name = "D"
         Me.D.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.D.SizeF = New System.Drawing.SizeF(575.7498!, 23.0!)
+        Me.D.SizeF = New System.Drawing.SizeF(835.7497!, 23.0!)
         Me.D.StylePriority.UseTextAlignment = False
         Me.D.Text = "D"
         Me.D.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
         'XrLine10
         '
-        Me.XrLine10.LocationFloat = New DevExpress.Utils.PointFloat(0.00006103516!, 93.75!)
+        Me.XrLine10.LocationFloat = New DevExpress.Utils.PointFloat(0.00006357829!, 93.75!)
         Me.XrLine10.Name = "XrLine10"
-        Me.XrLine10.SizeF = New System.Drawing.SizeF(686.7083!, 6.25!)
+        Me.XrLine10.SizeF = New System.Drawing.SizeF(946.7082!, 6.25!)
         '
         'XrPictureBox2
         '
         Me.XrPictureBox2.Image = CType(resources.GetObject("XrPictureBox2.Image"), System.Drawing.Image)
-        Me.XrPictureBox2.LocationFloat = New DevExpress.Utils.PointFloat(686.7083!, 0!)
+        Me.XrPictureBox2.LocationFloat = New DevExpress.Utils.PointFloat(946.7083!, 0.0!)
         Me.XrPictureBox2.Name = "XrPictureBox2"
         Me.XrPictureBox2.SizeF = New System.Drawing.SizeF(98.29175!, 90.95834!)
         Me.XrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage
@@ -256,10 +288,10 @@ Partial Public Class Bitacora
         'ptblogo
         '
         Me.ptblogo.Image = CType(resources.GetObject("ptblogo.Image"), System.Drawing.Image)
-        Me.ptblogo.LocationFloat = New DevExpress.Utils.PointFloat(0!, 0!)
+        Me.ptblogo.LocationFloat = New DevExpress.Utils.PointFloat(0.00006357829!, 0.0!)
         Me.ptblogo.Name = "ptblogo"
-        Me.ptblogo.SizeF = New System.Drawing.SizeF(110.9585!, 90.95834!)
-        Me.ptblogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage
+        Me.ptblogo.SizeF = New System.Drawing.SizeF(110.9584!, 90.95835!)
+        Me.ptblogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage
         '
         'XrLabel33
         '
@@ -267,35 +299,59 @@ Partial Public Class Bitacora
         Me.XrLabel33.LocationFloat = New DevExpress.Utils.PointFloat(110.9585!, 68.99999!)
         Me.XrLabel33.Name = "XrLabel33"
         Me.XrLabel33.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel33.SizeF = New System.Drawing.SizeF(575.7498!, 21.95834!)
+        Me.XrLabel33.SizeF = New System.Drawing.SizeF(835.7497!, 21.95834!)
         Me.XrLabel33.StylePriority.UseFont = False
         Me.XrLabel33.StylePriority.UseTextAlignment = False
         Me.XrLabel33.Text = "BITACORA DE OPERACIONES REALIZADAS EN EL SISTEMA"
         Me.XrLabel33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
-        'Dsbitacora1
+        'SqlDataSource1
         '
-        Me.Dsbitacora1.DataSetName = "Dsbitacora"
-        Me.Dsbitacora1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'BitacoraTableAdapter
-        '
-        Me.BitacoraTableAdapter.ClearBeforeFill = True
+        Me.SqlDataSource1.ConnectionName = "Formularios_de_Sistema_de_Cuenta_Corriente.My.MySettings.DB_catastroConnectionStr" & _
+    "ing1"
+        Me.SqlDataSource1.Name = "SqlDataSource1"
+        ColumnExpression1.ColumnName = "id_bitacora"
+        Table1.Name = "Bitacora"
+        ColumnExpression1.Table = Table1
+        Column1.Expression = ColumnExpression1
+        ColumnExpression2.ColumnName = "Modulo"
+        ColumnExpression2.Table = Table1
+        Column2.Expression = ColumnExpression2
+        ColumnExpression3.ColumnName = "accion"
+        ColumnExpression3.Table = Table1
+        Column3.Expression = ColumnExpression3
+        ColumnExpression4.ColumnName = "Fecha"
+        ColumnExpression4.Table = Table1
+        Column4.Expression = ColumnExpression4
+        ColumnExpression5.ColumnName = "Usuario"
+        ColumnExpression5.Table = Table1
+        Column5.Expression = ColumnExpression5
+        SelectQuery1.Columns.Add(Column1)
+        SelectQuery1.Columns.Add(Column2)
+        SelectQuery1.Columns.Add(Column3)
+        SelectQuery1.Columns.Add(Column4)
+        SelectQuery1.Columns.Add(Column5)
+        SelectQuery1.Name = "Bitacora"
+        SelectQuery1.Tables.Add(Table1)
+        Me.SqlDataSource1.Queries.AddRange(New DevExpress.DataAccess.Sql.SqlQuery() {SelectQuery1})
+        Me.SqlDataSource1.ResultSchemaSerializable = resources.GetString("SqlDataSource1.ResultSchemaSerializable")
         '
         'Bitacora
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.PageHeader, Me.ReportHeader})
-        Me.DataAdapter = Me.BitacoraTableAdapter
+        Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() {Me.SqlDataSource1})
         Me.DataMember = "Bitacora"
-        Me.DataSource = Me.Dsbitacora1
-        Me.FilterString = "[Fecha] >= ?Parameter1 And [Fecha] <= ?Parameter2"
+        Me.DataSource = Me.SqlDataSource1
+        Me.FilterString = "[Fecha] Between(?Parameter1, ?Parameter2)"
+        Me.Landscape = True
         Me.Margins = New System.Drawing.Printing.Margins(26, 29, 40, 100)
+        Me.PageHeight = 850
+        Me.PageWidth = 1100
         Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.Parameter1, Me.Parameter2})
         Me.ShowPreviewMarginLines = False
         Me.Version = "17.2"
         CType(Me.XrTable1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dsbitacora1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
     End Sub
@@ -328,6 +384,5 @@ Partial Public Class Bitacora
     Friend WithEvents XrPictureBox2 As DevExpress.XtraReports.UI.XRPictureBox
     Friend WithEvents ptblogo As DevExpress.XtraReports.UI.XRPictureBox
     Friend WithEvents XrLabel33 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents Dsbitacora1 As Formularios_de_Sistema_de_Cuenta_Corriente.Dsbitacora
-    Friend WithEvents BitacoraTableAdapter As Formularios_de_Sistema_de_Cuenta_Corriente.DsbitacoraTableAdapters.BitacoraTableAdapter
+    Friend WithEvents SqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
 End Class

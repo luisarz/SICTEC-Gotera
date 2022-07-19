@@ -68,7 +68,7 @@ Public Class EntierrosAdmin
             ElseIf e.Column.Name = "btnPrint" Then
                 Dim rep As New ficha_entierro
                 rep.Parameter1.Value = lblid.Text
-                MsgBox(lblid.Text)
+                'MsgBox(lblid.Text)
                 rep.ShowRibbonPreviewDialog()
             ElseIf e.Column.Name = "btnEscaneo" Then
                 escaneoEntierro.lblid.Text = lblid.Text
