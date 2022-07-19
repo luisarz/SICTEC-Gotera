@@ -24,26 +24,26 @@ Partial Class correlativos_admin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(correlativos_admin))
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
-        Me.txtSerie = New DevExpress.XtraEditors.TextEdit()
         Me.txtNumero = New DevExpress.XtraEditors.SpinEdit()
         Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.txtSerie = New DevExpress.XtraEditors.SpinEdit()
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
-        CType(Me.txtSerie.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtNumero.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtSerie.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
         '
-        Me.LayoutControl1.Controls.Add(Me.txtSerie)
         Me.LayoutControl1.Controls.Add(Me.txtNumero)
+        Me.LayoutControl1.Controls.Add(Me.txtSerie)
         Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControl1.Name = "LayoutControl1"
@@ -52,22 +52,10 @@ Partial Class correlativos_admin
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
-        'txtSerie
-        '
-        Me.txtSerie.Location = New System.Drawing.Point(156, 56)
-        Me.txtSerie.Name = "txtSerie"
-        Me.txtSerie.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSerie.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtSerie.Properties.Appearance.Options.UseFont = True
-        Me.txtSerie.Properties.Appearance.Options.UseForeColor = True
-        Me.txtSerie.Size = New System.Drawing.Size(347, 30)
-        Me.txtSerie.StyleController = Me.LayoutControl1
-        Me.txtSerie.TabIndex = 5
-        '
         'txtNumero
         '
         Me.txtNumero.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.txtNumero.Location = New System.Drawing.Point(156, 16)
+        Me.txtNumero.Location = New System.Drawing.Point(182, 16)
         Me.txtNumero.Name = "txtNumero"
         Me.txtNumero.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNumero.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -78,7 +66,7 @@ Partial Class correlativos_admin
         Me.txtNumero.Properties.IsFloatValue = False
         Me.txtNumero.Properties.Mask.EditMask = "N00"
         Me.txtNumero.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None
-        Me.txtNumero.Size = New System.Drawing.Size(347, 34)
+        Me.txtNumero.Size = New System.Drawing.Size(321, 34)
         Me.txtNumero.StyleController = Me.LayoutControl1
         Me.txtNumero.TabIndex = 4
         '
@@ -100,8 +88,8 @@ Partial Class correlativos_admin
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
         Me.LayoutControlItem1.Size = New System.Drawing.Size(493, 40)
-        Me.LayoutControlItem1.Text = "Ultimo Numero:"
-        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(136, 21)
+        Me.LayoutControlItem1.Text = "ULTIMO TITULO"
+        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(162, 21)
         '
         'LayoutControlItem2
         '
@@ -111,9 +99,23 @@ Partial Class correlativos_admin
         Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 40)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
         Me.LayoutControlItem2.Size = New System.Drawing.Size(493, 65)
-        Me.LayoutControlItem2.Text = "Serie:"
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(136, 21)
-        Me.LayoutControlItem2.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+        Me.LayoutControlItem2.Text = "ULTIMO ENTIERRO"
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(162, 21)
+        '
+        'txtSerie
+        '
+        Me.txtSerie.Location = New System.Drawing.Point(182, 56)
+        Me.txtSerie.Name = "txtSerie"
+        Me.txtSerie.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSerie.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtSerie.Properties.Appearance.Options.UseFont = True
+        Me.txtSerie.Properties.Appearance.Options.UseForeColor = True
+        Me.txtSerie.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.txtSerie.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.[Default]
+        Me.txtSerie.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None
+        Me.txtSerie.Size = New System.Drawing.Size(321, 30)
+        Me.txtSerie.StyleController = Me.LayoutControl1
+        Me.txtSerie.TabIndex = 5
         '
         'SimpleButton2
         '
@@ -151,20 +153,20 @@ Partial Class correlativos_admin
         Me.Text = "Configuracion de Correlativos"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
-        CType(Me.txtSerie.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtNumero.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtSerie.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
     Friend WithEvents LayoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents txtSerie As DevExpress.XtraEditors.TextEdit
     Friend WithEvents txtNumero As DevExpress.XtraEditors.SpinEdit
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents txtSerie As DevExpress.XtraEditors.SpinEdit
 End Class

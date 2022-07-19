@@ -1627,14 +1627,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SICTEC.exe" size="15628288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SICTEC.exe" size="15949312">
       <assemblyIdentity name="SICTEC" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>lTGu39MINpz+XhljYJ2uy7mxdOs=</dsig:DigestValue>
+        <dsig:DigestValue>iGB0kNFqeHA9dp5dxM1Q5NgGi/8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

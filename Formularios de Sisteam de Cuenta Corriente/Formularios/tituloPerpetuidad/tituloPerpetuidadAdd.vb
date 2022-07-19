@@ -10,6 +10,13 @@ Public Class tituloPerpetuidadAdd
         Try
             If btnAdd.Text = "Agregar" Then
                 'Seleccionar el ultimo correlativo
+                Dim cmdCorrelativo As New SqlCommand("SELECT ultimo_titulo   from correlativo", cnxConectionsServer)
+                Dim lectorCmdCorrelativo As SqlDataReader = cmdCorrelativo.ExecuteReader
+                If lectorCmdCorrelativo.Read Then
+                    numero_titulo.Text = lectorCmdCorrelativo(0).ToString + 1
+                    fecha_registro_titulo.Text = Today
+                End If
+                lectorCmdCorrelativo.Close()
             Else
                 'Seleccionar los datos del titulo
                 Dim cmd As New SqlCommand("SELECT * FROM titulo_perpetuidad WHERE id_titulo='" & lblid.Text & "'", cnxConectionsServer)
@@ -139,6 +146,14 @@ Public Class tituloPerpetuidadAdd
 
             rowsAffected = cmd.ExecuteNonQuery()
             lblid.Text = CInt(cmd.Parameters("@ID_TITULO").Value)
+
+
+            If lblid.Text > 0 Then
+                'Seleccionar el ultimo correlativo
+                Dim cmdCorrelativo As New SqlCommand("UPDATE correlativo set ultimo_titulo='" & numero_puesto.Text & "'", cnxConectionsServer)
+                If cmdCorrelativo.ExecuteNonQuery > 0 Then
+                End If
+            End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

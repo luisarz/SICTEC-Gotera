@@ -7,9 +7,21 @@ Public Class AddEntierro
 
 
     Private Sub AddEntierro_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'Cementerios_goteraDataSet1.titulo_perpetuidad' Puede moverla o quitarla según sea necesario.
+        Me.Titulo_perpetuidadTableAdapter.Fill(Me.Cementerios_goteraDataSet1.titulo_perpetuidad)
+
         Try
             If btnAdd.Text = "Agregar" Then
+                'TODO: esta línea de código carga datos en la tabla 'Cementerios_goteraDataSet.titulo_perpetuidad' Puede moverla o quitarla según sea necesario.
                 'Seleccionar el ultimo correlativo
+                'Seleccionar el ultimo correlativo
+                Dim cmdCorrelativo As New SqlCommand("SELECT ultimo_entierro   from correlativo", cnxConectionsServer)
+                Dim lectorCmdCorrelativo As SqlDataReader = cmdCorrelativo.ExecuteReader
+                If lectorCmdCorrelativo.Read Then
+                    numero_entiero.Text = lectorCmdCorrelativo(0).ToString + 1
+                    fecha_fallecimiento.Text = Today
+                End If
+                lectorCmdCorrelativo.Close()
             Else
                 'Seleccionar los datos del titulo
                 Dim cmd As New SqlCommand("SELECT * FROM entierros WHERE id_entierro='" & lblid.Text & "'", cnxConectionsServer)
@@ -51,7 +63,7 @@ Public Class AddEntierro
                     lote_num.Text = lectorCmd("lote_num").ToString
                     cementerio.Text = lectorCmd("cementerio").ToString
 
-                    
+
                     If lectorCmd("escaneo").ToString <> "" Then
                         Dim ImgStream As New IO.MemoryStream(CType(lectorCmd("escaneo"), Byte()))
                         escaneo.Image = Image.FromStream(ImgStream)
@@ -118,6 +130,12 @@ Public Class AddEntierro
             rowsAffected = cmd.ExecuteNonQuery()
             lblid.Text = CInt(cmd.Parameters("@ID_ENTIERRO").Value)
 
+            If lblid.Text > 0 Then
+                'Seleccionar el ultimo correlativo
+                Dim cmdCorrelativo As New SqlCommand("UPDATE correlativo set ultimo_entierro='" & numero_entiero.Text & "'", cnxConectionsServer)
+                If cmdCorrelativo.ExecuteNonQuery > 0 Then
+                End If
+            End If
             MsgBox("Datos almacenados de manera exitosa", MsgBoxStyle.Information)
 
 

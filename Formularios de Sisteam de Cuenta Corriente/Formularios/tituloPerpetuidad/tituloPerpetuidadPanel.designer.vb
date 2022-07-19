@@ -36,6 +36,11 @@ Partial Class tituloPerpetuidadPanel
         Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions4 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject13 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject14 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject15 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject16 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.PanelControl3 = New DevExpress.XtraEditors.PanelControl()
         Me.Lista = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
@@ -65,6 +70,8 @@ Partial Class tituloPerpetuidadPanel
         Me.lblid = New DevExpress.XtraEditors.LabelControl()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.AlertControl1 = New DevExpress.XtraBars.Alerter.AlertControl(Me.components)
+        Me.btnEntierros = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemButtonEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         CType(Me.PanelControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl3.SuspendLayout()
         CType(Me.Lista, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,6 +83,7 @@ Partial Class tituloPerpetuidadPanel
         CType(Me.PanelControl4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemButtonEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelControl3
@@ -96,7 +104,7 @@ Partial Class tituloPerpetuidadPanel
         Me.Lista.MainView = Me.GridView1
         Me.Lista.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Lista.Name = "Lista"
-        Me.Lista.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.btnDelete, Me.RepositoryItemButtonEdit1, Me.RepositoryItemImageEdit1, Me.RepositoryItemButtonEdit2})
+        Me.Lista.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.btnDelete, Me.RepositoryItemButtonEdit1, Me.RepositoryItemImageEdit1, Me.RepositoryItemButtonEdit2, Me.RepositoryItemButtonEdit3})
         Me.Lista.Size = New System.Drawing.Size(1766, 505)
         Me.Lista.TabIndex = 0
         Me.Lista.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -108,7 +116,7 @@ Partial Class tituloPerpetuidadPanel
         Me.GridView1.Appearance.FocusedRow.Options.UseFont = True
         Me.GridView1.Appearance.FocusedRow.Options.UseForeColor = True
         Me.GridView1.Appearance.FocusedRow.Options.UseImage = True
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn5, Me.Delete, Me.btnEdit, Me.GridColumn3, Me.GridColumn4, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8, Me.btnEscaneo, Me.btnPrint})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn5, Me.Delete, Me.btnEdit, Me.GridColumn3, Me.GridColumn4, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8, Me.btnEscaneo, Me.btnPrint, Me.btnEntierros})
         Me.GridView1.GridControl = Me.Lista
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
@@ -352,6 +360,24 @@ Partial Class tituloPerpetuidadPanel
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'btnEntierros
+        '
+        Me.btnEntierros.Caption = "Entierros"
+        Me.btnEntierros.ColumnEdit = Me.RepositoryItemButtonEdit3
+        Me.btnEntierros.ImageOptions.Image = CType(resources.GetObject("btnEntierros.ImageOptions.Image"), System.Drawing.Image)
+        Me.btnEntierros.Name = "btnEntierros"
+        Me.btnEntierros.Visible = True
+        Me.btnEntierros.VisibleIndex = 10
+        Me.btnEntierros.Width = 84
+        '
+        'RepositoryItemButtonEdit3
+        '
+        Me.RepositoryItemButtonEdit3.AutoHeight = False
+        EditorButtonImageOptions4.SvgImage = CType(resources.GetObject("EditorButtonImageOptions4.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.RepositoryItemButtonEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.RepositoryItemButtonEdit3.Name = "RepositoryItemButtonEdit3"
+        Me.RepositoryItemButtonEdit3.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor
+        '
         'tituloPerpetuidadPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -376,6 +402,7 @@ Partial Class tituloPerpetuidadPanel
         Me.PanelControl4.ResumeLayout(False)
         Me.PanelControl4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemButtonEdit3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -408,4 +435,6 @@ Partial Class tituloPerpetuidadPanel
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnPrint As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemButtonEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
+    Friend WithEvents btnEntierros As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemButtonEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
 End Class
